@@ -1,0 +1,45 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": "0",
+  "data": {
+    "parentList": [
+      {
+        "kanriKaName": "○○部署 1",
+        "bunruiCd": "01",
+        "bunruiName": "移管申請中",
+        "memo": "ACX",
+        "hznkikanCd ": "1年",
+        "hznkikantxt": "その他OO",
+        "reason": "OOOO"
+      },
+      {
+        "kanriKaName": "○○部署 2",
+        "bunruiCd": "02",
+        "bunruiName": "移管申請中",
+        "memo": "ACX",
+        "hznkikanCd ": "1年",
+        "hznkikantxt": "その他OO",
+        "reason": "OOOO"
+      },
+      {
+        "kanriKaName": " ○○部署 3",
+        "bunruiCd": "03",
+        "bunruiName": "移管申請中",
+        "memo": "ACX",
+        "hznkikanCd ": "1年",
+        "hznkikantxt": "その他OO",
+        "reason": "OOOO"
+      },
+      {
+        "kanriKaName": "○○部署 4",
+        "bunruiCd": "04",
+        "bunruiName": "移管申請中",
+        "memo": "ACX",
+        "hznkikanCd ": "1年",
+        "hznkikantxt": "その他OO",
+        "reason": "OOOO"
+      }
+    ]
+  }
+}

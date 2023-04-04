@@ -1,0 +1,39 @@
+@use 'styles/foundation/config' as *;
+
+.main {
+  width: 50%;
+  margin: 150px auto;
+  padding: 10px;
+
+  .title {
+    margin: 50px 0;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+  }
+
+  .form-control {
+    margin: 0 0 20px;
+
+    &.error {
+      label {
+        color: color(--red);
+      }
+    }
+
+    .p-input__message {
+      position: relative;
+    }
+  }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+
+  #root,
+  form,
+  main {
+    height: 100%;
+  }
+}

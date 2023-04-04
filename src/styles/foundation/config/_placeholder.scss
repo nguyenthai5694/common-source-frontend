@@ -1,0 +1,24 @@
+// How to Use
+// @include placeholder {
+//   color: color(--black-36);
+// }
+
+@mixin placeholder {
+  // &::input-placeholder {
+  //   @content;
+  // }
+
+  &:placeholder {
+    /* Firefox 18- */
+    @content;
+  }
+
+  &::placeholder {
+    /* Firefox 19+ */
+    @content;
+  }
+
+  &:input-placeholder {
+    @content;
+  }
+}

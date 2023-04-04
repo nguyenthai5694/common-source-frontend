@@ -1,0 +1,38 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": {
+    "kjnBan": 5064,
+    "bunruiCd": "a",
+    "bunruiName": "a",
+    "bunruiLevel": 2,
+    "kctr": 1,
+    "memo": "haha",
+    "reason": "hehe",
+    "joiKjnBan": 3965,
+    "hozonTermCode": -1,
+    "hozonTermDisp": "",
+    "hznkikantxt": null,
+    "hznKikanDisp": "",
+    "administrationType": 1,
+    "hasChildDeleted3Month": false,
+    "parentList": [
+      {
+        "kjnBan": 3965,
+        "bunruiCd": "00001",
+        "bunruiName": "★試験用_施行前_大分類",
+        "bunruiLevel": 1,
+        "kctr": 0,
+        "memo": null,
+        "reason": null,
+        "joiKjnBan": 0,
+        "hozonTermCode": -1,
+        "hozonTermDisp": "",
+        "hznkikantxt": null,
+        "hznKikanDisp": "",
+        "administrationType": 0
+      }
+    ]
+  }
+}

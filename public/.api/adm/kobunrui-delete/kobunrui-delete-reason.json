@@ -1,0 +1,23 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 200,
+  "data": [
+    {
+      "cmbSeq": 1,
+      "cmbUnm": "誤登録"
+    },
+    {
+      "cmbSeq": 2,
+      "cmbUnm": "誤記載"
+    },
+    {
+      "cmbSeq": 3,
+      "cmbUnm": "未使用"
+    },
+    {
+      "cmbSeq": 8,
+      "cmbUnm": "その他"
+    }
+  ]
+}

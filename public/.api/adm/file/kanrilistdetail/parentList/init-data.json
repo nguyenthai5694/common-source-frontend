@@ -1,0 +1,45 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": {
+    "parentList": [
+      {
+        "kjnBan": 3965,
+        "bunruiName": "★試験用_施行前_大分類",
+        "bunruiCd": "00001",
+        "kanriKaName": null,
+        "bunruiLevel": 1,
+        "joiKjnBan": 0,
+        "memo": null
+      },
+      {
+        "kjnBan": 3966,
+        "bunruiName": "★試験用_施行前_中分類",
+        "bunruiCd": "00002",
+        "kanriKaName": null,
+        "bunruiLevel": 2,
+        "joiKjnBan": 3965,
+        "memo": null
+      },
+      {
+        "kjnBan": 3967,
+        "bunruiName": "★試験用_施行前_小分類",
+        "bunruiCd": "00003",
+        "kanriKaName": null,
+        "bunruiLevel": 3,
+        "joiKjnBan": 3966,
+        "memo": null
+      },
+      {
+        "kjnBan": 3968,
+        "bunruiName": "★試験用_施行前_標準行政文書ファイル",
+        "bunruiCd": "00004",
+        "kanriKaName": "○○府省(庁) 総務局 総務部 総務課",
+        "bunruiLevel": 4,
+        "joiKjnBan": 3967,
+        "memo": null
+      }
+    ]
+  }
+}

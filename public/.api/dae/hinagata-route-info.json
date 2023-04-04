@@ -1,0 +1,188 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 200,
+  "data": {
+    "routeId": 10000,
+    "routeName": "雛形ルート名１",
+    "ownerType": "個人",
+    "routeType": "決裁",
+    "baseDate": "2020（令和2年）8月22日",
+    "ownerShimei": "山田　太郎",
+    "ownerBushoCode": "",
+    "ownerBushoName": "行政管理局　行政情報システム企画課",
+    "routeGroup": [
+      {
+        "step": 1,
+        "line": 2,
+        "row": 1,
+        "tokusokuTuchiUmu": 1,
+        "kian_preview_flg": 1,
+        "boxType": 1,
+        "routeDetail": [
+          {
+            "fuzaiType": "koetsu",
+            "atesakiShimei": "富士　太郎",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "行政管理局",
+            "box": 1,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 0
+          },
+          {
+            "fuzaiType": "koetsu",
+            "atesakiShimei": "富士　太郎",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "行政管理局",
+            "box": 2,
+            "dohoListId": 1,
+            "tokusokuTuchiUmu": 0
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "line": 1,
+        "row": 1,
+        "tokusokuTuchiUmu": 1,
+        "kian_preview_flg": 1,
+        "boxType": 1,
+        "routeDetail": [
+          {
+            "fuzaiType": "koetsu",
+            "atesakiShimei": "富士　太郎",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "行政管理局",
+            "box": 1,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 0
+          },
+          {
+            "fuzaiType": "",
+            "atesakiShimei": "富士　太郎",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "行政管理局",
+            "box": 2,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 1
+          }
+        ]
+      },
+      {
+        "step": 1,
+        "line": 1,
+        "row": 2,
+        "tokusokuTuchiUmu": 0,
+        "kian_preview_flg": 0,
+        "boxType": 1,
+        "routeDetail": [
+          {
+            "fuzaiType": "koetsu",
+            "atesakiShimei": "富士　太郎",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "行政管理局",
+            "box": 1,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 0
+          },
+          {
+            "fuzaiType": "koetsu",
+            "atesakiShimei": "富士　太郎",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "行政管理局",
+            "box": 2,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 0
+          },
+          {
+            "fuzaiType": "koetsu",
+            "atesakiShimei": "富士　太郎",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "行政管理局",
+            "box": 3,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 0
+          }
+        ]
+      },
+      {
+        "step": 1,
+        "line": 1,
+        "row": 1,
+        "tokusokuTuchiUmu": 0,
+        "kian_preview_flg": 0,
+        "boxType": 1,
+        "routeDetail": [
+          {
+            "fuzaiType": "",
+            "atesakiShimei": "富士　太郎",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "行政管理局",
+            "box": 1,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 0
+          },
+          {
+            "fuzaiType": "",
+            "atesakiShimei": "富士　太郎",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "行政管理局",
+            "box": 2,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 1
+          },
+          {
+            "fuzaiType": "koetsu",
+            "atesakiShimei": "富士　太郎",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "行政管理局",
+            "dairiShimei": "森肇",
+            "dairiYakushoku": "部長",
+            "dairiBusho": "総務省　大臣官房企画課サイバーセキュリティ・情報化推進室第二係",
+            "box": 3,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 0
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "line": null,
+        "row": null,
+        "tokusokuTuchiUmu": 0,
+        "kian_preview_flg": 0,
+        "boxType": 2,
+        "routeDetail": [
+          {
+            "fuzaiType": "koetsu",
+            "atesakiShimei": "花田健太",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "局長",
+            "box": 1,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 1
+          }
+        ]
+      },
+      {
+        "step": 0,
+        "line": null,
+        "row": null,
+        "tokusokuTuchiUmu": 0,
+        "kian_preview_flg": 0,
+        "boxType": 1,
+        "routeDetail": [
+          {
+            "fuzaiType": "",
+            "atesakiShimei": "花田健太",
+            "atesakiBusho": "行政情報システム企画課",
+            "atesakiYakushoku": "局長",
+            "box": 1,
+            "dohoListId": 0,
+            "tokusokuTuchiUmu": 0
+          }
+        ]
+      }
+    ]
+  }
+}

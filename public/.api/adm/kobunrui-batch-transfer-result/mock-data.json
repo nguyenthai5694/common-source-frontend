@@ -1,0 +1,110 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": {
+    "data": [
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "124",
+        "lblSmallClassificaName": "name124",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "125",
+        "lblSmallClassificaName": "name125",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "126",
+        "lblSmallClassificaName": "name126",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      },
+      {
+        "lblStatus": "lblStatus",
+        "lblSmallClassificaCode": "123",
+        "lblSmallClassificaName": "name123",
+        "lblErrorContent": "xxxxx"
+      }
+    ]
+  },
+  "meta": {
+    "total": 3,
+    "pageNum": 1,
+    "pageSize": 40
+  }
+}

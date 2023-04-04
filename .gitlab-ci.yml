@@ -1,0 +1,32 @@
+image: ciricihq/gitlab-sonar-scanner
+
+before_script:
+     - CI_PROJECT_NAMESPACE=$(echo $CI_PROJECT_NAMESPACE | sed 's/\//-/')
+     - apk add --update npm
+     - npm install -D typescript
+
+variables:
+  GIT_DEPTH: 0
+  GIT_CLONE_PATH: $CI_BUILDS_DIR/$CI_CONCURRENT_ID/$CI_PROJECT_NAME
+  
+stages:
+  - analysis
+
+sonarqube-publish:
+    stage: analysis
+    variables:
+      SONAR_URL: https://sonar.vti.com.vn
+      SONAR_TOKEN: $SONAR_TOKEN
+      SONAR_ANALYSIS_MODE: publish
+      MAVEN_OPTS: -Dmaven.repo.local=$CI_PROJECT_DIR/.m2/
+    only:
+      - merge_request
+      - develop
+      - master
+
+    script:
+      - gitlab-sonar-scanner -Dsonar.login=$SONAR_TOKEN -Dsonar.projectKey=$CI_PROJECT_NAMESPACE:$CI_PROJECT_NAME \
+        -Dsonar.gitlab.project_id=$CI_PROJECT_PATH \
+        -Dsonar.gitlab.commit_sha=$CI_COMMIT_SHA \
+        -Dsonar.gitlab.ref_name=$CI_COMMIT_REF_NAME
+

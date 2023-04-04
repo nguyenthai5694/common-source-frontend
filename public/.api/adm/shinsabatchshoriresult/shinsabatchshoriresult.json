@@ -1,0 +1,25 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": "0",
+  "data": [
+    {
+      "lblClassificationType": 0,
+      "lblCode": 1234,
+      "lblSubject": "第138回定例報告会について",
+      "lblErrorContents": "〇〇のため完了できませんでした。"
+    },
+    {
+      "lblClassificationType": 0,
+      "lblCode": 123,
+      "lblSubject": "第138回定例報告会について",
+      "lblErrorContents": "〇〇のため完了できませんでした。"
+    },
+    {
+      "lblClassificationType": 10,
+      "lblCode": 12,
+      "lblSubject": "第138回定例報告会について",
+      "lblErrorContents": "〇〇のため完了できませんでした。"
+    }
+  ]
+}

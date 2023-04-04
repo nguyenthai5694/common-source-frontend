@@ -1,0 +1,278 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": "0",
+  "data": [
+    {
+      "lblDocNo": 1,
+      "lnkAdminisDocName": "保総総第577号保総総第577号保総総第577号保総総第",
+      "lblRegistrationUpdate": "2019-12-16 19:25:41",
+      "lblPersonInCharge": "富士 太郎2",
+      "lblDocType": "施行後"
+    },
+    {
+      "lblDocNo": 2,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎1",
+      "lblDocType": "施行後"
+    },
+    {
+      "lblDocNo": 3,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎3",
+      "lblDocType": "施行後"
+    },
+    {
+      "lblDocNo": 4,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "施行前"
+    },
+    {
+      "lblDocNo": 6,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "施行前"
+    },
+    {
+      "lblDocNo": 7,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "施行前"
+    },
+    {
+      "lblDocNo": 8,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "施行前"
+    },
+    {
+      "lblDocNo": 9,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 10,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 11,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 12,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 13,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 14,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 15,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 16,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 17,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 18,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-17 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 19,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-17 18:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 20,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-18 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 21,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 22,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 23,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 24,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 25,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 26,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 27,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 28,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 29,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 30,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 31,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 32,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 33,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 34,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 36,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 35,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 37,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 38,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    },
+    {
+      "lblDocNo": 39,
+      "lnkAdminisDocName": "保総総第577号",
+      "lblRegistrationUpdate": "2019-12-16 19:22:41",
+      "lblPersonInCharge": "富士 太郎",
+      "lblDocType": "決裁文書"
+    }
+  ],
+  "meta": {
+    "total": 12,
+    "pageNum": 1,
+    "pageSize": 1
+  }
+}

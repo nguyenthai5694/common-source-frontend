@@ -1,0 +1,12 @@
+.gitlab
+.storybook
+.vscode
+build
+docs
+scripts
+npm-debug.log
+.dockerignore
+.editorconfig
+**/.git
+**/.DS_Store
+**/node_modules

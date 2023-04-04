@@ -1,0 +1,103 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": [
+    {
+      "lblReIdentifyNo": "12309412",
+      "lnkAdmDocFileName": "作成（取得日）時期 作成（取得日）時期作成（取得日）時期作成（取得日）時期",
+      "iblApplidate": "2017/03/31",
+      "lblExCompletionDate": "2017/03/31",
+      "lblCreationTime": "2017/03/31",
+      "lblRetentPerExDate": "2017/03/31",
+      "lblStgLoca": "おはようございます",
+      "lblProceResult": "こんばんは",
+      "lblOffiDocMngnLaw": false,
+      "id": "1"
+    },
+    {
+      "lblReIdentifyNo": "12309412",
+      "lnkAdmDocFileName": "作成（取得日）時期 作成（取得日）時期作成（取得日）時期作成（取得日）時期",
+      "iblApplidate": "2017/03/31",
+      "lblExCompletionDate": "2017/03/31",
+      "lblCreationTime": "2017/03/31",
+      "lblRetentPerExDate": "2017/03/31",
+      "lblStgLoca": "おはようございます",
+      "lblProceResult": "こんばんは",
+      "lblOffiDocMngnLaw": true,
+      "id": "2"
+    },
+    {
+      "lblReIdentifyNo": "12309412",
+      "lnkAdmDocFileName": "作成（取得日）時期 作成（取得日）時期作成（取得日）時期作成（取得日）時期",
+      "iblApplidate": "2017/03/31",
+      "lblExCompletionDate": "2017/03/31",
+      "lblCreationTime": "2017/03/31",
+      "lblRetentPerExDate": "2017/03/31",
+      "lblStgLoca": "おはようございます",
+      "lblProceResult": "こんばんは",
+      "lblOffiDocMngnLaw": false,
+      "id": "3"
+    },
+    {
+      "lblReIdentifyNo": "12309412",
+      "lnkAdmDocFileName": "作成（取得日）時期 作成（取得日）時期作成（取得日）時期作成（取得日）時期",
+      "iblApplidate": "2017/03/31",
+      "lblExCompletionDate": "2017/03/31",
+      "lblCreationTime": "2017/03/31",
+      "lblRetentPerExDate": "2017/03/31",
+      "lblStgLoca": "おはようございます",
+      "lblProceResult": "こんばんは",
+      "lblOffiDocMngnLaw": true,
+      "id": "4"
+    },
+    {
+      "lblReIdentifyNo": "12309412",
+      "lnkAdmDocFileName": "作成（取得日）時期 作成（取得日）時期作成（取得日）時期作成（取得日）時期",
+      "iblApplidate": "2017/03/31",
+      "lblExCompletionDate": "2017/03/31",
+      "lblCreationTime": "2017/03/31",
+      "lblRetentPerExDate": "2017/03/31",
+      "lblStgLoca": "おはようございます",
+      "lblProceResult": "こんばんは",
+      "lblOffiDocMngnLaw": false,
+      "id": "5"
+    },
+    {
+      "lblReIdentifyNo": "12309412",
+      "lnkAdmDocFileName": "作成（取得日）時期 作成（取得日）時期作成（取得日）時期作成（取得日）時期",
+      "iblApplidate": "2017/03/31",
+      "lblExCompletionDate": "2017/03/31",
+      "lblCreationTime": "2017/03/31",
+      "lblRetentPerExDate": "2017/03/31",
+      "lblStgLoca": "おはようございます",
+      "lblProceResult": "こんばんは",
+      "lblOffiDocMngnLaw": true,
+      "id": "6"
+    },
+    {
+      "lblReIdentifyNo": "12309412",
+      "lnkAdmDocFileName": "作成（取得日）時期 作成（取得日）時期作成（取得日）時期作成（取得日）時期",
+      "iblApplidate": "2017/03/31",
+      "lblExCompletionDate": "2017/03/31",
+      "lblCreationTime": "2017/03/31",
+      "lblRetentPerExDate": "2017/03/31",
+      "lblStgLoca": "おはようございます",
+      "lblProceResult": "こんばんは",
+      "lblOffiDocMngnLaw": false,
+      "id": "7"
+    },
+    {
+      "lblReIdentifyNo": "12309412",
+      "lnkAdmDocFileName": "作成（取得日）時期 作成（取得日）時期作成（取得日）時期作成（取得日）時期",
+      "iblApplidate": "2017/03/31",
+      "lblExCompletionDate": "2017/03/31",
+      "lblCreationTime": "2017/03/31",
+      "lblRetentPerExDate": "2017/03/31",
+      "lblStgLoca": "おはようございます",
+      "lblProceResult": "こんばんは",
+      "lblOffiDocMngnLaw": true,
+      "id": "8"
+    }
+  ]
+}

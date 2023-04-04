@@ -1,0 +1,82 @@
+{
+    "type": "OK",
+    "message": "",
+    "code": 200,
+    "data": {
+      "dataList": [
+        {
+          "lblConfirmRequestNo": "101",
+          "lblConfirmRequestDate": "2021/06/11",
+          "lblDone": "1200",
+          "lblUnconfirm": "4000",
+          "lblRemand": "10",
+          "lblUpdateDate": "担当者",
+          "lblApplicationSection": "起案課",
+          "lblApplicant": "担当者",
+          "lblDocNo": "管理担当 1212 -2",
+          "lblTargetPeriod": "完結完了日 1"
+        },
+        {
+            "lblConfirmRequestNo": "101",
+            "lblConfirmRequestDate": "2021/06/11",
+            "lblDone": "1200",
+            "lblUnconfirm": "3050",
+            "lblRemand": "10",
+            "lblUpdateDate": "担当者",
+            "lblApplicationSection": "起案課",
+            "lblApplicant": "担当者",
+            "lblDocNo": "管理担当 1212 -2",
+            "lblTargetPeriod": "完結完了日 1"
+          },
+          {
+            "lblConfirmRequestNo": "101",
+            "lblConfirmRequestDate": "2021/06/11",
+            "lblDone": "1201",
+            "lblUnconfirm": "3200",
+            "lblRemand": "10",
+            "lblUpdateDate": "担当者",
+            "lblApplicationSection": "起案課",
+            "lblApplicant": "担当者",
+            "lblDocNo": "管理担当 1212 -2",
+            "lblTargetPeriod": "完結完了日 1"
+          },
+          {
+            "lblConfirmRequestNo": "101",
+            "lblConfirmRequestDate": "2021/06/11",
+            "lblDone": "1200",
+            "lblUnconfirm": "3000",
+            "lblRemand": "10",
+            "lblUpdateDate": "担当者",
+            "lblApplicationSection": "起案課",
+            "lblApplicant": "担当者",
+            "lblDocNo": "管理担当 1212 -2",
+            "lblTargetPeriod": "完結完了日 1"
+          },
+          {
+            "lblConfirmRequestNo": "101",
+            "lblConfirmRequestDate": "2021/06/11",
+            "lblDone": "1200",
+            "lblUnconfirm": "3000",
+            "lblRemand": "10",
+            "lblUpdateDate": "担当者",
+            "lblApplicationSection": "起案課",
+            "lblApplicant": "担当者",
+            "lblDocNo": "管理担当 1212 -2",
+            "lblTargetPeriod": "完結完了日 1"
+          },
+          {
+            "lblConfirmRequestNo": "102",
+            "lblConfirmRequestDate": "2021/06/11",
+            "lblDone": "1200",
+            "lblUnconfirm": "3000",
+            "lblRemand": "10",
+            "lblUpdateDate": "担当者",
+            "lblApplicationSection": "起案課",
+            "lblApplicant": "担当者",
+            "lblDocNo": "管理担当 1212 -2",
+            "lblTargetPeriod": "完結完了日 1"
+          }
+      ]
+    }
+  }
+  

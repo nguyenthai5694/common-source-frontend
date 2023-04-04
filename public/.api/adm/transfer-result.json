@@ -1,0 +1,25 @@
+{
+  "type": "OK",
+  "message": null,
+  "code": "0",
+  "data": [
+    {
+      "lblStatus": "lblStatus",
+      "lblSmallClassificaCode": 1,
+      "lblSmallClassificaName": "lblSmallClassificaName",
+      "lblErrorContent": "lblErrorContent"
+    },
+    {
+      "lblStatus": "lblStatus",
+      "lblSmallClassificaCode": 2,
+      "lblSmallClassificaName": "lblSmallClassificaName",
+      "lblErrorContent": "lblErrorContent"
+    },
+    {
+      "lblStatus": "lblStatus",
+      "lblSmallClassificaCode": 3,
+      "lblSmallClassificaName": "lblSmallClassificaName",
+      "lblErrorContent": "lblErrorContent"
+    }
+  ]
+}

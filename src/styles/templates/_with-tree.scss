@@ -1,0 +1,242 @@
+@use 'foundation/config' as *;
+
+.t-with-tree {
+  flex: 1;
+  overflow: hidden;
+
+  &.-detail {
+    .p-input {
+      &[style*='width: 220px'] {
+        @include mq(lg, min) {
+          width: 220px !important;
+        }
+      }
+    }
+
+    .p-select {
+      &[style*='width: 100px'] {
+        @include mq(lg, min) {
+          width: 100px !important;
+        }
+      }
+    }
+
+    .u-forms:last-of-type {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+.overwrite-width {
+  .p-input {
+    &[style*='width: 220px'] {
+      @include mq(lg, min) {
+        width: 220px !important;
+      }
+    }
+  }
+
+  .p-select {
+    &[style*='width: 100px'] {
+      @include mq(lg, min) {
+        width: 100px !important;
+      }
+    }
+  }
+
+  .u-forms:last-of-type {
+    margin-bottom: 2px;
+  }
+}
+
+.t-with-tree__contents {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.t-with-tree__header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+}
+
+.t-with-tree__header-fixed {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.t-with-tree__header-select {
+  margin-left: 24px;
+  padding-top: 3.5 / 16 * 1em;
+  line-height: 1;
+  // transform: translateY(-2px);
+}
+
+.t-with-tree__adjustable-area {
+  display: flex;
+  flex: 1;
+  margin-top: 10px;
+  overflow: hidden;
+
+  main[role='main'].-detail & {
+    padding-bottom: 65px;
+  }
+}
+
+.t-with-tree__adjust-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 36px;
+  background: color(--white);
+  border: 1px solid color(--primary-36);
+  border-left: none;
+  border-radius: 0 2px 2px 0;
+  transform: translateY(-50%);
+  cursor: move;
+}
+
+.t-with-tree__adjust-image {
+  width: 5px;
+}
+
+.t-with-tree__main-area {
+  flex-grow: 1;
+  margin-left: 14px;
+  padding-top: 12px;
+  padding-right: 14px;
+  padding-bottom: 12px;
+  overflow: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  border-top: 1px solid color(--primary-12);
+
+  &.-without-tree {
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+    border-top: none;
+  }
+}
+
+.t-with-tree__main-area-inner {
+  min-width: 500px;
+
+  &.-minwidth {
+    min-width: 900px !important;
+  }
+}
+
+.t-with-tree__department {
+  display: flex;
+  margin-left: auto;
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.t-with-tree__department-key {
+  flex-shrink: 0;
+  padding-top: 0.46875em;
+
+  &::after {
+    content: '：';
+  }
+}
+
+.t-with-tree__department-value {
+  display: flex;
+  flex-grow: 1;
+
+  .dept-select-wrapper {
+    padding-top: 0.2083em;
+  }
+}
+
+.t-with-tree__department-value-viewport {
+  display: inline-block;
+  padding-top: 0.46875em;
+  text-align: justify;
+}
+
+.t-with-tree__switch-department {
+  flex-shrink: 0;
+  height: 31px;
+  margin-left: 12px;
+  color: color(--blue);
+
+  &:hover {
+    color: color(--blue_hover);
+    text-decoration: underline;
+  }
+}
+
+.t-with-tree__list-header-upper {
+  display: flex;
+}
+
+.t-with-tree__list-header-middle {
+  margin-top: 12px;
+
+  &.error {
+    margin-bottom: 25px;
+  }
+}
+
+.t-with-tree__list-keyword-form {
+  display: flex;
+  height: 32px;
+}
+
+.t-with-tree__list-keyword-input {
+  @include fontSize(14);
+  width: calc(100% - 32px);
+  padding-right: 12px;
+  padding-left: 12px;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px color(--blue-24);
+  }
+}
+
+.t-with-tree__list-keyword-submit {
+  width: 32px;
+  background-color: color(--primary);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  &:hover {
+    background-color: color(--primary_hover);
+  }
+}
+
+.t-with-tree__list-header-lower {
+  display: flex;
+  margin-top: 12px;
+}
+
+.t-with-tree__list-table-area {
+  margin-top: 12px;
+}
+
+.t-with-tree__header-button-group {
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.t-with-tree__page-top {
+  bottom: 16px;
+}

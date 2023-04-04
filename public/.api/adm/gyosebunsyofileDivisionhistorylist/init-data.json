@@ -1,0 +1,108 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": [
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "nguyen anh nhan"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "anh nam"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "baby"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 555555,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 112233,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 3311,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 1122,
+      "bosatsuName": "xxx"
+    },
+    {
+      "bunruiCode": 999999,
+      "bosatsuName": "xxx"
+    }
+  ],
+  "meta": {
+    "total": 3,
+    "pageNum": 1,
+    "pageSize": 40
+  }
+}

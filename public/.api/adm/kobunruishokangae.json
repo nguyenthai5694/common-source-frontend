@@ -1,0 +1,53 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": {
+    "bunsyoBunruiSearchForm": {
+      "kaNo": "10101010000000",
+      "kaName": "総務局 総務部 総務課",
+      "bunsyoBunruiList": {
+        "bosNo": "",
+        "bosCd": "",
+        "bosName": "",
+        "memo": "",
+        "joiKjnBan": "",
+        "hznKikanUnm": "",
+        "bosHznKikanDisp": ""
+      },
+      "parentList": [
+        {
+          "kjnBan": 11000,
+          "nendo": 2020,
+          "bunruiLevel": 2,
+          "joiKjnBan": 4420,
+          "bunruiCd": "9876",
+          "bunruiName": "大分類コード"
+        },
+        {
+          "kjnBan": 11000,
+          "nendo": 2020,
+          "bunruiLevel": 2,
+          "joiKjnBan": 4420,
+          "bunruiCd": "1234",
+          "bunruiName": "中分類コード"
+        },
+        {
+          "kjnBan": 11000,
+          "nendo": 2020,
+          "bunruiLevel": 2,
+          "joiKjnBan": 4420,
+          "bunruiCd": "1234",
+          "bunruiName": "小分類"
+        }
+      ],
+      "bunruiLevel": 2,
+      "motoKaNo": "motoKano",
+      "motoKaName": "motoKaName",
+      "bunriGrpCode": "a",
+      "kanriKaName": "○○府省(庁) 総務局 総務部 総務課",
+      "busyoFlg": 1,
+      "kanriBusyoCode": 1
+    }
+  }
+}

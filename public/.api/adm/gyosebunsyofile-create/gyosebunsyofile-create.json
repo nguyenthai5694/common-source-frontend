@@ -1,0 +1,134 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": {
+    "data": [
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 1
+      },
+      {
+        "cmbMajorClassification": "test",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 2
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 3
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 4
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 5
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 6
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 7
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 8
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 9
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 10
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 11
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 12
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 13
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 14
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 15
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 16
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 17
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 18
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 19
+      },
+      {
+        "cmbMajorClassification": "廃案",
+        "cmbMiddleClassification": "2020/09/12",
+        "cmbSubcategoryFile": "総務　職員１Ｇ",
+        "id": 20
+      }
+    ]
+  },
+  "meta": {
+    "total": 1,
+    "pageNum": 1,
+    "pageSize": 40
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": {
+    "data": [
+      {
+        "lblDocumentNumber": "総務課01号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "廃案",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "決裁",
+        "id": 1
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 2
+      },
+      {
+        "lblDocumentNumber": "総務課01号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "廃案",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "決裁",
+        "id": 3
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      },
+      {
+        "lblDocumentNumber": "総務課02号",
+        "lnkLinkToItem": "_TBD_",
+        "btn": "内閣の重要政策等に関する企画立案",
+        "lblState": "保存中",
+        "lblDraftingCreationDate": "2020/09/12",
+        "lblPersonInCharge": "総務　職員１Ｇ",
+        "lblBookNumber": "採番体系不明",
+        "lblBookTitle": "簿冊名１",
+        "lblApprovalType": "供覧",
+        "id": 4
+      }
+    ]
+  },
+  "meta": {
+    "total": 1,
+    "pageNum": 1,
+    "pageSize": 40
+  }
+}

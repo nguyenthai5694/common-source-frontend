@@ -1,0 +1,111 @@
+{
+  "type": "OK",
+  "message": null,
+  "code": "0",
+  "data": [
+    {
+      "bunNo": "1",
+      "lblDepartment": "総務省 企画部 情報課"
+    },
+    {
+      "bunNo": "2",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "3",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "4",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "5",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "6",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "7",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "8",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "9",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "10",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "11",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "12",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "13",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "14",
+      "lblDepartment": "総務省 企画部 情報課"
+    },
+    {
+      "bunNo": "15",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "16",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "17",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "18",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "19",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "20",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "21",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "22",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "23",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "24",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    },
+    {
+      "bunNo": "25",
+      "lblDepartment": "口口口 口口口 口口口"
+    },
+    {
+      "bunNo": "26",
+      "lblDepartment": "〇〇〇 〇〇〇 〇〇〇"
+    }
+  ]
+}

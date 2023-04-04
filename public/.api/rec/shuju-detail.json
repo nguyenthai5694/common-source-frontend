@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "data": {
+    "bunNo": "1",
+    "bunJoNm": "bunJoNm",
+    "haiHenFlg": "haiHenFlg",
+    "shuKMei": "shuKMei",
+    "aitesakiBango": "aitesakiBango",
+    "senpoubundate": "senpoubundate",
+    "uketsukedate": "uketsukedate",
+    "bunBango": "bunBango",
+    "aitesakiNm": "aitesakiNm",
+    "atesakiNm": "atesakiNm",
+    "jushinKbnNm": "jushinKbnNm",
+    "recDate": "recDate",
+    "shujuFiles": [
+      {
+        "name": "File 1",
+        "fileName": "File 1.txt"
+      },
+      {
+        "name": "File 2",
+        "fileName": "File 2.txt"
+      }
+    ],
+    "mailText": "ContentOfEmail",
+    "kianTantoShokuinNm": "PersonInCharge",
+    "shujuSyokuinName": "Instruct",
+    "sekoSyoriKigenJDate": "EnfCalendar",
+    "bikou": "Remark",
+    "sekoumotoDai": "MajorClass",
+    "sekoumotoTyu": "MiddleClass",
+    "sekoumotoSyo": "SmallClass",
+    "sekoumotoHyoujyunFile": "StandardAdDoc",
+    "sekoumotoFile": "SourceAdDoc",
+    "henpuRiyu": "RefundReason",
+    "bessouUmu": "SeparatedeliveryPresence"
+  }
+}

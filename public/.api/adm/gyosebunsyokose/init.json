@@ -1,0 +1,15 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": [
+    {
+      "bunNo": 55684,
+      "mokKmei": "☆件名"
+    },
+    {
+      "bunNo": 55216,
+      "mokKmei": "☆件名1"
+    }
+  ]
+}

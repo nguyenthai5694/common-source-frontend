@@ -1,0 +1,31 @@
+@use '../foundation/config' as *;
+
+.u-modal-pdf__text {
+  @include fontSize(14);
+  margin-bottom: 16px;
+}
+
+.u-modal-pdf__item {
+  @include fontSize(14);
+  padding: 0 0 8px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid color(--primary-12);
+  }
+
+  &+& {
+    margin-top: 12px;
+  }
+}
+
+.u-modal-pdf__group {
+  align-items: center;
+  padding: 12px 0;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-bottom: 1px solid #e3e6e9;
+}
+
+.u-modal-pdf__label {
+  padding: 0 0 0 24px;
+}

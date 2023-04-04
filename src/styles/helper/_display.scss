@@ -1,0 +1,172 @@
+@use 'styles/foundation/config' as *;
+
+.h-d_flex {
+  display: flex;
+
+  &.-align-start {
+    align-items: start;
+  }
+
+  &.-align-center {
+    align-items: center;
+  }
+
+  &.-align-start {
+    align-items: flex-start;
+  }
+
+  &.-align-end {
+    align-items: flex-end;
+  }
+
+  &.-align-baseline {
+    align-items: baseline;
+  }
+
+  &.-direction-column {
+    flex-direction: column;
+  }
+
+  &.-justify-center {
+    justify-content: center;
+  }
+
+  &.-justify-between {
+    justify-content: space-between;
+  }
+
+  &.-justify-flex-end {
+    justify-content: flex-end;
+  }
+
+  &.-justify-flex-start {
+    justify-content: flex-start;
+  }
+
+  &.-grow-1 {
+    flex-grow: 1;
+  }
+
+  &.-direction-column {
+    flex-direction: column;
+  }
+
+  &.-align-content-start {
+    align-content: flex-start;
+  }
+
+  &.-direction-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &.-justify-around {
+    justify-content: space-around;
+  }
+}
+
+.h-d_inline_flex {
+  display: inline-flex;
+}
+
+.h-d_run_in {
+  display: run-in;
+}
+
+.h-d_contents {
+  display: contents;
+}
+
+.h-flex_basis-100 {
+  flex-basis: 100%;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.h-d_block {
+  display: block;
+}
+
+.h-d_inline-block {
+  display: inline-block;
+}
+
+.h-d_none {
+  display: none;
+}
+
+.h-d_visibility {
+  visibility: hidden;
+}
+
+.h-d_wrapper-select-hidden {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.h-pointer {
+  cursor: pointer;
+}
+
+.h-pointer-event-none {
+  pointer-events: none;
+}
+
+.h-text-left {
+  text-align: left;
+}
+
+.h-text-start {
+  text-align: start;
+}
+
+.h-background-highlighted {
+  background-color: color(--yellow-4);
+
+  .h-background-highlighted-off & {
+    background: transparent;
+  }
+}
+
+.h-position-relative {
+  position: relative;
+}
+
+.h-break-word {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+  body.-IE & {
+    width: 100%;
+    word-break: break-all;
+
+    &.-auto-width {
+      width: auto;
+    }
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.h-cursor-default {
+  cursor: default;
+}

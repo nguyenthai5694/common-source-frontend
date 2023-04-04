@@ -1,0 +1,112 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": [
+    {
+      "bunsyoNo": "bunsyoNo",
+      "mokurokuName": "mokurokuName",
+      "bunJoName": "bunJoName",
+      "kianDate": "2021/01/02 01:00:00",
+      "kianSyokuinName": "kianSyokuinName",
+      "bosMeiBan": "bosMeiBan",
+      "bosNm": "bosNm",
+      "kessaiSyubetu": "kessaiSyubetu"
+    },
+    {
+      "bunsyoNo": "bunsyoNo",
+      "mokurokuName": "mokurokuName",
+      "bunJoName": "bunJoName",
+      "kianDate": "2021/01/02 01:00:00",
+      "kianSyokuinName": "kianSyokuinName",
+      "bosMeiBan": "bosMeiBan",
+      "bosNm": "bosNm",
+      "kessaiSyubetu": "kessaiSyubetu"
+    },
+    {
+      "bunsyoNo": "bunsyoNo",
+      "mokurokuName": "mokurokuName",
+      "bunJoName": "bunJoName",
+      "kianDate": "2021/01/02 01:00:00",
+      "kianSyokuinName": "kianSyokuinName",
+      "bosMeiBan": "bosMeiBan",
+      "bosNm": "bosNm",
+      "kessaiSyubetu": "kessaiSyubetu"
+    },
+    {
+      "bunsyoNo": "bunsyoNo",
+      "mokurokuName": "mokurokuName",
+      "bunJoName": "bunJoName",
+      "kianDate": "2021/01/02 01:00:00",
+      "kianSyokuinName": "kianSyokuinName",
+      "bosMeiBan": "bosMeiBan",
+      "bosNm": "bosNm",
+      "kessaiSyubetu": "kessaiSyubetu"
+    },
+    {
+      "bunsyoNo": "bunsyoNo",
+      "mokurokuName": "mokurokuName",
+      "bunJoName": "bunJoName",
+      "kianDate": "2021/01/02 01:00:00",
+      "kianSyokuinName": "kianSyokuinName",
+      "bosMeiBan": "bosMeiBan",
+      "bosNm": "bosNm",
+      "kessaiSyubetu": "kessaiSyubetu"
+    },
+    {
+      "bunsyoNo": "bunsyoNo",
+      "mokurokuName": "mokurokuName",
+      "bunJoName": "bunJoName",
+      "kianDate": "2021/01/02 01:00:00",
+      "kianSyokuinName": "kianSyokuinName",
+      "bosMeiBan": "bosMeiBan",
+      "bosNm": "bosNm",
+      "kessaiSyubetu": "kessaiSyubetu"
+    },
+    {
+      "bunsyoNo": "bunsyoNo",
+      "mokurokuName": "mokurokuName",
+      "bunJoName": "bunJoName",
+      "kianDate": "2021/01/02 01:00:00",
+      "kianSyokuinName": "kianSyokuinName",
+      "bosMeiBan": "bosMeiBan",
+      "bosNm": "bosNm",
+      "kessaiSyubetu": "kessaiSyubetu"
+    },
+    {
+      "bunsyoNo": "bunsyoNo",
+      "mokurokuName": "mokurokuName",
+      "bunJoName": "bunJoName",
+      "kianDate": "2021/01/02 01:00:00",
+      "kianSyokuinName": "kianSyokuinName",
+      "bosMeiBan": "bosMeiBan",
+      "bosNm": "bosNm",
+      "kessaiSyubetu": "kessaiSyubetu"
+    },
+    {
+      "bunsyoNo": "bunsyoNo",
+      "mokurokuName": "mokurokuName",
+      "bunJoName": "bunJoName",
+      "kianDate": "2021/01/02 01:00:00",
+      "kianSyokuinName": "kianSyokuinName",
+      "bosMeiBan": "bosMeiBan",
+      "bosNm": "bosNm",
+      "kessaiSyubetu": "kessaiSyubetu"
+    },
+    {
+      "bunsyoNo": "bunsyoNo",
+      "mokurokuName": "mokurokuName",
+      "bunJoName": "bunJoName",
+      "kianDate": "2021/01/02 01:00:00",
+      "kianSyokuinName": "kianSyokuinName",
+      "bosMeiBan": "bosMeiBan",
+      "bosNm": "bosNm",
+      "kessaiSyubetu": "kessaiSyubetu"
+    }
+  ],
+  "meta": {
+    "total": 2,
+    "pageNum": 1,
+    "pageSize": 10
+  }
+}

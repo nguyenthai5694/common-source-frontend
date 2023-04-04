@@ -1,0 +1,68 @@
+// .h-mt-8  : margin-top: 0.5rem = 8px
+// .h-ml-16 : margin-left: 1rem = 16px
+
+@use 'sass:map';
+
+$_spacings: (
+  0: 0,
+  2: 0.125,
+  4: 0.25,
+  6: 0.375,
+  8: 0.5,
+  10: 0.625,
+  12: 0.75,
+  14: 0.875,
+  16: 1,
+  20: 1.25,
+  24: 1.5,
+  30: 1.875,
+  36: 2.25,
+  40: 2.5,
+  44: 2.75,
+  52: 3.25,
+  80: 5,
+  100: 6.25,
+  150: 9.375,
+  300: 18.75,
+);
+
+@each $_spacing_key,
+$_spacing in $_spacings {
+  .h-mt-#{$_spacing_key} {
+    margin-top: $_spacing + rem;
+  }
+
+  .h-mr-#{$_spacing_key} {
+    margin-right: $_spacing + rem;
+  }
+
+  .h-mb-#{$_spacing_key} {
+    margin-bottom: $_spacing + rem;
+  }
+
+  .h-ml-#{$_spacing_key} {
+    margin-left: $_spacing + rem;
+  }
+
+  .h-mx-#{$_spacing_key} {
+    margin-right: $_spacing + rem;
+    margin-left: $_spacing + rem;
+  }
+
+  .h-my-#{$_spacing_key} {
+    margin-top: $_spacing + rem;
+    margin-bottom: $_spacing + rem;
+  }
+}
+
+.h-ml-auto {
+  margin-left: auto;
+}
+
+.h-mb-auto {
+  margin-bottom: auto;
+}
+
+.h-m-0 {
+  margin: 0;
+}

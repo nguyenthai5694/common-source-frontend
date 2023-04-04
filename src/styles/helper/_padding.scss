@@ -1,0 +1,64 @@
+// .h-pt-8  : padding-top: 0.5rem = 8px
+// .h-pl-16 : padding-left: 1rem = 16px
+
+@use 'sass:map';
+
+$_spacings: (
+  0: 0,
+  2: 0.125,
+  4: 0.25,
+  6: 0.375,
+  8: 0.5,
+  10: 0.625,
+  12: 0.75,
+  14: 0.875,
+  16: 1,
+  20: 1.25,
+  24: 1.5,
+  30: 1.875,
+  36: 2.25,
+  40: 2.5,
+  44: 2.75,
+  52: 3.25,
+  80: 5,
+  100: 6.25,
+  150: 9.375,
+  300: 18.75,
+);
+
+@each $_spacing_key,
+$_spacing in $_spacings {
+  .h-pt-#{$_spacing_key} {
+    padding-top: $_spacing + rem;
+  }
+
+  .h-pr-#{$_spacing_key} {
+    padding-right: $_spacing + rem;
+  }
+
+  .h-pb-#{$_spacing_key} {
+    padding-bottom: $_spacing + rem;
+  }
+
+  .h-pl-#{$_spacing_key} {
+    padding-left: $_spacing + rem;
+  }
+
+  .h-px-#{$_spacing_key} {
+    padding-right: $_spacing + rem;
+    padding-left: $_spacing + rem;
+  }
+
+  .h-py-#{$_spacing_key} {
+    padding-top: $_spacing + rem;
+    padding-bottom: $_spacing + rem;
+  }
+}
+
+.h-p-0 {
+  padding: 0;
+}
+
+.h-pl-0 {
+  padding-left: 0;
+}

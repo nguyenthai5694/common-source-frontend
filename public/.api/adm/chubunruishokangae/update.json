@@ -1,0 +1,33 @@
+{
+  "type": "OK",
+  "message": "所管換処理が正常に行われました。",
+  "code": 0,
+  "data": {
+    "processResult": "",
+    "error": "",
+    "resultList": [
+      {
+        "code": 1111,
+        "name": "★試験用_大分類",
+        "errorContent": "入力された分類コードは既に存在しています。",
+        "bunruiLevel": 1,
+        "adminstrationType": 0,
+        "status": "保存中",
+        "bosNo": 3962,
+        "errorConent": "入力された分類コードは既に存在しています。",
+        "kaiList": null,
+        "classError": "大分類（コード：3962）：★試験用_大分類"
+      },
+      {
+        "status": "保存中",
+        "code": 2222,
+        "name": "★試験用_大分類",
+        "errorContent": "入力された分類コードは既に存在しています。",
+        "bunruiLevel": 5,
+        "adminstrationType": 0,
+        "bosNo": 396,
+        "classError": "大分類（コード：3962）：★試験用_大分類"
+      }
+    ]
+  }
+}

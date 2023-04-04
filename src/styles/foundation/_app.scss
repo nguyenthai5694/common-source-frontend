@@ -1,0 +1,79 @@
+@use '../foundation/config' as *;
+$_scroll-bar-width: 17px;
+
+.app {
+  display: flex;
+  min-width: 1024px - $_scroll-bar-width;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.app__main {
+  width: calc(100% - #{$nav-default-width});
+  margin-left: $nav-default-width;
+
+  &.-shortened {
+    width: calc(100% - #{$nav-shortened-width});
+    margin-left: $nav-shortened-width;
+  }
+
+  &.-full-width {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  &.-full-width.-view-only-mode {
+    .b-breadcrumb {
+      display: none;
+    }
+  }
+}
+
+.app__main-header {
+  position: fixed;
+  top: 0;
+  left: $nav-default-width;
+  z-index: z(header);
+  width: calc(100% - #{$nav-default-width});
+  height: 48px;
+
+  .app__main.-shortened & {
+    left: $nav-shortened-width;
+    width: calc(100% - #{$nav-shortened-width});
+  }
+}
+
+.app__main-body {
+  padding-top: 48px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.app__main-scroll-inner {
+  position: fixed;
+  top: 48px;
+  right: 0;
+  bottom: 64px;
+  left: $nav-default-width;
+  padding: 20px;
+  overflow: auto;
+
+  .app__main.-shortened & {
+    left: $nav-shortened-width;
+  }
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  background-color: rgb(28, 37, 54);
+  color: #fff;
+  height: 100%;
+}

@@ -1,0 +1,19 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": "0",
+  "data": [
+    {
+      "meiNo":"2121",
+      "hyojiFName":"伺い文1"
+    },
+    {
+      "meiNo":"2123",
+      "hyojiFName":"伺い文2"
+    },
+    {
+      "meiNo":"2124",
+      "hyojiFName":"伺い文3"
+    }
+  ]
+}

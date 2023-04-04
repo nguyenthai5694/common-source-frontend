@@ -1,0 +1,136 @@
+@use 'foundation/config' as *;
+
+.t-list {
+  margin-bottom: 64px;
+
+  &.-no-search-area {
+    padding-bottom: 40px;
+  }
+}
+
+.t-list__header-upper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.t-list__header-select {
+  @include fontSize(14);
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+
+  >label {
+    white-space: nowrap;
+  }
+}
+
+.t-list__header-button-group {
+  margin-left: auto;
+
+  .b-page-wraper_bottom & {
+    button {
+      white-space: nowrap;
+    }
+  }
+}
+
+.t-list__hidden {
+  @include visually-hidden;
+}
+
+.t-list__label {
+  .t-list__hidden:focus+& {
+    box-shadow: 0 0 0 2px color(--blue-24);
+  }
+}
+
+.t-list__header-button {
+  width: 120px;
+  padding-right: 0;
+  padding-left: 0;
+  white-space: nowrap;
+
+  &:nth-child(n + 2) {
+    margin-left: 8px;
+  }
+
+  &.t-list__csv-button {
+    min-width: 120px !important;
+  }
+
+  &.w-96 {
+    width: 96px;
+  }
+}
+
+.t-list__header-lower {
+  display: flex;
+  margin-top: 12px;
+
+  &.nowrap .p-pagination__display {
+    white-space: nowrap;
+  }
+}
+
+.t-list__column-layout {
+  display: flex;
+  margin-left: auto;
+}
+
+.t-list__table-area {
+  margin-top: 12px;
+}
+
+.t-list__table-area {
+  margin-top: 12px;
+}
+
+.t-list__expand-button {
+  @include fontSize(12);
+  display: inline-flex;
+  align-items: center;
+  padding: 4 / 12 * 1em 0.4em;
+  border-radius: 4px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  [data-whatintent='keyboard'] &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px color(--blue-24);
+  }
+
+  &::before {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    background-size: contain;
+    content: '';
+  }
+
+  &.-contract::before {}
+}
+
+
+.t-list__button-history {
+  @include fontSize(14);
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  padding: 0 24px;
+  color: color(--black);
+  vertical-align: top;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    content: '';
+  }
+}

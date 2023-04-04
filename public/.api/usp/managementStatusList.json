@@ -1,0 +1,47 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": {
+    "gyoumuCode": "AP_B000036",
+    "gyoumuName": "供覧",
+    "gyoumuDescription": "供覧DESCRIPTION",
+    "gyoumuDetails": [
+      {
+        "gyoumuCntNo": 12,
+        "gyoumuStatusName": "一時保存中",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 13,
+        "gyoumuStatusName": "供覧持ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 14,
+        "gyoumuStatusName": "事前閲覧可能",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 0
+      },
+      {
+        "gyoumuCntNo": 15,
+        "gyoumuStatusName": "後閲待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 16,
+        "gyoumuStatusName": "閲覧待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+@use '../foundation/config' as *;
+
+.u-button-text {
+  @include fontSize(14);
+  color: currentColor;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.-disabled,
+  &[disabled] {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+.u-button-text__icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: -0.3em;
+}

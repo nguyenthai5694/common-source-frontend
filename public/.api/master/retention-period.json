@@ -1,0 +1,112 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 200,
+  "data": [
+    {
+      "rpc": "0",
+      "displayName": "1年未満",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "1",
+      "displayName": "1年",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "2",
+      "displayName": "2年",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "3",
+      "displayName": "3年",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "4",
+      "displayName": "4年",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "5",
+      "displayName": "5年",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "6",
+      "displayName": "6年",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "7",
+      "displayName": "7年",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "8",
+      "displayName": "8年",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "9",
+      "displayName": "9年",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "1000",
+      "displayName": "その他",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "1001",
+      "displayName": "常用",
+      "initialDisplayOfStoragePeriod": true
+    },
+    {
+      "rpc": "1002",
+      "displayName": "満了日指定",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "2000",
+      "displayName": "特定日以後5年(許認可等)",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "2001",
+      "displayName": "特定日以後5年(補助金等交付)",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "2002",
+      "displayName": "特定日以後10年(裁決・決定)",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "2003",
+      "displayName": "特定日以後10年(訴訟)",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "2004",
+      "displayName": "支給制限の処分期間又は5年",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "2005",
+      "displayName": "特定日以後5年又は10年(事業終了)",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "2006",
+      "displayName": "特定日以後10年(補助金等交付)",
+      "initialDisplayOfStoragePeriod": false
+    },
+    {
+      "rpc": "2007",
+      "displayName": "用件を具備しなくなってから５年",
+      "initialDisplayOfStoragePeriod": false
+    }
+  ]
+}

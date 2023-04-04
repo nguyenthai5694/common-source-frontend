@@ -1,0 +1,72 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 200,
+  "data": [
+    {
+      "id": "6059bf9363b9df24c5da4671",
+      "lblRecordIdentifyNo": 20,
+      "lnkAdmDocFile": "行政文書ファイル/名称行政文書ファイル/名称行政文書ファイル/名称行政文書ファイル/名称行政文書ファイル/名称",
+      "lblCreationTime": "2011-3-28",
+      "lblRetentionPeriod": "Mae Brewer",
+      "lblMajorClass": "Christina Potts",
+      "lblMiddleClass": "Adams Bonner",
+      "lblSmallClass": "Enim id Lorem fugiat deserunt proident exercitation officia anim laboris velit adipisicing minim. ",
+      "lblStandardAdmDocFile": "Cillum aute Lorem anim dolor mollit. Mollit commodo anim aliqua ad aliqua. Dolor magna consectetur ",
+      "lblCreationTimeClerk": "Ullamco culpa sit eu sint nisi ad commodo do amet sint sit dolor ut aliqua. Elit dolore sunt eu ",
+      "lblMngSection": "Consequat deserunt ex ipsum cillum incididunt magna nostrud labore. Culpa velit anim est officia fugiat "
+    },
+    {
+      "id": "6059bf9365c08aa84629efa4",
+      "lblRecordIdentifyNo": 37,
+      "lnkAdmDocFile": "Brown Rowland",
+      "lblCreationTime": "2011-3-28",
+      "lblRetentionPeriod": "Lenore Burke",
+      "lblMajorClass": "Bird Nieves",
+      "lblMiddleClass": "Tami Cunningham",
+      "lblSmallClass": "Enim id Lorem fugiat deserunt proident exercitation officia anim laboris velit adipisicing minim. ",
+      "lblStandardAdmDocFile": "Cillum aute Lorem anim dolor mollit. Mollit commodo anim aliqua ad aliqua. Dolor magna consectetur ",
+      "lblCreationTimeClerk": "Ullamco culpa sit eu sint nisi ad commodo do amet sint sit dolor ut aliqua. Elit dolore sunt eu ",
+      "lblMngSection": "Consequat deserunt ex ipsum cillum incididunt magna nostrud labore. Culpa velit anim est officia fugiat "
+    },
+    {
+      "id": "6059bf9393bd3a84a8f6b4a9",
+      "lblRecordIdentifyNo": 26,
+      "lnkAdmDocFile": "Cantrell Warren",
+      "lblCreationTime": "2011-3-28",
+      "lblRetentionPeriod": "Santana Burks",
+      "lblMajorClass": "Patrick Carpenter",
+      "lblMiddleClass": "Mccarty Harper",
+      "lblSmallClass": "Enim id Lorem fugiat deserunt proident exercitation officia anim laboris velit adipisicing minim. ",
+      "lblStandardAdmDocFile": "Cillum aute Lorem anim dolor mollit. Mollit commodo anim aliqua ad aliqua. Dolor magna consectetur ",
+      "lblCreationTimeClerk": "Ullamco culpa sit eu sint nisi ad commodo do amet sint sit dolor ut aliqua. Elit dolore sunt eu ",
+      "lblMngSection": "Consequat deserunt ex ipsum cillum incididunt magna nostrud labore. Culpa velit anim est officia fugiat "
+    },
+    {
+      "id": "6059bf937ff0d7ce30a24aa9",
+      "lblRecordIdentifyNo": 29,
+      "lnkAdmDocFile": "Burt Mcmahon",
+      "lblCreationTime": "2011-4-1",
+      "lblRetentionPeriod": "Duncan Mcneil",
+      "lblMajorClass": "Reyes Martin",
+      "lblMiddleClass": "Pansy Barnett",
+      "lblSmallClass": "Enim id Lorem fugiat deserunt proident exercitation officia anim laboris velit adipisicing minim. ",
+      "lblStandardAdmDocFile": "Cillum aute Lorem anim dolor mollit. Mollit commodo anim aliqua ad aliqua. Dolor magna consectetur ",
+      "lblCreationTimeClerk": "Ullamco culpa sit eu sint nisi ad commodo do amet sint sit dolor ut aliqua. Elit dolore sunt eu ",
+      "lblMngSection": "Consequat deserunt ex ipsum cillum incididunt magna nostrud labore. Culpa velit anim est officia fugiat "
+    },
+    {
+      "id": "6059bf93e198d6d9ad27011d",
+      "lblRecordIdentifyNo": 25,
+      "lnkAdmDocFile": "Rachel Johnson",
+      "lblCreationTime": "2011-5-2",
+      "lblRetentionPeriod": "Julia Coleman",
+      "lblMajorClass": "Campos Johns",
+      "lblMiddleClass": "Jacklyn Pearson",
+      "lblSmallClass": "Enim id Lorem fugiat deserunt proident exercitation officia anim laboris velit adipisicing minim. ",
+      "lblStandardAdmDocFile": "Cillum aute Lorem anim dolor mollit. Mollit commodo anim aliqua ad aliqua. Dolor magna consectetur ",
+      "lblCreationTimeClerk": "Ullamco culpa sit eu sint nisi ad commodo do amet sint sit dolor ut aliqua. Elit dolore sunt eu ",
+      "lblMngSection": "Consequat deserunt ex ipsum cillum incididunt magna nostrud labore. Culpa velit anim est officia fugiat "
+    }
+  ]
+}

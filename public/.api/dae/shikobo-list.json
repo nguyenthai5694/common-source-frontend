@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "lblDocNo": "文書番号 01",
+      "lblSubject": "New Subject",
+      "lblEnforceDate": "132132123",
+      "lblPersonInCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblEnforce": "処理待ち"
+    },
+    {
+      "lblDocNo": "文書番号 02",
+      "isMultiID": true,
+      "lblSubject": "New Subject",
+      "lblEnforceDate": "132132123",
+      "lblPersonInCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblEnforce": "処理待ち"
+    },
+    {
+      "lblDocNo": "文書番号 03",
+      "lblSubject": "New Subject",
+      "lblEnforceDate": "132132123",
+      "lblPersonInCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblEnforce": "処理待ち"
+    },
+    {
+      "lblDocNo": "文書番号 04",
+      "isMultiID": true,
+      "lblSubject": "New Subject",
+      "lblEnforceDate": "132132123",
+      "lblPersonInCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblEnforce": "処理待ち"
+    },
+    {
+      "lblDocNo": "文書番号 05",
+      "lblSubject": "New Subject",
+      "lblEnforceDate": "132132123",
+      "lblPersonInCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblEnforce": "処理待ち"
+    },
+    {
+      "lblDocNo": "文書番号 06",
+      "lblSubject": "New Subject",
+      "lblEnforceDate": "132132123",
+      "lblPersonInCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblEnforce": "処理待ち"
+    }
+  ]
+}

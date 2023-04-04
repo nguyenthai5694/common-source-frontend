@@ -1,0 +1,168 @@
+@use '../foundation/config' as *;
+
+// reset
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+q::before,
+q::after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+button {
+  overflow: visible;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+img,
+video,
+button {
+  vertical-align: middle;
+}
+
+input {
+  font-family: inherit;
+}
+
+progress[value] {
+  border: 0;
+  appearance: none;
+
+  &::-ms-fill {
+    border: none;
+  }
+}
+
+// Project setting
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  color: color(--black);
+  font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+    Meiryo, sans-serif;
+  background-color: #f2f3f5;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: color(--blue);
+  text-decoration: none;
+
+  &:hover {
+    color: color(--blue_hover);
+  }
+
+  // Fix error content editable tag with enter for character \\
+  &:not([href]) {
+    color: color(--black);
+    text-decoration: none !important;
+  }
+}
+
+textarea {
+  font-family: inherit;
+}
+
+[data-whatintent='mouse']:not([data-whatinput='keyboard']) button,
+[data-whatintent='touch'] button {
+  outline: none;
+}
+
+[data-whatinput='keyboard'] .p-calendar button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px color(--blue-24);
+}
+
+::-ms-clear {
+  display: none;
+}

@@ -1,0 +1,25 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": {
+    "lblMajorClass": "lblMajorClass",
+    "lblMajorClassCode": "1111",
+    "lblMiddleClass": "lblMiddleClass",
+    "lblMiddleClassCode": "1111",
+    "lblSmallClass": "lblSmallClass",
+    "lblSmallClassCode": "1111",
+    "lblStandardClass": "lblStandardClass",
+    "lblStandardClassCode": "1111",
+    "lblStandardClassRetent": "2222",
+    "lblAdminDocFile": "lblAdminDocFile",
+    "lblAdminDocFileCode": "11111",
+    "lblAdminDocFileRetent": "22222",
+    "lblNameSmall": "lblNameSmall",
+    "lblNameSmallCode": "1111",
+    "lblNameSmallCodeRetent": "222222",
+    "lblDocNo": "lblDocNo",
+    "lblDocNumber": "lblDocNumber",
+    "lblSubject": "lblSubject"
+  }
+}

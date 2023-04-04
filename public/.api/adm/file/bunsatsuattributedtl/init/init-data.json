@@ -1,0 +1,25 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": "0",
+  "data": {
+    "bosInfo": {
+      "bosNo": 13064,
+      "bosName": "総務局",
+      "sakuseiKaName": "小田　雄三",
+      "kanriKaName": "○○府省(庁) 総務局 総務部 総務課 庶務室 文書班 文書管理係",
+      "hozonManryoJDate": "2019-12-16 00:00:00",
+      "kjnban": 3927
+    },
+    "attribInfo": {
+      "bunsyoNo": 9024,
+      "bunJoName": "総務局",
+      "kianShuCode": "149",
+      "kanriKaName": "○○府省(庁) 総務局 総務部 総務課 庶務室 文書班 文書管理係",
+      "yusendoCd": "務",
+      "bunsyoSyubetu": "務課",
+      "title": "総務課",
+      "fullBunId": "full bunid"
+    }
+  }
+}

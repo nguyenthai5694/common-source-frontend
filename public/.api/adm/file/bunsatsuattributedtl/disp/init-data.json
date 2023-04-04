@@ -1,0 +1,52 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": {
+    "bosInfo": {
+      "bosNo": "00010",
+      "bosName": "★試験用_施行前_行政文書ファイル",
+      "sakuseiKaName": "○○府省(庁) 総務局 総務部 総務課",
+      "kanriKaName": "総務課",
+      "bosHznKikanCd": "1",
+      "kjnBan": "0"
+    },
+    "attribInfo": {
+      "bunsyoNo": 55216,
+      "bunJoName": "2019",
+      "kianShuNm": "決裁文書",
+      "bunsyosyubetu": "1",
+      "title": "★20190903_施行前_起案02",
+      "fullBunId": "保総総第144号",
+      "kianJDate": "2019-09-03 12:00:00",
+      "hznkikanSitei": "",
+      "hozonManryoDisp": "令和03年03月31日",
+      "kessaiJDate": "2019-09-03 12:00:00",
+      "kessaiSyoriName": "電子",
+      "kanketsuKanJDate": "2019-09-03 12:00:00",
+      "kyoyuKbnNm": "kyoyuKbnNm",
+      "kessaiKbnStr": "kessaiKbnStr",
+      "sekoUmu": "0",
+      "sekoSaki": "sekoSaki",
+      "sekosya": "sekosya",
+      "kouhouEntUmu": "0",
+      "kianshaNm": "富士　太郎",
+      "kianTantoName": "富士　太郎",
+      "renrakuSaki": "renrakuSaki",
+      "kyodoKianFlg": "kyodoKianFlg",
+      "johoKokaiKbn": "johoKokaiKbn",
+      "himitsuKbn": "3",
+      "himitsuEndYmd": "himitsuEndYmd",
+      "kmtKakuduke": "kmtKakuduke",
+      "atsukaiSeigen": "atsukaiSeigen",
+      "moushiokuri": "moushiokuri",
+      "biko": "biko",
+      "noteApprove": "noteApprove",
+      "kakuchoAttributeString": "kakuchoAttributeString",
+      "bosatsuInfo": {
+        "hozonManryo": "2021-03-31 12:00:00",
+        "haikiJDate": null
+      }
+    }
+  }
+}

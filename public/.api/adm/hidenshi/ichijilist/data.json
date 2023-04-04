@@ -1,0 +1,292 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": "0",
+  "data": [
+    {
+      "bunNo": 5824,
+      "saveDate": "2021-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 1,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 58245,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 1,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 58246,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 1,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 58247,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 58248,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 58249,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 1,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582410,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582411,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582412,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582413,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582414,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582415,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582416,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582417,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582418,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582419,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582420,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582421,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582422,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582420,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582420,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582420,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582420,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582420,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582420,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582420,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582420,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    },
+    {
+      "bunNo": 582420,
+      "saveDate": "2019-12-16 19:22:41",
+      "docId": "保総総第577号",
+      "titleName": "test",
+      "staffName": "富士 太郎",
+      "docType": "決裁文書",
+      "adminisTrationType": 2,
+      "updateCount": 2
+    }
+  ],
+  "meta": {
+    "total": 12,
+    "pageNum": 1,
+    "pageSize": 1
+  }
+}

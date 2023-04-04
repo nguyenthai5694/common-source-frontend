@@ -1,0 +1,222 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": "0",
+  "data": {
+    "bunIdList": [
+      {
+        "ctrCd": 965,
+        "ctrMoji": "保総総第",
+        "cdrDflt": 0
+      },
+      {
+        "ctrCd": 982,
+        "ctrMoji": "総総総第",
+        "cdrDflt": 0
+      },
+      {
+        "ctrCd": 67034,
+        "ctrMoji": "★保総政第",
+        "cdrDflt": 0
+      }
+    ],
+    "contentsInfo": {
+      "bunsyosyubetu": "1",
+      "bunsyoNo": 55044,
+      "jianNo": 0,
+      "sekoKigenDate": null,
+      "kessaiDate": "2019/08/27",
+      "sekoDate": null,
+      "bunId": {
+        "ctrCd": 0,
+        "dbstring": "保総総第104号"
+      },
+      "title": "確認ファイル００１",
+      "tanto": "富士　太郎",
+      "hasshinsya": null,
+      "state": 58,
+      "stateNm": "施行(送信中)",
+      "koinUmu": 0,
+      "kohoUmu": 0,
+      "sekoFiles": [],
+      "sekoyoteisaki": null,
+      "systemFlg": 0,
+      "systemCd": null,
+      "systemSekoFlg": null,
+      "kianDate": "2019/08/26",
+      "systemKanryo": false,
+      "aitesakiBango": null,
+      "minNo": 0,
+      "updCtr": 114,
+      "kyoudouKianFlg": null,
+      "sekoMeiCount": 0,
+      "jushinKbnCd": 0
+    },
+    "sekoAnkenList": [
+      {
+        "jianNo": 1,
+        "listDetail": [
+          {
+            "jianMeiNo": 1,
+            "sekoHoho": 1,
+            "sekoHohoNm": "庁内施行",
+            "sekosakiNm": "施行完了",
+            "sekoDate": "2019/10/29",
+            "state": 59,
+            "stateNm": "施行完了",
+            "tanto": "富士　太郎",
+            "koinUmu": 0
+          },
+          {
+            "jianMeiNo": 2,
+            "sekoHoho": 2,
+            "sekoHohoNm": "警察文書伝送",
+            "sekosakiNm": "施行(送信中)",
+            "sekoDate": "2020/01/20",
+            "state": 58,
+            "stateNm": "施行(送信中)",
+            "tanto": "富士　太郎",
+            "koinUmu": 0
+          },
+          {
+            "jianMeiNo": 10,
+            "sekoHoho": 8,
+            "sekoHohoNm": "電子メール等",
+            "sekosakiNm": "施行完了",
+            "sekoDate": "2021/02/25",
+            "state": 59,
+            "stateNm": "施行完了",
+            "tanto": "富士　太郎",
+            "koinUmu": 0
+          },
+          {
+            "jianMeiNo": 11,
+            "sekoHoho": 8,
+            "sekoHohoNm": "電子メール等",
+            "sekosakiNm": "施行完了",
+            "sekoDate": "2021/02/25",
+            "state": 59,
+            "stateNm": "施行完了",
+            "tanto": "富士　太郎",
+            "koinUmu": 0
+          },
+          {
+            "jianMeiNo": 23,
+            "sekoHoho": 8,
+            "sekoHohoNm": "電子メール等",
+            "sekosakiNm": "施行完了",
+            "sekoDate": "2021/03/10",
+            "state": 59,
+            "stateNm": "施行完了",
+            "tanto": "富士　太郎",
+            "koinUmu": 0
+          },
+          {
+            "jianMeiNo": 999,
+            "sekoHoho": 1,
+            "sekoHohoNm": "庁内施行",
+            "sekosakiNm": "施行待ち",
+            "sekoDate": null,
+            "state": 50,
+            "stateNm": "施行待ち",
+            "tanto": null,
+            "koinUmu": 0
+          }
+        ],
+        "sekoFiles": [
+          {
+            "fileName": "fileName.pdf"
+          },
+          {
+            "fileName": "fileName2.pdf"
+          },
+          {
+            "fileName": "fileName3.pdf"
+          }
+        ]
+      },
+      {
+        "jianNo": 2,
+        "listDetail": [
+          {
+            "jianMeiNo": 1,
+            "sekoHoho": 1,
+            "sekoHohoNm": "庁内施行",
+            "sekosakiNm": "施行完了",
+            "sekoDate": "2019/10/29",
+            "state": 59,
+            "stateNm": "施行完了",
+            "tanto": "富士　太郎",
+            "koinUmu": 0
+          },
+          {
+            "jianMeiNo": 2,
+            "sekoHoho": 2,
+            "sekoHohoNm": "警察文書伝送",
+            "sekosakiNm": "施行(送信中)",
+            "sekoDate": "2020/01/20",
+            "state": 58,
+            "stateNm": "施行(送信中)",
+            "tanto": "富士　太郎",
+            "koinUmu": 0
+          },
+          {
+            "jianMeiNo": 10,
+            "sekoHoho": 8,
+            "sekoHohoNm": "電子メール等",
+            "sekosakiNm": "施行完了",
+            "sekoDate": "2021/02/25",
+            "state": 59,
+            "stateNm": "施行完了",
+            "tanto": "富士　太郎",
+            "koinUmu": 0
+          },
+          {
+            "jianMeiNo": 11,
+            "sekoHoho": 8,
+            "sekoHohoNm": "電子メール等",
+            "sekosakiNm": "施行完了",
+            "sekoDate": "2021/02/25",
+            "state": 59,
+            "stateNm": "施行完了",
+            "tanto": "富士　太郎",
+            "koinUmu": 0
+          },
+          {
+            "jianMeiNo": 23,
+            "sekoHoho": 8,
+            "sekoHohoNm": "電子メール等",
+            "sekosakiNm": "施行完了",
+            "sekoDate": "2021/03/10",
+            "state": 59,
+            "stateNm": "施行完了",
+            "tanto": "富士　太郎",
+            "koinUmu": 0
+          },
+          {
+            "jianMeiNo": 999,
+            "sekoHoho": 1,
+            "sekoHohoNm": "庁内施行",
+            "sekosakiNm": "施行待ち",
+            "sekoDate": null,
+            "state": 50,
+            "stateNm": "施行待ち",
+            "tanto": null,
+            "koinUmu": 0
+          }
+        ],
+        "sekoFiles": [
+          {
+            "fileName": "fileName.pdf"
+          },
+          {
+            "fileName": "fileName2.pdf"
+          },
+          {
+            "fileName": "fileName3.pdf"
+          }
+        ]
+      }
+    ]
+  }
+}

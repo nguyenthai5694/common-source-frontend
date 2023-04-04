@@ -1,0 +1,105 @@
+@use '../foundation/config' as *;
+
+.u-footer-fixed-menu {
+  position: fixed;
+  bottom: 0;
+  z-index: z(footer-fixed);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - #{$nav-default-width});
+  height: 64px;
+  margin-left: -20px;
+  padding: 0 20px;
+  background: color(--white);
+  box-shadow: 0 -2px 4px rgba(#051933, 0.2);
+
+  &.-center {
+    justify-content: center;
+  }
+
+  &.-column4 {
+    @include mq(lg, max) {
+      justify-content: flex-end;
+    }
+  }
+
+  .app__main.-shortened & {
+    width: calc(100% - #{$nav-shortened-width});
+  }
+
+  .app__main.-full-width & {
+    width: 100%;
+  }
+
+  //impact assessment??????!!!!!!!!! check another place using this
+  // .-view-only-mode {
+  //   display: none;
+  // }
+
+  .app__main.-full-width.-view-only-mode & {
+    justify-content: center;
+
+    >* {
+      display: none;
+    }
+
+    >.-view-only-mode {
+      display: block;
+    }
+  }
+}
+
+.original__view {
+  justify-content: flex-start !important;
+}
+
+.u-footer-fixed-menu {
+  .p-button {
+    min-width: 160px;
+
+    // padding: 0 30px;
+    @media (max-width: 1024px) {
+      min-width: 140px;
+    }
+  }
+
+  .p-popover__content {
+    min-width: auto;
+  }
+}
+
+.u-footer-fixed-menu__left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.u-footer-fixed-menu__right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.u-footer-fixed-menu__center {
+  .u-footer-fixed-menu__text {
+    display: inline-block;
+    vertical-align: middle;
+
+    br {
+      display: block;
+    }
+  }
+}
+
+.u-footer-fixed-menu__text {
+  @include fontSize(14);
+
+  @include mq(md, min) {
+    br {
+      display: none;
+    }
+  }
+}

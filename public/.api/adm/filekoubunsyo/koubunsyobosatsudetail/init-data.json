@@ -1,0 +1,62 @@
+{
+  "type": "OK",
+  "message": "Success",
+  "code": "200",
+  "data": {
+    "bosatsuInfo": {
+      "administration_type": "1",
+      "parentList": [
+        {
+          "bunruiName": "bunruiName",
+          "bunruiCd": "1",
+          "hznkikanCd": "hznkikanCd",
+          "hznkikantxt": "hznkikantxt",
+          "hznKikanDisp": "hznKikanDisp",
+          "memo": null,
+          "reason": null
+        },
+        {
+          "bunruiName": "bunruiName1",
+          "bunruiCd": "1",
+          "hznkikanCd": "hznkikanCd",
+          "hznkikantxt": "hznkikantxt",
+          "hznKikanDisp": "hznKikanDisp",
+          "memo": null,
+          "reason": null
+        },
+        {
+          "bunruiName": "bunruiName2",
+          "bunruiCd": "1",
+          "hznkikanCd": "hznkikanCd",
+          "hznkikantxt": "hznkikantxt",
+          "hznKikanDisp": "hznKikanDisp",
+          "memo": null,
+          "reason": null
+        },
+        {
+          "bunruiName": "bunruiName2",
+          "bunruiCd": "1",
+          "hznkikanCd": "hznkikanCd",
+          "hznkikantxt": "hznkikantxt",
+          "hznKikanDisp": "hznKikanDisp",
+          "memo": null,
+          "reason": null
+        },
+        {
+          "bunruiName": "bunruiName2",
+          "bunruiCd": "1",
+          "hznkikanCd": "hznkikanCd",
+          "hznkikantxt": "hznkikantxt",
+          "hznKikanDisp": "hznKikanDisp",
+          "memo": null,
+          "reason": null
+        }
+      ],
+      "bosatsuNo": 13187,
+      "bunruiCode": "13187",
+      "bosatsuName": "平成31年度訓令・通達の制定・改廃",
+      "hozonTermName": "5年",
+      "hznKikanDisp": "hznKikanDisp"
+    }
+  }
+}

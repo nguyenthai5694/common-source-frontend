@@ -1,0 +1,37 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": {
+    "templateId": 157,
+    "templateName": "廃棄",
+    "cmbSharing": [
+      1,
+      2
+    ],
+    "firstView": 1,
+    "isValid": 1,
+    "selectedMatters": "1(6)",
+    "jikoGyomu": "1.法律の制定又は改廃及びその経緯(1)立案の検討",
+    "rsVal04": 2,
+    "rsVal03": 2,
+    "rsVal22": 2,
+    "rsVal23": 2,
+    "rsVal05": 2,
+    "rsVal17": 3,
+    "rsVal18": 0,
+    "rsVal19": 0,
+    "rsVal20": 3,
+    "rsVal21": 3,
+    "rsVal06": 2,
+    "rsVal07": 2,
+    "rsVal08": 2,
+    "rsVal09": 2,
+    "addingInfo": "hello babe  hihihii",
+    "rsVal11": 2,
+    "rsVal12": 2,
+    "timeoutSaveSolution": 1001,
+    "parentCmbClass": 14,
+    "referenceInfo": "this is reference info"
+  }
+}

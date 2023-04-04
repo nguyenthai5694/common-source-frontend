@@ -1,0 +1,96 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "shimeiCode": "1",
+      "shimeiName_k": "花田　健太（ハナダ ケンタ）",
+      "shimeiName": "花田健太",
+      "bushoName": "行政管理局",
+      "yakushokuName": "局長",
+      "email": "abcde@soumu.co.jp",
+      "fullBushoName": "○○府省(庁),総務局,総務部,総務課,庶務室,文書班,庶務係",
+      "soshikiName": "○○府省(庁) 総務局 総務部 総務課 庶務室 文書班 庶務係",
+      "tanto": "Ａ担当"
+    },
+    {
+      "shimeiCode": "2",
+      "shimeiName_k": "高山　元太（ヤカヤマ　ゲンタ）",
+      "shimeiName": "高山元太",
+      "bushoName": "行政管理局　行政情報システム企画課",
+      "email": "abcde@soumu.co.jp",
+      "fullBushoName": "○○府省(庁),総務局,総務部,総務課,庶務室,文書班,庶務係",
+      "soshikiName": "○○府省(庁) 総務局 総務部 総務課 庶務室 文書班 庶務係",
+      "yakushokuName": "係員",
+      "tanto": "Ａ担当"
+    },
+    {
+      "shimeiCode": "3",
+      "shimeiName_k": "清水　清志（ヤカヤマ　ゲンタ）",
+      "shimeiName": "清水清志",
+      "bushoName": "行政管理局　行政情報システム企画課",
+      "email": "abcde@soumu.co.jp",
+      "fullBushoName": "○○府省(庁),総務局,総務部,総務課,庶務室,文書班,庶務係",
+      "soshikiName": "○○府省(庁) 総務局 総務部 総務課 庶務室 文書班 庶務係",
+      "yakushokuName": "係員",
+      "tanto": "Ａ担当"
+    },
+    {
+      "shimeiCode": "4",
+      "shimeiName_k": "笹川 康太（ササキ コウタ）",
+      "shimeiName": "笹川康太",
+      "bushoName": "行政管理局　行政情報システム企画課",
+      "yakushokuName": "係員",
+      "tanto": "Ａ担当",
+      "email": "abcde@soumu.co.jp"
+    },
+    {
+      "shimeiCode": "5",
+      "shimeiName_k": "酒井 美由紀（ササキ コウタ）",
+      "shimeiName": "酒井美由紀",
+      "bushoName": "行政管理局　行政情報システム企画課",
+      "yakushokuName": "部長",
+      "tanto": "Ａ担当",
+      "email": "abcde@soumu.co.jp"
+    },
+    {
+      "shimeiCode": "6",
+      "shimeiName_k": "花田　健太（ハナダ ケンタ）2",
+      "shimeiName": "花田健太2",
+      "bushoName": "行政管理局",
+      "yakushokuName": "局長",
+      "email": "abcde@soumu.co.jp"
+    },
+    {
+      "shimeiCode": "7",
+      "shimeiName_k": "高山　元太（ヤカヤマ　ゲンタ）2",
+      "shimeiName": "高山元太2",
+      "bushoName": "行政管理局　行政情報システム企画課",
+      "email": "abcde@soumu.co.jp"
+    },
+    {
+      "shimeiCode": "8",
+      "shimeiName_k": "清水　清志（ヤカヤマ　ゲンタ）2",
+      "shimeiName": "清水清志2",
+      "bushoName": "行政管理局　行政情報システム企画課",
+      "email": "abcde@soumu.co.jp"
+    },
+    {
+      "shimeiCode": "9",
+      "shimeiName_k": "笹川 康太（ササキ コウタ）2",
+      "shimeiName": "笹川康太2",
+      "bushoName": "行政管理局　行政情報システム企画課",
+      "yakushokuName": "係員",
+      "tanto": "Ａ担当",
+      "email": "abcde@soumu.co.jp"
+    },
+    {
+      "shimeiCode": "10",
+      "shimeiName_k": "酒井 美由紀（ササキ コウタ）2",
+      "shimeiName": "酒井美由紀2",
+      "bushoName": "行政管理局　行政情報システム企画課",
+      "yakushokuName": "部長",
+      "tanto": "Ａ担当",
+      "email": "abcde@soumu.co.jp"
+    }
+  ]
+}

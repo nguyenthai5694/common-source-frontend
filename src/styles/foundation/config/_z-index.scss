@@ -1,0 +1,67 @@
+// How to Use
+// z-index: z(content);
+
+@use 'sass:map';
+
+$z-map: (
+  help: true,
+  form: (
+    message: true,
+    option: true,
+  ),
+  in-table-dropdown: true,
+  table-check: true,
+  filter-header: true,
+  footer-fixed: true,
+  filter-detail: true,
+  filter-form: true,
+  column-display: true,
+  tab: true,
+  header-dropdown: true,
+  header: true,
+  nav: true,
+  calendar: true,
+  calendar-display-tooltip: true,
+  modal: true,
+  toast: true,
+  loading: true,
+);
+
+$z-map-reverse: false;
+
+@function z($options...) {
+  $option-length: length($options);
+  $point: 1;
+  $is-index: 1;
+
+  $temp-map: $z-map;
+  $get-key: nth($options, $option-length);
+
+  @if ($option-length > 1) {
+    @each $option in $options {
+      @if ($option != $get-key) {
+        $temp-map: map.get($temp-map, $option);
+      }
+    }
+  }
+
+  @if (not $z-map-reverse) {
+    $get-value: map-get($temp-map, $get-key);
+    $is-index: index($temp-map, ($get-key $get-value));
+  } @else {
+    $counter: 1;
+    @if ($z-map-reverse) {
+      $counter: length($temp-map);
+      $point: -1;
+    }
+
+    @each $map-key, $map-value in $temp-map {
+      @if $map-key == $get-key {
+        $is-index: $counter;
+      }
+      $counter: $counter + $point;
+    }
+  }
+
+  @return $is-index;
+}

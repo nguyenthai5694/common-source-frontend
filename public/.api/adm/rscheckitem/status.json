@@ -1,0 +1,17 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": "0",
+  "data": {
+    "rcSchCheckInfo": [
+      {
+        "bosHznKiManCd": 1000,
+        "hozonkimanName": "廃棄"
+      },
+      {
+        "bosHznKiManCd": 1001,
+        "hozonkimanName": "移管"
+      }
+    ]
+  }
+}

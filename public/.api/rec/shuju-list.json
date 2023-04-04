@@ -1,0 +1,437 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 10,
+      "jushinKbnNm": "庁内施行",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 10,
+      "jushinKbnNm": "電子メール",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 2,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 10,
+      "jushinKbnNm": "他システム",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 3,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 10,
+      "jushinKbnNm": "文書受付",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 3,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 30,
+      "jushinKbnNm": "庁内施行",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 30,
+      "jushinKbnNm": "電子メール",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 2,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 30,
+      "jushinKbnNm": "他システム",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 3,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 30,
+      "jushinKbnNm": "文書受付",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 2,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 7,
+      "jushinKbnNm": "他システム",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 7,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 7,
+      "jushinKbnNm": "他システム",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 2,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 7,
+      "jushinKbnNm": "他システム",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 3,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 8,
+      "jushinKbnNm": "庁内施行",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 8,
+      "jushinKbnNm": "電子メール",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 8,
+      "jushinKbnNm": "他システム",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 8,
+      "jushinKbnNm": "文書受付",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 100,
+      "jushinKbnNm": "庁内施行",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 100,
+      "jushinKbnNm": "電子メール",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 100,
+      "jushinKbnNm": "他システム",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 100,
+      "jushinKbnNm": "文書受付",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 4,
+      "jushinKbnNm": "庁内施行",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 20,
+      "jushinKbnNm": "庁内施行",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 0,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 20,
+      "jushinKbnNm": "電子メール",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 2,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 20,
+      "jushinKbnNm": "電子メール",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 3,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 20,
+      "jushinKbnNm": "他システム",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 3,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 20,
+      "jushinKbnNm": "文書受付",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 3,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 20,
+      "jushinKbnNm": "文書受付",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 3,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    },
+    {
+      "bunId": {
+        "dbString": "結合試験2101号"
+      },
+      "title": "テスト１",
+      "bunNo": 55244,
+      "bunJoCd": 20,
+      "jushinKbnNm": "文書受付",
+      "recDate": "2019-09-03",
+      "aitesakiNm": null,
+      "tempFFlg": 0,
+      "shuKctr": 4,
+      "mukoFlg": 3,
+      "soshinshaNm": "",
+      "shuShokuinNm": ""
+    }
+  ]
+}

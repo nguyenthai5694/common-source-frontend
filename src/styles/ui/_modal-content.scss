@@ -1,0 +1,25 @@
+@use '../foundation/config' as *;
+
+.u-modal-content {
+  &__text {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    display: flex;
+    color: color(--red);
+
+    &::before {
+      display: inline-block;
+      width: 1em;
+      padding-left: 5px;
+      color: color(--red);
+      font-weight: bold;
+      content: '\2022';
+    }
+
+    & p {
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "data":
+  [
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "処理待ち"
+    },
+    {
+      "lblDocNo": "2020/02/12",
+      "lblSubject": "New Subject 1",
+      "lblDocumentNo": "132132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/15",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A D C",
+      "lblApprovalType": "処理待ち"
+    },
+    {
+      "lblDocNo": "2020/02/19",
+      "lblSubject": "New Subject 12",
+      "lblDocumentNo": "13223",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/20",
+      "lblPersonCharge": "Mr B",
+      "lblDraftSection": "A B C D",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/10",
+      "lblSubject": "New Subject 3",
+      "lblDocumentNo": "13213",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/20",
+      "lblPersonCharge": "Mr V",
+      "lblDraftSection": "A B C G",
+      "lblApprovalType": "処理待ち"
+    },
+    {
+      "lblDocNo": "2020/02/02",
+      "lblSubject": "New Subject 2",
+      "lblDocumentNo": "1323",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/03",
+      "lblPersonCharge": "Mr Y",
+      "lblDraftSection": "A B D C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/01",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "1322123",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/02",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "FASDAt",
+      "lblDocumentNo": "31232",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "ADSAFA",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "すべて",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "すべて"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "処理待ち"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "処理待ち"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "処理待ち"
+    },
+    {
+      "lblDocNo": "2020/02/14",
+      "lblSubject": "New Subject",
+      "lblDocumentNo": "132132123",
+      "lblStatusDetail": "処理待ち",
+      "lblDraftDate": "2020/03/12",
+      "lblPersonCharge": "Mr A",
+      "lblDraftSection": "A B C",
+      "lblApprovalType": "処理待ち"
+    }
+  ]
+}

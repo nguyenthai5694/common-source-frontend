@@ -1,0 +1,33 @@
+@use '../foundation/config' as *;
+
+.u-keyword-form {
+  display: flex;
+  height: 32px;
+}
+
+.u-keyword-form__input {
+  @include fontSize(14);
+  width: calc(100% - 32px);
+  padding-right: 12px;
+  padding-left: 12px;
+  border: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px color(--blue-24);
+  }
+}
+
+.u-keyword-form__submit {
+  width: 32px;
+  background-color: color(--primary);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  &:hover {
+    background-color: color(--primary_hover);
+  }
+}

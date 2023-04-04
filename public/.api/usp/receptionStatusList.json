@@ -1,0 +1,40 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": {
+    "gyoumuCode": "AP_B000011",
+    "gyoumuName": "受付",
+    "gyoumuDescription": "受付DESCRIPTION",
+    "gyoumuDetails": [
+      {
+        "gyoumuCntNo": 1,
+        "gyoumuStatusName": "受付持ち（他システム）",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 2,
+        "gyoumuStatusName": "受付持ち（庁内施行）",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 3,
+        "gyoumuStatusName": "受付持ち（配布・転送）",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 4,
+        "gyoumuStatusName": "受付持ち（一時保存中）",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 0
+      }
+    ]
+  }
+}

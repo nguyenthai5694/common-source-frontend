@@ -1,0 +1,40 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": {
+    "gyoumuCode": "AP_B000038",
+    "gyoumuName": "施行・保存",
+    "gyoumuDescription": "施行・保存DESCRIPTION",
+    "gyoumuDetails": [
+      {
+        "gyoumuCntNo": 17,
+        "gyoumuStatusName": "施行処理待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 18,
+        "gyoumuStatusName": "保存処理待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 19,
+        "gyoumuStatusName": "公印審査待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 20,
+        "gyoumuStatusName": "官報審査待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      }
+    ]
+  }
+}

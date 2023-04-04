@@ -1,0 +1,8 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 200,
+  "data": {
+    "isEnableBulkApproval": true
+  }
+}

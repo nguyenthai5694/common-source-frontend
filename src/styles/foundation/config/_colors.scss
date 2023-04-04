@@ -1,0 +1,55 @@
+// How to Use
+// color: color(--white);
+// background-color: color(--green);
+
+@use 'sass:map';
+
+$colors: (
+  --primary: #1f334d,
+  --primary_hover: #194580,
+  --primary-4: #f6f7f8,
+  --primary-8: #edeff1,
+  --primary-12: #e3e6e9,
+  --primary-23: #f6f7f8,
+  --primary-24: #c9ced4,
+  --primary-36: #aeb5be,
+  --primary-60: #788494,
+  --black: #020c1a,
+  --black-12: #e0e1e3,
+  --black-20: #f2f3f5,
+  --black-36: #a3a7ac,
+  --black-48: #858a91,
+  --black-60: #676d75,
+  --blue: #0d66d0,
+  --blue_hover: #2296f0,
+  --blue-8: #ecf3fc,
+  --blue-12: #e1ecfa,
+  --blue-24: #c5daf4,
+  --white: #fff,
+  --white-12: rgba(255, 255, 255, 0.12),
+  --white-60: rgba(255, 255, 255, 0.6),
+  --white-90: rgba(255, 255, 255, 0.9),
+  --light-blue: #0c80ed,
+  --light-blue_hover: #2296f0,
+  --orange: #db7609,
+  --green: #01874b,
+  --green_hover: #00bf69,
+  --green-8: #ebfaf3,
+  --light-green: #00bf69,
+  --light-green_hover: #00de7a,
+  --red: #d60b0b,
+  --red_hover: #eb0c0c,
+  --red-4: #fef5f5,
+  --red-12: #fae1e1,
+  --red-24: #f5c4c4,
+  --light-red: #eb0c0c,
+  --light-red_hover: #f76565,
+  --yellow: #ffbc1f,
+  --yellow_hover: #ffd21f,
+  --yellow-4: #fffbde,
+  --yellow-12: #fff6b5,
+);
+
+@function color($name) {
+  @return map.get($colors, $name);
+}

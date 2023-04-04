@@ -1,0 +1,32 @@
+@use '../foundation/config' as *;
+
+.u-modal-news__date {
+  @include fontSize(14);
+  margin-bottom: 12px;
+  color: color(--black-60);
+
+  .p-tag {
+    margin-left: 10px;
+    vertical-align: 1px;
+
+    &.-no-margin-left {
+      margin-left: 0;
+    }
+  }
+}
+
+.u-modal-news__title {
+  @include fontSize(16);
+  margin-bottom: 12px;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.u-modal-news__text {
+  @include fontSize(14);
+  word-break: break-all;
+
+  strong {
+    font-weight: bold;
+  }
+}

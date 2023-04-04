@@ -1,0 +1,11 @@
+@use '../foundation/config' as *;
+
+.modal-multicode-nendo__wrap {
+  .p-pagination__display {
+    white-space: nowrap;
+  }
+
+  .p-visible-changer {
+    display: none;
+  }
+}

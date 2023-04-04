@@ -1,0 +1,61 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": {
+    "gyoumuCode": "AP_B000025",
+    "gyoumuName": "決裁",
+    "gyoumuDescription": "決裁DESCRIPTION",
+    "gyoumuDetails": [
+      {
+        "gyoumuCntNo": 5,
+        "gyoumuStatusName": "一時保存中",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 6,
+        "gyoumuStatusName": "決裁待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 7,
+        "gyoumuStatusName": "事前閲覧可能",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 8,
+        "gyoumuStatusName": "後閲待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 9,
+        "gyoumuStatusName": "閲覧待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      },
+      {
+        "gyoumuCntNo": 10,
+        "gyoumuStatusName": "完了処理待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 0
+      },
+      {
+        "gyoumuCntNo": 11,
+        "gyoumuStatusName": "完了審査待ち",
+        "tokusoku": false,
+        "count": 0,
+        "dispFlg": 1
+      }
+    ]
+  }
+}

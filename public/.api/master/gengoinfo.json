@@ -1,0 +1,57 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 200,
+  "data": [
+    {
+      "eraCode": "1",
+      "eraEName": "M",
+      "eraJShortName": "明",
+      "eraJLongName": "明治",
+      "eraStartDate": "1868-09-08",
+      "default": false,
+      "eraOffsetYear": 1867,
+      "optionValue": "1,1867"
+    },
+    {
+      "eraCode": "2",
+      "eraEName": "T",
+      "eraJShortName": "大",
+      "eraJLongName": "大正",
+      "eraStartDate": "1912-07-29",
+      "default": false,
+      "eraOffsetYear": 1911,
+      "optionValue": "2,1911"
+    },
+    {
+      "eraCode": "3",
+      "eraEName": "S",
+      "eraJShortName": "昭",
+      "eraJLongName": "昭和",
+      "eraStartDate": "1926-12-25",
+      "default": false,
+      "eraOffsetYear": 1925,
+      "optionValue": "3,1925"
+    },
+    {
+      "eraCode": "4",
+      "eraEName": "H",
+      "eraJShortName": "平",
+      "eraJLongName": "平成",
+      "eraStartDate": "1989-01-08",
+      "default": false,
+      "eraOffsetYear": 1988,
+      "optionValue": "4,1988"
+    },
+    {
+      "eraCode": "5",
+      "eraEName": "R",
+      "eraJShortName": "令",
+      "eraJLongName": "令和",
+      "eraStartDate": "2019-05-01",
+      "default": true,
+      "eraOffsetYear": 2018,
+      "optionValue": "5,2018"
+    }
+  ]
+}

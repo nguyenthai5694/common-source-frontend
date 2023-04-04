@@ -1,0 +1,47 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data":[
+    {
+      "bunBango":"保総総第576号",
+      "bunNo":"57126",
+      "shuKmei":"結合試験_4.21_001",
+      "bunJoNm":"受付済",
+      "uketsukedate":"2021/01/18",
+      "shuShokuinNm":"富士　太郎",
+      "jushinKbnNm":"予備",
+      "kianTantoShokuinNm":"富士　太郎"
+    },
+    {
+      "bunBango":"保総総第577号",
+      "bunNo":"57127",
+      "shuKmei":"結合試験_4.21_002",
+      "bunJoNm":"受付済",
+      "uketsukedate":"2021/01/18",
+      "shuShokuinNm":"富士　太郎",
+      "jushinKbnNm":"予備",
+      "kianTantoShokuinNm":"富士　太郎"
+    },
+    {
+      "bunBango":"保総総第578号",
+      "bunNo":"57128",
+      "shuKmei":"結合試験_4.21_002",
+      "bunJoNm":"受付済",
+      "uketsukedate":"2021/01/18",
+      "shuShokuinNm":"富士　太郎",
+      "jushinKbnNm":"予備",
+      "kianTantoShokuinNm":"富士　太郎"
+    },
+    {
+      "bunBango":"保総総第579号",
+      "bunNo":"57129",
+      "shuKmei":"結合試験_4.21_002",
+      "bunJoNm":"受付済",
+      "uketsukedate":"2021/01/18",
+      "shuShokuinNm":"富士　太郎",
+      "jushinKbnNm":"予備",
+      "kianTantoShokuinNm":"富士　太郎"
+    }
+  ]
+}

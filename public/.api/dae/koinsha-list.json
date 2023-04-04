@@ -1,0 +1,29 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "id": 1,
+      "lblPredecessorDept": "第1回定例会について",
+      "lnkPredecessorName": "Mr.A",
+      "lblSuccessorDept": 1,
+      "lblSuccessorName": 1,
+      "lblRegisterDate": "2021/01/01 09:30"
+    },
+    {
+      "id": 2,
+      "lblPredecessorDept": "第1回定例会について",
+      "lnkPredecessorName": "Mr.A",
+      "lblSuccessorDept": 2,
+      "lblSuccessorName": 2,
+      "lblRegisterDate": "2021/01/01 09:30"
+    },
+    {
+      "id": 3,
+      "lblPredecessorDept": "第1回定例会について",
+      "lnkPredecessorName": "Mr.A",
+      "lblSuccessorDept": 3,
+      "lblSuccessorName": 3,
+      "lblRegisterDate": "2021/01/01 09:30"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": {
+    "lblManageDept": "lblManageDept",
+    "cmbMajorClass": [
+      {
+        "label": "cmbMajorClass",
+        "kjnban": 1
+      },
+      {
+        "label": "cmbMajorClass2",
+        "kjnban": 2
+      },
+      {
+        "label": "cmbMajorClass3",
+        "kjnban": 3
+      }
+    ],
+    "cmbMiddleClass": [
+      {
+        "label": "cmbMiddleClass",
+        "kjnban": 1
+      },
+      {
+        "label": "cmbMiddleClass2",
+        "kjnban": 2
+      },
+      {
+        "label": "cmbMiddleClass3",
+        "kjnban": 3
+      }
+    ],
+    "cmbSmallClass": [
+      {
+        "label": "cmbMiddleClass",
+        "kjnban": 1
+      },
+      {
+        "label": "cmbMiddleClass2",
+        "kjnban": 2
+      },
+      {
+        "label": "cmbMiddleClass3",
+        "kjnban": 3
+      }
+    ],
+    "cmbStandardDocFile": [
+      {
+        "label": "cmbStandardDocFile",
+        "kjnban": 1
+      },
+      {
+        "label": "cmbStandardDocFile2",
+        "kjnban": 2
+      },
+      {
+        "label": "cmbStandardDocFile3",
+        "kjnban": 3
+      }
+    ],
+    "cmbDocRecord": [
+      {
+        "label": "cmbDocRecord",
+        "kjnban": 1
+      },
+      {
+        "label": "cmbDocRecord2",
+        "kjnban": 2
+      },
+      {
+        "label": "cmbDocRecord3",
+        "kjnban": 3
+      }
+    ],
+    "cmbNameSmall": [
+      {
+        "label": "cmbNameSmall",
+        "kjnban": 1
+      },
+      {
+        "label": "cmbNameSmall2",
+        "kjnban": 2
+      },
+      {
+        "label": "cmbNameSmall3",
+        "kjnban": 3
+      }
+    ]
+  }
+}

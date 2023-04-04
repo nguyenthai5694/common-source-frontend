@@ -1,0 +1,15 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "bushoName": "総務課",
+      "bushoCode": "10101010000000",
+      "yakushoku": "課長"
+    },
+    {
+      "bushoName": "総務課",
+      "bushoCode": "10101010000001",
+      "yakushoku": "部長"
+    }
+  ]
+}

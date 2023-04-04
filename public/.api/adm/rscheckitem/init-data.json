@@ -1,0 +1,107 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": "0",
+  "data": {
+    "rcScheduleForm": [
+      {
+        "hinagataNo": 157,
+        "hinagataNm": "廃棄 1",
+        "hinagataMemo": "すべて該当なし 1",
+        "bosHznKiManCd": 1000,
+        "rsVal02": [
+          {
+            "label": "事項・業務区分（番号）選択 3",
+            "value": 3
+          },
+          {
+            "label": "事項・業務区分（番号）選択 4",
+            "value": 4
+          }
+        ],
+        "rsVal04": 2,
+        "rsVal03": 2,
+        "rsVal22": 2,
+        "rsVal23": 2,
+        "rsVal05": 2,
+        "rsVal17": 2,
+        "rsVal18": 2,
+        "rsVal19": 2,
+        "rsVal20": 2,
+        "rsVal21": 2,
+        "rsVal06": 2,
+        "rsVal07": 2,
+        "rsVal08": 2,
+        "rsVal09": 2,
+        "rsVal10": "廃棄 1",
+        "rsVal11": 2,
+        "rsVal12": 2,
+        "rsVal13": "廃棄 1"
+      },
+      {
+        "hinagataNo": 158,
+        "hinagataNm": "廃棄 2",
+        "hinagataMemo": "すべて該当なし 2",
+        "bosHznKiManCd": 1001,
+        "rsVal02": [
+          {
+            "label": "事項・業務区分（番号）選択 5",
+            "value": 5
+          },
+          {
+            "label": "事項・業務区分（番号）選択 6",
+            "value": 6
+          }
+        ],
+        "rsVal04": 1,
+        "rsVal03": 1,
+        "rsVal22": 1,
+        "rsVal23": 1,
+        "rsVal05": 1,
+        "rsVal17": 1,
+        "rsVal18": 1,
+        "rsVal19": 1,
+        "rsVal20": 1,
+        "rsVal21": 1,
+        "rsVal06": 1,
+        "rsVal07": 1,
+        "rsVal08": 1,
+        "rsVal09": 1,
+        "rsVal10": "廃棄 2",
+        "rsVal11": 2,
+        "rsVal12": 1,
+        "rsVal13": "廃棄 2"
+      },
+      {
+        "hinagataNo": 159,
+        "hinagataNm": "廃棄 3",
+        "hinagataMemo": "すべて該当なし 3",
+        "bosHznKiManCd": 1000,
+        "rsVal02": [
+          {
+            "label": "事項・業務区分（番号）選択 11",
+            "value": 11
+          }
+        ],
+        "rsVal04": 1,
+        "rsVal03": 2,
+        "rsVal22": 1,
+        "rsVal23": 2,
+        "rsVal05": 1,
+        "rsVal17": 2,
+        "rsVal18": 1,
+        "rsVal19": 3,
+        "rsVal20": 1,
+        "rsVal21": 2,
+        "rsVal06": 1,
+        "rsVal07": 2,
+        "rsVal08": 1,
+        "rsVal09": 2,
+        "rsVal10": "廃棄 3",
+        "rsVal11": 1,
+        "rsVal12": 2,
+        "rsVal13": "廃棄 3"
+      }
+    ]
+  }
+}

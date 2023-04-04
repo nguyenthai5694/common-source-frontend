@@ -1,0 +1,32 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "lblNumber": 1,
+      "lblDocName": "総企収第号-01",
+      "lblStatus": "文書番号",
+      "lblMethod": "号 (総企収第)",
+      "lblDestination":  "総企収第 総企収第 総企収第総企収第",
+      "lblEnforDate": "2020/11/06",
+      "lblEnforcerPIC": "総企 総企"
+    },
+    {
+      "lblNumber": 2,
+      "lblDocName": "総企収第号-02",
+      "lblStatus": "文書番号",
+      "lblMethod": "号 (総企収第)",
+      "lblDestination":  "総企収第 総企収第 総企収第総企収第",
+      "lblEnforDate": "2020/11/06",
+      "lblEnforcerPIC": "総企 総企"
+    },
+    {
+      "lblNumber": 3,
+      "lblDocName": "総企収第号-03",
+      "lblStatus": "施行完了",
+      "lblMethod": "号 (総企収第)",
+      "lblDestination":  "総企収第 総企収第 総企収第総企収第",
+      "lblEnforDate": "2020/11/06",
+      "lblEnforcerPIC": "総企 総企"
+    }
+  ]
+}

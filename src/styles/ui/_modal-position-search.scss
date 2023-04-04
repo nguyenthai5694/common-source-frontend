@@ -1,0 +1,218 @@
+@use '../foundation/config' as *;
+
+.u-modal-position-search__result {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  height: 286px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid color(--primary-24);
+  border-radius: 4px;
+}
+
+.u-modal-position-search__result-department-tree {
+  position: relative;
+  flex-shrink: 0;
+  min-width: 50px;
+  max-width: 90%;
+  padding: 14px 12px 30px;
+  overflow: auto;
+  background: color(--blue-8);
+
+  // モーダル内の部署ツリーに適用するスタイル
+  &>.b-department-tree__result-list>.b-department-tree__result-item+.b-department-tree__result-item {
+    padding-top: 10px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 10px;
+      background-color: color(--blue-8);
+      content: '';
+    }
+  }
+}
+
+.u-modal-position-search__result-block {
+  position: relative;
+  flex-grow: 1;
+}
+
+.u-modal-position-search__result-adjust-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 36px;
+  background: color(--white);
+  border: 1px solid color(--primary-36);
+  border-left: none;
+  border-radius: 0 2px 2px 0;
+  transform: translateY(-50%);
+  cursor: move;
+}
+
+.u-modal-position-search__result-adjust-img {
+  width: 5px;
+}
+
+.u-modal-position-search__result-refine {
+  padding: 8px 16px 8px 22px;
+}
+
+.u-modal-position-search__result-positions {
+  position: relative;
+  z-index: 1;
+  height: 230px;
+  overflow: auto;
+}
+
+.u-modal-position-search__result-position {
+  position: relative;
+  max-width: 100%;
+  padding: 12px 62px 12px 22px;
+  border-top: 1px solid color(--primary-12);
+}
+
+.u-modal-position-search__result-position-name {
+  @include fontSize(14);
+  display: inline-block;
+  margin-right: 12px;
+  line-height: 1;
+}
+
+.u-modal-position-search__result-position-department {
+  @include fontSize(11);
+  display: inline-block;
+  color: color(--black-48);
+  line-height: 1;
+}
+
+.u-modal-position-search__result-position-add-box {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.u-modal-position-search__result-position-add {
+  @include fontSize(14);
+  display: inline-flex;
+  align-items: center;
+  color: color(--blue);
+  line-height: 1;
+
+  & .u-modal-position-search__result-position-add-img {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    vertical-align: -4px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:not([disabled]):hover .u-modal-position-search__result-position-add-img {}
+
+  &:not([disabled]):hover {
+    color: color(--blue_hover);
+    text-decoration: underline;
+  }
+
+  &[disabled] {
+    cursor: default;
+    opacity: 0.3;
+  }
+}
+
+.u-modal-position-search__result-position-delete-box {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.u-modal-position-search__result-position-delete {
+  @include fontSize(14);
+  display: inline-flex;
+  align-items: center;
+  color: color(--red);
+  line-height: 1;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.u-modal-position-search__result-position-delete-img {
+  width: 18px;
+  margin-right: 4px;
+  vertical-align: -4px;
+}
+
+.u-modal-position-search__title {
+  @include fontSize(16);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.u-modal-position-search__section-body {
+  position: relative;
+  z-index: 0;
+  min-height: 166px;
+  max-height: 205px;
+  padding: 12px 12px 0;
+  overflow: auto;
+  border: 1px solid color(--primary-24);
+  border-radius: 4px;
+
+  &.min-height-auto {
+    min-height: 63px;
+  }
+}
+
+.u-modal-position-search__select-wrap {
+  &+& {
+    margin-top: 4px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 12px;
+  }
+}
+
+.u-modal-position-search__select {
+  position: relative;
+  padding: 8px 24px 8px 8px;
+  border: 1px solid color(--primary-60);
+  border-radius: 4px;
+
+  .u-modal-position-search__select-wrap & {
+    padding: 8px 110px 8px 8px;
+  }
+}
+
+.u-modal-position-search__select-position {
+  @include fontSize(14);
+  margin-top: 4px;
+
+  .u-modal-position-search__select-wrap & {
+    margin-top: 0;
+  }
+}
+
+.u-modal-position-search__select-department {
+  @include fontSize(11);
+  color: color(--black-48);
+
+  .u-modal-position-search__select-wrap & {
+    display: inline-block;
+    margin-left: 12px;
+  }
+}

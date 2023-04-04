@@ -1,0 +1,40 @@
+@use '../foundation/config' as *;
+
+.data-table {
+  .MuiTableHead-root {
+    background-color: #0072E5;
+
+    .MuiTableCell-root {
+      border-right: 1px solid #fff;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      .MuiTableSortLabel-root {
+        color: #fff;
+
+        .MuiTableSortLabel-icon {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .MuiTableBody-root {
+    .MuiTableCell-root {
+      border-right: 1px solid rgba(224, 224, 224, 1);
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.table-search {
+  .u-table-filter__group {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": [
+    {
+      "lblCode": "string",
+      "lblName": "string",
+      "lnkName": "abc abc abc abc abc abc abc abc",
+      "lblEnforceStatus": "string",
+      "lblStatus": "string",
+      "lnkReasonYes": "2021/09/08",
+      "lnkReasonNo": "string",
+      "lblApplicationType": "string",
+      "lblApplicationDate": "string",
+      "lblApplicationSection": "string",
+      "lblApplicant": "string",
+      "lblCreateAcTime": "string",
+      "lblRetentPeriodExpire": "string",
+      "lblRetentPeriod": "string"
+    }
+  ]
+}

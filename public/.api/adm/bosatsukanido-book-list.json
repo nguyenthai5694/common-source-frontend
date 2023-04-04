@@ -1,0 +1,166 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": {
+    "bookList": [
+      {
+        "lblDocumentNumber": 1,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 2,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 3,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 4,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 5,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 6,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 7,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 8,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 9,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 10,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 11,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 12,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 13,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 14,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 15,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 16,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 17,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 18,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      },
+      {
+        "lblDocumentNumber": 19,
+        "lblAdminDoctName": "行政文書名（ラベル）",
+        "lblBookNumber": "簿冊番号(ラベル)",
+        "lblPersonInCharge": "担当 担当 1G",
+        "lblDraftCreationDate": "2020/09/12",
+        "lblSharedDivision": "共有区分(ラベル)"
+      }
+    ]
+  },
+  "meta": {
+    "total": 3,
+    "pageNum": 1,
+    "pageSize": 40
+  }
+}

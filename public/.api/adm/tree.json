@@ -1,0 +1,55 @@
+{
+  "type": "OK",
+  "message": "Success",
+  "code": "200",
+  "data": [
+    {
+      "lv": 0,
+      "hyoFlg": 1,
+      "sameLvNos": "",
+      "dispName": "",
+      "linkFlg": 0,
+      "emailAddress": "",
+      "bunruiCode": "14422",
+      "no": "14422",
+      "parentName": "",
+      "groupCode": "",
+      "dispOrder": 14422,
+      "name": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
+      "key": "14422,0,0",
+      "parent": "0"
+    },
+    {
+      "lv": 0,
+      "hyoFlg": 1,
+      "sameLvNos": "",
+      "dispName": "",
+      "linkFlg": 0,
+      "emailAddress": "",
+      "bunruiCode": "14422",
+      "no": "14423",
+      "parentName": "",
+      "groupCode": "",
+      "dispOrder": 14423,
+      "name": "TEST1",
+      "key": "14423,0,0",
+      "parent": "0"
+    },
+    {
+      "lv": 0,
+      "hyoFlg": 1,
+      "sameLvNos": "",
+      "dispName": "",
+      "linkFlg": 0,
+      "emailAddress": "",
+      "bunruiCode": "14422",
+      "no": "14424",
+      "parentName": "",
+      "groupCode": "",
+      "dispOrder": 14424,
+      "name": "TEST1",
+      "key": "14424,0,0",
+      "parent": "0"
+    }
+  ]
+}

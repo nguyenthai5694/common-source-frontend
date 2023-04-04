@@ -1,0 +1,53 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": {
+    "kjnBan": 5602,
+    "bunruiCd": "5602",
+    "bunruiName": "TestTao04",
+    "bunriGrpCode": "1111",
+    "bunruiLevel": 2,
+    "kctr": 1,
+    "memo": "TestTao04-Remakr",
+    "reason": null,
+    "joiKjnBan": 5302,
+    "hozonTermCode": -1,
+    "hozonTermDisp": "",
+    "hznkikantxt": null,
+    "hznKikanDisp": "",
+    "administrationType": 0,
+    "hasChildDeleted3Month": null,
+    "parentList": [
+      {
+        "kjnBan": 5302,
+        "bunruiCd": "5302",
+        "bunruiName": "TestTao",
+        "bunruiLevel": 1,
+        "kctr": 0,
+        "memo": "abc",
+        "reason": null,
+        "joiKjnBan": 0,
+        "hozonTermCode": -1,
+        "hozonTermDisp": "",
+        "hznkikantxt": null,
+        "hznKikanDisp": "",
+        "administrationType": 0
+      }
+    ],
+    "koshinKaNo": "10101010101000",
+    "koshinShokuinNo": "2104",
+    "koshinShokuinName": "",
+    "koshinFlg": "1",
+    "koshinFlgName": "修正",
+    "koshinRiyu": "",
+    "shinseiDate": "2021-04-19",
+    "shinsaStat": 0,
+    "shinsaStatName": "",
+    "modoshiRiyu": "",
+    "shinsaDate": "2021-04-19T09:37:39.576+00:00",
+    "shinsaKaNo": "",
+    "shinsaShokuinNo": "",
+    "delRiyu": 0
+  }
+}

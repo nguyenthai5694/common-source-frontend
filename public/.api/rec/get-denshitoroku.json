@@ -1,0 +1,47 @@
+{
+  "code": 0,
+  "data": {
+    "bunsyoNo": 56673,
+    "shuKMei": "警察庁_結合試験4.06_003",
+    "aitesakiBango": "aitesakiBango",
+    "senpoubundate": "2021/01/30",
+    "uketsukedate": "2021/01/29",
+    "bunId": {
+      "fullBunId": "value1"
+    },
+    "aitesakiNm": "aitesakiNm",
+    "atesakiNm": "atesakiNm",
+    "jushinKbnNm": "OTHER SYSTEM",
+    "recDate": "2021/01/28 08:30",
+    "shujuFiles": {
+      "attachFilesList": [
+        {
+          "fileName": "TEST",
+          "fileExtension": "txt",
+          "bunsyoNo": 56673,
+          "meisaiNo": 13985,
+          "bunZokCd": 20
+        },
+        {
+          "fileName": "TEST 2",
+          "fileExtension": "doc",
+          "bunsyoNo": 56673,
+          "meisaiNo": 13985,
+          "bunZokCd": 20
+        }
+      ]
+    },
+    "mailText": "mailText",
+    "kianTantoShokuinNm": "kianTantoShokuinNm",
+    "kianShiji": "kianShiji",
+    "sekoSyoriKigenJDate": "2021/01/27",
+    "bikou": "bikou",
+    "sekoumotoDai": "sekoumotoDai",
+    "sekoumotoTyu": "sekoumotoTyu",
+    "sekoumotoSyo": "sekoumotoSyo",
+    "sekoumotoHyoujyunFile": "sekoumotoHyoujyunFile",
+    "sekoumotoFile": "sekoumotoFile",
+    "sendBackReason": "sendBackReason",
+    "bessouUmu": "bessouUmu"
+  }
+}

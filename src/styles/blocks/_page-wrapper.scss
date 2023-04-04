@@ -1,0 +1,24 @@
+.b-page-wraper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 48px);
+
+  main[role='main'] {
+    flex: 1;
+    overflow: hidden;
+  }
+}
+
+.b-page-wraper_top {
+  margin: 13px 0 15px;
+}
+
+.b-page-wraper_top,
+.b-page-wraper_bottom {
+  display: flex;
+  align-items: center;
+}
+
+.main-page {
+  padding: 20px;
+}

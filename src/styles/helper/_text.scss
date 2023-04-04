@@ -1,0 +1,96 @@
+@use '../foundation/config' as *;
+
+.h-text-bold {
+  font-weight: bold;
+}
+
+.h-text-end {
+  text-align: end;
+}
+
+.h-text-center {
+  text-align: center;
+}
+
+.h-text-left {
+  text-align: left;
+}
+
+.h-text-right {
+  text-align: right;
+}
+
+.h-text-danger {
+  color: color(--red) !important;
+
+  &:hover {
+    color: color(--red_hover) !important;
+  }
+
+  &.-small {
+    @include fontSize(12);
+  }
+
+  &.-inValid {
+    &::before {
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      margin: 0 6px -2px 0;
+      content: '';
+    }
+  }
+}
+
+.h-text-note {
+  color: color(--primary-36);
+
+  &.-small {
+    @include fontSize(11);
+  }
+}
+
+.h-text-blue {
+  color: color(--blue);
+}
+
+.h-text-black-60 {
+  color: color(--black-60);
+}
+
+.max-w-80 {
+  max-width: 80%;
+}
+
+.h-text-font-small {
+  font-size: 12px;
+}
+
+.h-text-break-all {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+  body.-IE & {
+    width: 100%;
+    word-break: break-all;
+  }
+}
+
+.h-text-white-space {
+  &.-nowrap {
+    white-space: nowrap;
+  }
+
+  &.-pre-wrap {
+    white-space: pre-wrap;
+  }
+}
+
+.h-text-underline {
+  text-decoration: underline;
+}
+
+.h-word-break {
+  word-break: break-all;
+}

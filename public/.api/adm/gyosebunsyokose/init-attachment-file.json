@@ -1,0 +1,70 @@
+{
+  "type": "ok",
+  "message": null,
+  "code": "0",
+  "data": {
+    "yoshikiFiles": [
+      {
+        "bunsyoNo": 55684,
+        "fileName": "伺い内容詳細_01",
+        "meisaiNo": 14207,
+        "bunzok": 20
+      }
+    ],
+    "besshiFile": [
+      {
+        "bunsyoNo": 55684,
+        "fileName": "伺い内容詳細_01",
+        "meisaiNo": 14207,
+        "bunzok": 20
+      }
+    ],
+    "sekoFile": [
+      {
+        "bunsyoNo": 55684,
+        "fileName": "決裁文書案01_01",
+        "meisaiNo": 14208,
+        "bunzok": 50
+      }
+    ],
+    "benttenFile": [
+      {
+        "bunsyoNo": 55684,
+        "fileName": "別添_01",
+        "meisaiNo": 14209,
+        "bunzok": 25
+      }
+    ],
+    "honbunFiles": [
+      {
+        "bunsyoNo": 55684,
+        "fileName": "決裁文書案01_01",
+        "meisaiNo": 14208,
+        "bunzok": 50
+      }
+    ],
+    "pdfFiles": [
+      {
+        "bunsyoNo": 55684,
+        "fileName": "決裁文書案01_01",
+        "meisaiNo": 14208,
+        "bunzok": 50
+      }
+    ],
+    "shujuBunsyos": [
+      {
+        "bunsyoNo": 55685,
+        "tittle": "☆件名",
+        "fullBunId": "保総総第151号"
+      }
+    ],
+    "kanrenBunsyos": [
+      {
+        "bunsyoNo": 55685,
+        "tittle": "☆件名",
+        "fullBunId": "保総総第151号"
+      }
+    ],
+    "benttenKamiContent": "別添紙"
+  }
+}

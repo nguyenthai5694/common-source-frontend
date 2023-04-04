@@ -1,0 +1,55 @@
+{
+  "code": 0,
+  "data": {
+    "bushoInfo": {
+      "code": "1000",
+      "name": "総務省",
+      "parentCode": "",
+      "orderNo": 1,
+      "pureParentCode": ""
+    },
+    "childbushoList": [
+      {
+        "bushoInfo": {
+          "code": "1001",
+          "name": "政策総務部",
+          "parentCode": "",
+          "orderNo": 1,
+          "pureParentCode": "1000"
+        },
+        "childbushoList": [
+          {
+            "bushoInfo": {
+              "code": "1003",
+              "name": "政策課",
+              "parentCode": "",
+              "orderNo": 1,
+              "pureParentCode": "1001"
+            },
+            "childbushoList": []
+          },
+          {
+            "bushoInfo": {
+              "code": "1004",
+              "name": "財務課",
+              "parentCode": "",
+              "orderNo": 1,
+              "pureParentCode": "1001"
+            },
+            "childbushoList": []
+          }
+        ]
+      },
+      {
+        "bushoInfo": {
+          "code": "1002",
+          "name": "行政管理部",
+          "parentCode": "",
+          "orderNo": 1,
+          "pureParentCode": "1000"
+        },
+        "childbushoList": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 0,
+  "data": [
+    {
+      "versionNumber": 1,
+      "updateDate": "2012/12/16 18:51:21",
+      "changer": "lblChanger1",
+      "comment": "lblComment1"
+    },
+    {
+      "versionNumber": 2,
+      "updateDate": "2012/12/16 18:51:21",
+      "changer": "lblChanger2",
+      "comment": "lblComment2"
+    },
+    {
+      "versionNumber": 3,
+      "updateDate": "2012/12/16 18:51:21",
+      "changer": "lblChanger3",
+      "comment": "lblComment3"
+    },
+    {
+      "versionNumber": 4,
+      "updateDate": "2012/12/16 18:51:21",
+      "changer": "lblChanger4",
+      "comment": "lblComment4"
+    }
+  ],
+  "meta": {
+    "total": 4,
+    "pageNum": 1,
+    "pageSize": 40
+  }
+}

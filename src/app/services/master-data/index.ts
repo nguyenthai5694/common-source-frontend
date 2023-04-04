@@ -1,0 +1,1 @@
+export { getMasterData, getListMasterData, getMasterDataSync } from './get-master-data.service'

@@ -1,0 +1,32 @@
+{
+  "type": "OK",
+  "message": "",
+  "code": 200,
+  "data": [
+    {
+      "code": "1",
+      "displayName": "翌年度の始期",
+      "isInitial": true
+    },
+    {
+      "code": "2",
+      "displayName": "翌年の始期",
+      "isInitial": false
+    },
+    {
+      "code": "3",
+      "displayName": "翌月の始期",
+      "isInitial": false
+    },
+    {
+      "code": "4",
+      "displayName": "翌事務年度の始期",
+      "isInitial": false
+    },
+    {
+      "code": "5",
+      "displayName": "特定の日",
+      "isInitial": false
+    }
+  ]
+}

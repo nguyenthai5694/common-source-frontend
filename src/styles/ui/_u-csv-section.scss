@@ -1,0 +1,18 @@
+@use '../foundation/config' as *;
+
+.upload-csv-section {
+  position: relative;
+  margin-top: 12px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 0 0 rgba(211, 214, 219, 1);
+
+  .result-file {
+    height: 250px;
+  }
+}
+
+.error-section {
+  position: relative;
+}
