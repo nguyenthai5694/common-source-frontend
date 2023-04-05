@@ -1,8 +1,8 @@
 import React, { Suspense } from 'react';
 import { Switch, Route, Redirect, useHistory } from 'react-router-dom';
 import { History } from 'history';
-import PageError, { PageErrorType } from 'soumu/blocks/page-error/page-error.component';
-import { Lazy } from 'soumu/utils/lazy/lazy.component';
+import PageError, { PageErrorType } from 'common/blocks/page-error/page-error.component';
+import { Lazy } from 'common/utils/lazy/lazy.component';
 import { setActiveCookie } from 'app/services/active-cookie'
 import { NormalizedRoute } from 'app/services/route';
 import { handleMiddlewareError } from './handle-middleware-error';

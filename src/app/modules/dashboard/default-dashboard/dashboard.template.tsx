@@ -1,6 +1,6 @@
 import React from 'react'
-import PageWrapper from 'soumu/blocks/page-wrapper/page-wrapper.component'
-import Loading from 'soumu/parts/loading/loading.component'
+import PageWrapper from 'common/blocks/page-wrapper/page-wrapper.component'
+import Loading from 'common/parts/loading/loading.component'
 import Dashboard from './dashboard.component';
 
 interface DashboardTemplate {

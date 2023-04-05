@@ -1,0 +1,49 @@
+@use 'foundation/config' as *;
+
+.u-modal-dialog {
+  width: 360px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+}
+
+.u-modal-dialog__text {
+  @include fontSize(20);
+  padding-top: 22px;
+  font-weight: bold;
+  white-space: pre-line;
+  text-align: center;
+
+  strong {
+    font-weight: inherit;
+  }
+}
+
+.u-modal-dialog__icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.u-form__reason-custom {
+  width: 140px !important;
+  margin-right: 10px !important;
+}
+
+.-dialog {
+  .b-modal__body-footer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .b-modal__inner {
+    min-height: 160px;
+
+    .u-modal-dialog {
+      padding: 0;
+    }
+  }
+
+  .b-modal__body {
+    min-height: 175px;
+  }
+}

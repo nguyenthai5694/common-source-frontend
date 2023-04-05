@@ -1,9 +1,8 @@
 import React from 'react';
 import { FormikContextType } from 'formik';
-import { DataTableQueries } from 'soumu/blocks/datatable/datatable.type';
-import { defaultQueries } from 'soumu/blocks/table-ui/table';
-import PageComponent from 'soumu/utils/page/page.component'
-import { NoticeType } from '../../../const/oshirase.const';
+import { DataTableQueries } from 'common/blocks/datatable/datatable.type';
+import { defaultQueries } from 'common/blocks/table-ui/table';
+import PageComponent from 'common/utils/page/page.component'
 import { ModalService } from '../../../services/modal';
 import DemoTemplate from './demo.template';
 

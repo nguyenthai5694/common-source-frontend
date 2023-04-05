@@ -1,8 +1,8 @@
 import React from 'react'
 import { Grid } from '@mui/material';
-import PageWrapper from 'soumu/blocks/page-wrapper/page-wrapper.component'
-import { Input } from 'soumu/form';
-import Loading from 'soumu/parts/loading/loading.component'
+import PageWrapper from 'common/blocks/page-wrapper/page-wrapper.component'
+import { Input } from 'common/form';
+import Loading from 'common/parts/loading/loading.component'
 import InputComponent from './input.component';
 
 interface InputTemplate {

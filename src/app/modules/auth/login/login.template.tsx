@@ -8,7 +8,7 @@ import {
   Tab, Tabs, TextField, Typography, useTheme,
 } from '@mui/material';
 import { Form, Formik } from 'formik';
-import { FormControl, Input } from 'soumu/form';
+import { FormControl, Input } from 'common/form';
 
 interface LoginTemplateProps {
   self: Login;

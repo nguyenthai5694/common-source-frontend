@@ -1,0 +1,239 @@
+@use 'foundation/config' as *;
+
+.b-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1200;
+  background: rgba(0, 0, 0, 0.6);
+
+  &.-sizeM,
+  &.-sizeS,
+  &.-sizeXs,
+  &.-sizeAuto {
+    display: flex;
+    align-items: center;
+  }
+
+  &[hidden] {
+    display: none;
+  }
+
+  &.-sizeF,
+  &.-sizeAuto {
+    justify-content: center;
+  }
+}
+
+.b-modal__inner {
+  position: relative;
+  height: auto;
+  min-height: 320px;
+  max-height: calc(100vh - 80px);
+  margin: 40px;
+  background: color(--white);
+  border-radius: 5px 5px 0 0;
+
+  .-sizeAuto & {
+    min-width: 880px;
+    max-width: fit-content;
+    margin: 40px;
+  }
+
+  .-sizeF & {
+    width: 880px;
+    margin: 40px auto;
+  }
+
+  .-sizeM & {
+    width: 780px;
+    margin: 40px auto;
+  }
+
+  .-sizeS & {
+    width: 640px;
+    margin: 40px auto;
+  }
+
+  .-sizeXs & {
+    width: 420px;
+    margin: 40px auto;
+
+    .b-modal__body {
+      min-height: 200px;
+    }
+  }
+
+  .b-modal.-dialog & {
+    border-radius: 5px;
+  }
+
+  .b-modal.-dialog.-sizeS & {
+    width: 520px;
+  }
+
+  .p-download-button {
+    position: absolute;
+    top: 0;
+    right: 70px;
+  }
+
+  .p-round-button {
+    position: absolute;
+  }
+
+  &.m_b-hozonkikanhyo-list {
+    background: color(--black-20);
+  }
+}
+
+.b-modal__inner-center {
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin-top: -300px;
+}
+
+.b-modal__message {
+  @include fontSize(14);
+
+  &.-danger {
+    color: color(--red);
+  }
+
+  &.-warn {
+    color: color(--orange);
+  }
+
+  &.-icon {
+    position: relative;
+    padding-left: 18px + 6px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background: 0 0 no-repeat;
+      background-size: contain;
+      content: '';
+    }
+
+    &.-valid::before {
+      background-image: url(/assets/images/icons/check-circle-green.svg);
+    }
+
+    &.-inValid::before {
+      background-image: url(/assets/images/icons/error-red.svg);
+    }
+
+    &.-warn::before {
+      background-image: url(/assets/images/icons/info-orange.svg);
+    }
+  }
+}
+
+.b-modal__header {
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 53px;
+  border-bottom: 2px solid rgba(color(--primary), 0.15);
+
+  &.-primary {
+    color: color(--white);
+    background: color(--primary);
+  }
+}
+
+.b-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 0;
+}
+
+.b-modal__body {
+  min-height: 200px;
+  max-height: calc(100vh - 197px);
+  overflow: auto;
+  scroll-behavior: smooth;
+
+  &.u-modal_csv-output {
+    .b-table-wrap-left {
+      border-right: none;
+    }
+  }
+}
+
+.b-modal__body-flex-grow {
+  flex-grow: 1;
+}
+
+.b-modal__body__inner {
+  margin: 20px;
+}
+
+.b-modal__body-footer {
+  padding-top: 24px;
+  text-align: center;
+}
+
+.b-modal__footer {
+  position: relative;
+  z-index: 1;
+  height: 64px;
+  padding-top: 12px;
+  text-align: right;
+  border-top: 1px solid rgba(31, 51, 77, 0.12);
+  box-shadow: 0 -2px 4px rgba(5, 25, 51, 0.2);
+
+  button {
+    margin-right: 15px;
+  }
+}
+
+.b-modal__footer-cancel {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+
+  &.-center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.-special {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+.b-modal__footer-delete {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+.b-modal__footer-text {
+  position: absolute;
+  top: 38%;
+  left: 25%;
+  display: inline-block;
+  height: 25px;
+  margin-right: 40px;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+  vertical-align: middle;
+
+  .-f16 {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+}

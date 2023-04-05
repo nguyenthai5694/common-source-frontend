@@ -1,7 +1,7 @@
 import { throwError, NEVER, Observable } from 'rxjs'
 import { AjaxResponse } from 'rxjs/ajax';
 import { catchError, map } from 'rxjs/operators';
-import { addToast } from 'soumu/parts/toast/toast.service'
+import { addToast } from 'common/parts/toast/toast.service'
 import { rootHistory, replaceUrl } from 'app/services/route'
 import { SoumuResponse } from '.'
 import { HTTPOptions, RESPONSE_ERROR } from './http.type'

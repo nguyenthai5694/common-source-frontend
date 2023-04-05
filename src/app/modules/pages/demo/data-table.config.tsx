@@ -1,5 +1,5 @@
 
-import { ColumnsConfig, TableConfig } from 'soumu/blocks/datatable/datatable.component';
+import { ColumnsConfig, TableConfig } from 'common/blocks/datatable/datatable.component';
 import DatatableSearch from './components/datatable-search.component';
 // import { ShokangaeData } from './type/shokangae.type';
 interface DemoData {

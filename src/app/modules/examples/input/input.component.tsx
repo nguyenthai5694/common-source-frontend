@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormikContextType } from 'formik';
-import PageComponent from 'soumu/utils/page/page.component'
+import PageComponent from 'common/utils/page/page.component'
 import { NoticeType } from '../../../const/oshirase.const';
 import { ModalService } from '../../../services/modal';
 import InputTemplate from './input.template';

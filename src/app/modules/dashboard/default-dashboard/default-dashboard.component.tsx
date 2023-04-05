@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Help from 'soumu/parts/help/help.component'
-import Tag from 'soumu/parts/tag/tag.component'
+import Help from 'common/parts/help/help.component'
+import Tag from 'common/parts/tag/tag.component'
 
 export default function DefaultDashboardPage() {
   return (

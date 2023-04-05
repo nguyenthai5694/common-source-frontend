@@ -4,11 +4,11 @@ import { Form, Formik, FieldArray, FormikProps } from 'formik';
 import { withRouter, RouteComponentProps } from 'react-router-dom'
 import * as Yup from 'yup';
 import {
-  FormControl, Checkbox, Select, Input,
+  FormControl, Checkbox, CommonSelect, Input,
   Radio, Textarea, RichTextarea,
   InputTags, displayFormErrors,
-} from 'soumu/form';
-import Button from 'soumu/parts/button/button.component';
+} from 'common/form';
+import Button from 'common/parts/button/button.component';
 
 class UserForm extends Component<RouteComponentProps> {
   formRef = React.createRef<FormikProps<any>>();
@@ -171,7 +171,7 @@ class UserForm extends Component<RouteComponentProps> {
                               <label htmlFor={`users.${index}.gender`}>Gender</label>
 
                               <FormControl name={`users.${index}.gender`}>
-                                <Select options={range} multi={true} id='' />
+                                <CommonSelect options={range} multi={true} id='' />
                               </FormControl>
                             </div>
 
@@ -274,7 +274,7 @@ class UserForm extends Component<RouteComponentProps> {
 
                 <div className={clsx('form-control', { 'error': errors.customSelector })}>
                   <FormControl name='customSelector3'>
-                    <Select options={range} multi={true} id='' />
+                    <CommonSelect options={range} multi={true} id='' />
                   </FormControl>
                 </div>
 
@@ -284,7 +284,7 @@ class UserForm extends Component<RouteComponentProps> {
 
                 <div className={clsx('form-control', { 'error': errors.customSelector })}>
                   <FormControl name='customSelector4'>
-                    <Select options={range} id='' />
+                    <CommonSelect options={range} id='' />
                   </FormControl>
                 </div>
 

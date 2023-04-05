@@ -95,14 +95,10 @@
 
   &.-valid {
     color: color(--green);
-
-    &::before {}
   }
 
   &.-inValid {
     color: color(--red);
-
-    &::before {}
   }
 
   &.-attention {
@@ -185,7 +181,7 @@ $forms-line-gap-y: 8px;
   display: flex;
   align-items: center;
   padding: 12px 16px;
-  border-bottom: 1px solid color(--primary-12);
+  // border-bottom: 1px solid color(--primary-12);
 
   .u-forms.-title-inside & {
     padding-top: 2px;
@@ -611,10 +607,6 @@ $forms-line-gap-y: 8px;
       content: '';
     }
   }
-
-  &.-link {
-    &::after {}
-  }
 }
 
 .u-forms__inner-modal {
@@ -630,7 +622,6 @@ $forms-line-gap-y: 8px;
     }
 
     .p-textarea {
-
       .-sizeM &,
       .-sizeS & {
         width: 100% !important;

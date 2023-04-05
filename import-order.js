@@ -36,7 +36,7 @@ extDependencies.forEach(depName => {
 })
 
 pathGroups.push({
-  "pattern": `soumu/**`,
+  "pattern": `common/**`,
   "group": "internal",
   "position": "before"
 })

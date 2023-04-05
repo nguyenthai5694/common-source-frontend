@@ -123,8 +123,7 @@ body,
 body {
   box-sizing: border-box;
   color: color(--black);
-  font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
-    Meiryo, sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   background-color: #f2f3f5;
 }
 
@@ -165,4 +164,12 @@ textarea {
 
 ::-ms-clear {
   display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap-15 {
+  gap: 15px;
 }

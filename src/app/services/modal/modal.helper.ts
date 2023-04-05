@@ -1,5 +1,5 @@
 import { ComponentType } from 'react';
-import { PortalDialogRef } from 'soumu/blocks/modal/modal.type';
+import { PortalDialogRef } from 'common/blocks/modal/modal.type';
 import { ModalService, ExtractPortalDataFromComponent } from './';
 
 export function openPortalDialog<T = ComponentType>(

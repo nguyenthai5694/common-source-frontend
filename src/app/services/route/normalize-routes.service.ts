@@ -1,5 +1,5 @@
-import BlankLayout from 'soumu/blocks/layout/blank-layout/blank-layout.component'
-import Loading from 'soumu/parts/loading/loading.component'
+import BlankLayout from 'common/blocks/layout/blank-layout/blank-layout.component'
+import Loading from 'common/parts/loading/loading.component'
 import { Routes, NormalizedRoute } from 'app/services/route';
 import { setRoute } from './route.store'
 

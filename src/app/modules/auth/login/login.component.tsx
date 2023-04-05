@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import { FormikContextType } from 'formik';
-import PageComponent from 'soumu/utils/page/page.component'
+import PageComponent from 'common/utils/page/page.component'
 import { RECOVERY_PREV_PATH } from 'app/const/env.const';
 import Template from './login.template';
 

@@ -1,6 +1,6 @@
 import { ComponentType } from 'react';
 import { Subject } from 'rxjs';
-import { ModalProps, ModalDialogProps, PortalDialogAll, PortalDialogRef } from 'soumu/blocks/modal/modal.type';
+import { ModalProps, ModalDialogProps, PortalDialogAll, PortalDialogRef } from 'common/blocks/modal/modal.type';
 import { ExtractPropsFromComponent } from 'app/types/helper'
 
 enum ActionType {

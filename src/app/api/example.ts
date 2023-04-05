@@ -1,4 +1,4 @@
-import { DataTableQueries } from 'soumu/blocks/datatable/datatable.component'
+import { DataTableQueries } from 'common/blocks/datatable/datatable.component'
 import { ADM_MOCK_API } from 'app/const/env.const'
 import { http } from 'app/services/http'
 

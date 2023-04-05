@@ -1,8 +1,8 @@
 import React from 'react'
-// import { Table } from 'soumu/blocks/datatable/table';
-import PageWrapper from 'soumu/blocks/page-wrapper/page-wrapper.component'
-import DataTable from 'soumu/blocks/table-ui/table';
-import Loading from 'soumu/parts/loading/loading.component'
+// import { Table } from 'common/blocks/datatable/table';
+import PageWrapper from 'common/blocks/page-wrapper/page-wrapper.component'
+import DataTable from 'common/blocks/table-ui/table';
+import Loading from 'common/parts/loading/loading.component'
 import { columnsConfig, tableConfig } from './data-table.config';
 import Demo from './demo.component';
 
@@ -37,13 +37,14 @@ export default function DemoTemplate({ self }: DemoTemplate) {
     createData('Marshmallow', 318, 0, 81, 2.0),
     createData('Nougat', 360, 19.0, 9, 37.0),
     createData('Oreo', 437, 18.0, 63, 4.0),
+    createData('Oreo', 437, 18.0, 63, 4.0),
   ];
 
   return (
     <PageWrapper
       title={self.pageTitle}
       pages={self.breadcrumb}
-      className='t-input'
+      className='t-demo'
     >
       {state.isRunning && <Loading />}
 

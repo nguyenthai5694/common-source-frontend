@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { Checkbox, CustomSelect, Input, Radio, Textarea, InputTags } from 'soumu/form';
+import { Checkbox, CustomSelect, Input, Radio, Textarea, InputTags } from 'common/form';
 
 class SimpleForm extends Component<any, any> {
   constructor(props) {

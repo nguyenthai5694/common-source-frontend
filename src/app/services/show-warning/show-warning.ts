@@ -1,4 +1,4 @@
-import { addToast } from 'soumu/parts/toast/toast.service';
+import { addToast } from 'common/parts/toast/toast.service';
 
 export const handleShowWarning = (self, data: Array<any> = []): void => {
   setTimeout(() => {

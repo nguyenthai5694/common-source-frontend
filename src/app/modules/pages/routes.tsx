@@ -9,4 +9,10 @@ export const pagesRoutes: Routes = [
     exact: true,
     component: React.lazy(() => import('app/modules/pages/demo/demo.component')),
   },
+  {
+    id: 'menu-setting',
+    path: 'setting/menu',
+    exact: true,
+    component: React.lazy(() => import('app/modules/pages/settings/menu/setting-menu.component')),
+  },
 ]

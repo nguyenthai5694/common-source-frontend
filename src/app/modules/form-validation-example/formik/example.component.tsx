@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ChangePassword from 'soumu/blocks/change-password/change-password.component';
-import ExtendAttribute from 'soumu/blocks/extend-attribute-edit/extend-attribute.component';
-import FormOutputSelect, { TypeFileOutput } from 'soumu/blocks/form-output-select/form-output-select.component'
-import { Select } from 'soumu/form';
-import Button from 'soumu/parts/button/button.component';
+import ChangePassword from 'common/blocks/change-password/change-password.component';
+import ExtendAttribute from 'common/blocks/extend-attribute-edit/extend-attribute.component';
+import FormOutputSelect, { TypeFileOutput } from 'common/blocks/form-output-select/form-output-select.component'
+import { CommonSelect } from 'common/form';
+import Button from 'common/parts/button/button.component';
 import { DocumentManagementLawValues } from 'app/const/kian.const';
 import { ModalService } from 'app/services/modal';
 import { getFullPath } from 'app/services/route';
@@ -250,7 +250,7 @@ export default function Example() {
     <>
       <h2>Pulldown list virtual scroll random height</h2>
 
-      <Select
+      <CommonSelect
         options={selectVirtual.options} size='l' width={160}
         defaultValue={50} onChange={selectVirtual.onChange}
       />
@@ -259,7 +259,7 @@ export default function Example() {
 
       <h2>Pulldown list virtual scroll has filter random height</h2>
 
-      <Select
+      <CommonSelect
         options={selectVirtual.options} size='l' width={160} maxLength={20}
         defaultValue={50} onChange={selectVirtual.onChange} filter={true}
       />
@@ -268,7 +268,7 @@ export default function Example() {
 
       <h2>Pulldown list virtual scroll normal</h2>
 
-      <Select
+      <CommonSelect
         options={selectVirtual.options2} size='l' width={160}
         defaultValue={50} onChange={selectVirtual.onChange}
       />
@@ -277,7 +277,7 @@ export default function Example() {
 
       <h2>Pulldown list virtual scroll has filter</h2>
 
-      <Select
+      <CommonSelect
         options={selectVirtual.options2} size='l' width={160}
         defaultValue={50} onChange={selectVirtual.onChange} filter={true}
       />

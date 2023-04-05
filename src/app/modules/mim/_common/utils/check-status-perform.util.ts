@@ -1,4 +1,4 @@
-import { addToast } from 'soumu/parts/toast/toast.service';
+import { addToast } from 'common/parts/toast/toast.service';
 import { MIM_MESSAGE } from 'app/const/mim.const';
 
 // Used for SC013902, SC021401

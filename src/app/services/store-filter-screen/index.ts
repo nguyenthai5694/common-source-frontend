@@ -1,6 +1,6 @@
 import { navPagesTitle } from 'app/const/common.const';
-import 'soumu/utils/extension/storage-extensions.component';
-import 'soumu/utils/extension/array-extensions.component';
+import 'common/utils/extension/storage-extensions.component';
+import 'common/utils/extension/array-extensions.component';
 
 interface DataTableScroll {
   top: number;

@@ -1,1 +1,6 @@
-export { promptSbj, setPromptStatus, setBeforeLeaveMiddleware, resetBeforeLeaveMiddlewares } from 'soumu/blocks/prompt';
+export {
+  promptSbj,
+  setPromptStatus,
+  setBeforeLeaveMiddleware,
+  resetBeforeLeaveMiddlewares,
+} from 'common/blocks/prompt';

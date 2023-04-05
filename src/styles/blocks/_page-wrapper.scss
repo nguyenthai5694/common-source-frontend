@@ -17,8 +17,14 @@
 .b-page-wraper_bottom {
   display: flex;
   align-items: center;
+
 }
 
 .main-page {
   padding: 20px;
+}
+
+.b-page-wraper_bottom {
+  justify-content: space-between;
+  margin-bottom: 10px;
 }

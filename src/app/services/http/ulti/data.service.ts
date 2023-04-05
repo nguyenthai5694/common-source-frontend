@@ -1,4 +1,4 @@
-import { addToast } from 'soumu/parts/toast/toast.service';
+import { addToast } from 'common/parts/toast/toast.service';
 import { HTTPOptions, SoumuResponse } from '..';
 
 export function limitDataWarning(response: SoumuResponse<any>, options: HTTPOptions) {

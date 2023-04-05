@@ -1,7 +1,7 @@
 import { throwError } from 'rxjs'
 import { ajax, AjaxRequest, AjaxResponse } from 'rxjs/ajax';
 import { catchError, map, mergeMap } from 'rxjs/operators';
-import { addToast } from 'soumu/parts/toast/toast.service';
+import { addToast } from 'common/parts/toast/toast.service';
 import { activeCookieHeader } from 'app/const/auth.const';
 import { getActiveCookie } from 'app/services/active-cookie'
 import { HTTPOptions, SoumuResponse } from 'app/services/http'

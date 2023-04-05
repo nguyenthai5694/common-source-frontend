@@ -10,12 +10,14 @@
 @use 'blocks/logout';
 @use 'blocks/page-wrapper';
 @use 'blocks/page-title';
+@use 'blocks/nav';
 
 //table
 
 // ui �? in alphabetical order
 @use 'ui/button-text';
 @use 'ui/table';
+@use 'ui/single-calender';
 @use 'ui/footer-fixed-menu';
 @use 'ui/forms';
 @use 'ui/keyword-form';
@@ -29,6 +31,8 @@
 @use 'ui/modal-staff-search';
 @use 'ui/modal-position-search';
 @use 'ui/u-csv-section';
+@use 'blocks/modal';
+@use 'blocks/modal-dialog';
 
 
 // helper �? in alphabetical order

@@ -2,9 +2,10 @@
 
 .data-table {
   .MuiTableHead-root {
-    background-color: #0072E5;
+    background-color: #0072e5;
 
     .MuiTableCell-root {
+      color: #fff;
       border-right: 1px solid #fff;
 
       &:last-child {

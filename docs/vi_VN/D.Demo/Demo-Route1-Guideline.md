@@ -22,7 +22,7 @@ https://drive.google.com/drive/folders/1ro776MsM_cZVlsQgzZT_ijhWh-pd4lMr
 ### 4.2. Nếu sử dụng git:
 #### 4.2.1. Clone source:
 ```bash
-$ git clone https://git.vti.com.vn/p2_soumu/p2_frontend/soumu_fe.git demo-frontend-1
+$ git clone https://git.vti.com.vn/p2_common/p2_frontend/soumu_fe.git demo-frontend-1
 ```
 #### 4.2.2. Checkout nhánh demo:
 ```bash

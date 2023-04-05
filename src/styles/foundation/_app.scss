@@ -3,9 +3,10 @@ $_scroll-bar-width: 17px;
 
 .app {
   display: flex;
+  flex-direction: column;
   min-width: 1024px - $_scroll-bar-width;
   min-height: 100%;
-  flex-direction: column;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
 
 .app__main {
@@ -73,7 +74,7 @@ $_scroll-bar-width: 17px;
   top: 0;
   left: 0;
   width: 280px;
-  background-color: rgb(28, 37, 54);
-  color: #fff;
   height: 100%;
+  color: #fff;
+  background-color: rgb(28, 37, 54);
 }
