@@ -8,12 +8,12 @@ import { HTTPOptions, RESPONSE_ERROR } from './http.type'
 
 export function displayError(response) {
   if (!response) {
-    addToast({ title: text('ERROR_NETWORK_CONNECTION'), status: 'inValid' });
+    addToast({ title: text('ERROR_NETWORK_CONNECTION'), status: 'error' });
 
     return;
   }
 
-  addToast({ title: response.message || text('ERROR_UNEXPECTED'), status: 'inValid' });
+  addToast({ title: response.message || text('ERROR_UNEXPECTED'), status: 'error' });
 }
 
 export const handleError = (options: HTTPOptions) => (error: AjaxResponse) => {
@@ -177,6 +177,6 @@ export const validateCharactersRequest = (request: any, options?: HTTPOptions): 
 
 export const catchErrorWithData = (res: AjaxResponse) => {
   if (res?.response?.type === RESPONSE_ERROR && res?.response?.message) {
-    addToast({ status: 'inValid', title: res.response.message });
+    addToast({ status: 'error', title: res.response.message });
   }
 }

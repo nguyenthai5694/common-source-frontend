@@ -64,7 +64,7 @@ class HttpService {
         if (response?.message && response?.type === 'warn') {
           addToast({
             title: response.message,
-            status: 'warn',
+            status: 'warning',
           })
         }
 
@@ -100,7 +100,7 @@ class HttpService {
         if (options.isCheckMsgHeader) {
           const msgKeyError = res.xhr.getResponseHeader('X-Msg-Error') || '';
 
-          !!msgKeyError && addToast({ title: text(msgKeyError as any), status: 'warn' });
+          !!msgKeyError && addToast({ title: text(msgKeyError as any), status: 'warning' });
         }
 
         return res

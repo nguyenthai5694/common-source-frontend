@@ -1,15 +1,59 @@
 @use '../foundation/config' as *;
 
 .data-table {
-  .MuiTableHead-root {
-    background-color: #0072e5;
+  .MuiTableContainer-root {
+    position: relative;
+    overflow: hidden;
 
+    .MuiBox-root {
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+
+    .MuiTable-root {
+      width: max-content;
+      min-width: 100%;
+
+      .colunm-action {
+        position: absolute;
+        top: auto;
+        right: 0;
+        margin-top: -1px;
+        padding: 17px;
+        border-top-width: 1px;
+      }
+
+      .colunm-action-item {
+        position: absolute;
+        top: auto;
+        right: 0;
+        margin-top: -1px;
+        border-top-width: 1px;
+      }
+    }
+
+    .table-colunm-check,
+    .MuiTableCell-root.table-colunm-fixed {
+      position: absolute;
+      top: auto;
+      left: 0;
+    }
+  }
+
+
+  .MuiTableHead-root {
     .MuiTableCell-root {
       color: #fff;
-      border-right: 1px solid #fff;
+      background-color: #0072e5;
+      border-left: 1px solid #fff;
 
-      &:last-child {
-        border-right: none;
+      &:first-child {
+        border-left: none;
+
+        &.table-colunm-check {
+          border-right: 1px solid #fff;
+        }
       }
 
       .MuiTableSortLabel-root {
@@ -19,17 +63,60 @@
           color: #fff;
         }
       }
+
+      .MuiSvgIcon-root {
+        fill: #fff;
+      }
+
+      &.no-border {
+        border-left: 0;
+      }
     }
+
   }
 
   .MuiTableBody-root {
     .MuiTableCell-root {
-      border-right: 1px solid rgba(224, 224, 224, 1);
+      border-left: 1px solid rgba(224, 224, 224, 1);
 
-      &:last-child {
-        border-right: none;
+      &:first-child {
+        border-left: none;
+
+        &.table-colunm-check {
+          border-right: 1px solid rgba(224, 224, 224, 1);
+        }
+      }
+
+      &.no-border {
+        border-left: 0;
       }
     }
+
+  }
+
+  .table-checkbox {
+    label {
+      margin: 0;
+    }
+  }
+
+  .table-action {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    .table-action-item button {
+      width: 24px;
+      height: 24px;
+      padding: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.87);
+      border-radius: 100%;
+
+      svg {
+        @include fontSize(16);
+      }
+    }
+
   }
 }
 

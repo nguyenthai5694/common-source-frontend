@@ -8,11 +8,11 @@ export const checkStatusPerform = (status: number, screenName: string) => {
   switch (status) {
     case 0:
     case -1:
-      addToast({ title: MIM_MESSAGE.ERROR.CHECK_STATUS(screenName), status: 'inValid' });
+      addToast({ title: MIM_MESSAGE.ERROR.CHECK_STATUS(screenName), status: 'error' });
       isOk = false;
       break;
     case 2:
-      addToast({ title: MIM_MESSAGE.ERROR.CHECK_REGIST(screenName), status: 'inValid' });
+      addToast({ title: MIM_MESSAGE.ERROR.CHECK_REGIST(screenName), status: 'error' });
       isOk = false;
       break;
     default:

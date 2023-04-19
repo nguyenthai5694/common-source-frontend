@@ -41,13 +41,13 @@ export default function ExtendAttribute(props: PortalDialogProps<ExtendAttribute
         return false
       })
 
-      isShowInvalidCharacters && addToast({ title: error.title || error.content, status: 'inValid' })
+      isShowInvalidCharacters && addToast({ title: error.title || error.content, status: 'error' })
 
       return;
     }
 
     if (values.length && values.filter(e => !e.title).length > 0) {
-      addToast({ title: text('COMSE040'), status: 'inValid' })
+      addToast({ title: text('COMSE040'), status: 'error' })
 
       return
     }

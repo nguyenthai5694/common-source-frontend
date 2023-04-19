@@ -231,7 +231,7 @@ export class DataTable extends GenericComponent<DataTableProps, DataTableState>{
 
   handleShowWarning = (data: Array<any> = []): void => {
     !this.props.disableShowWarning &&
-      this.isClickButtonSearch && data && !data.length && addToast({ status: 'warn', title: text('DAECE220') });
+      this.isClickButtonSearch && data && !data.length && addToast({ status: 'warning', title: text('DAECE220') });
     this.isClickButtonSearch = false
   }
 

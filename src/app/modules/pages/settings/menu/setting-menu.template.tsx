@@ -38,7 +38,11 @@ export default function SettingMenuTemplate({ self }: SettingMenuTemplate) {
         dataItems={state.data}
         tableConfig={tableConfig}
         onSearch={self.onSearch}
+        onSelectItem={self.onSelectItem}
+        onActionClick={self.onActionClick}
         dataTableQueries={state.queries}
+        totalItem={state.totalItem}
+        checkType='checkbox'
       />
 
     </PageWrapper >

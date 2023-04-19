@@ -34,9 +34,6 @@ export default function TableToolbar(props: TableToolbarProps) {
           {tableConfig.headerMiddle && (
             <tableConfig.headerMiddle
               onSearch={(onSearch)}
-            // setFilter={self.setFilter}
-            // setRef={self.setRef}
-            // data={headerMiddleData}
             />
           )}
         </Typography>

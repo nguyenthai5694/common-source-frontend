@@ -6,7 +6,7 @@ export function limitDataWarning(response: SoumuResponse<any>, options: HTTPOpti
     if (options?.useMessageLimitFromBE && response?.message) {
       return addToast({
         title: response.message,
-        status: 'inValid',
+        status: 'error',
       })
     }
   }

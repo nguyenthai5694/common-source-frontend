@@ -36,7 +36,7 @@ export default function ExtendAttributeEdit({ isOpen, handleClose, handleSubmit,
     }
 
     if (values.length && values.filter(e => !e.title).length > 0) {
-      addToast({ title: '拡張属性の項目が入力されていません。', status: 'inValid' })
+      addToast({ title: '拡張属性の項目が入力されていません。', status: 'error' })
 
       return
     }

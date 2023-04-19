@@ -54,6 +54,7 @@ export default function DemoTemplate({ self }: DemoTemplate) {
         tableConfig={tableConfig}
         onSearch={self.onSearch}
         dataTableQueries={state.queries}
+        totalItem={0}
       />
 
     </PageWrapper >

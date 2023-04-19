@@ -4,7 +4,7 @@ import { removeToast, toast$ } from 'common/parts/toast/toast.service'
 import { ToastStatus } from './toast.type'
 
 function FormItemsInvalid({ totalItemsFormError, status }: { totalItemsFormError: number, status: ToastStatus }) {
-  if (totalItemsFormError < 2 || status !== 'inValid') {
+  if (totalItemsFormError < 2 || status !== 'error') {
     return null;
   }
 

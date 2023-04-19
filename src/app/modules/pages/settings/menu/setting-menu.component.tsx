@@ -11,7 +11,8 @@ import SettingMenuTemplate from './setting-menu.template';
 interface DemoState {
   isRunning: boolean,
   queries: DataTableQueries,
-  data: SettingMenuData[]
+  data: SettingMenuData[],
+  totalItem: number,
 }
 
 export default class SettingMenu extends PageComponent<DemoState> {
@@ -25,6 +26,7 @@ export default class SettingMenu extends PageComponent<DemoState> {
       },
     },
     data: [],
+    totalItem: 0,
   };
 
   formRef = React.createRef<FormikContextType<any>>();
@@ -41,6 +43,26 @@ export default class SettingMenu extends PageComponent<DemoState> {
     this.onSearch(this.state.queries)
   }
 
+  /**
+   * 
+   * @param items Event after click checkbox or radio in table
+   */
+  onSelectItem = (items) => {
+    console.log(items);
+  }
+
+  /**
+   * 
+   * @param action Event after click action in table
+   */
+  onActionClick = (action) => {
+    console.log(action);
+  }
+
+  /**
+   * 
+   * @param queries Event search of table
+   */
   onSearch = (queries: DataTableQueries) => {
     const store = window.localStorage.getItem('listmenu')
 
@@ -48,6 +70,7 @@ export default class SettingMenu extends PageComponent<DemoState> {
       ...this.state,
       data: store ? JSON.parse(store) : [],
       queries,
+      totalItem: 7,
     })
   }
 
@@ -57,11 +80,16 @@ export default class SettingMenu extends PageComponent<DemoState> {
     )
   }
 
+  /** 
+   * Event add record 
+  */
   handAddMenu = () => {
+    // Open dialog Add Menu
     const submitForm = this.modalService.openPortalDialog(AddMenuModal, {
       a: '1',
     });
 
+    // Event after close dialog Add Menu
     submitForm.afterClosed().subscribe((data) => {
       if (data) {
         let store = window.localStorage.getItem('listmenu') ? JSON.parse(window.localStorage.getItem('listmenu')) : [];

@@ -77,6 +77,8 @@ export interface CellComponentProps<DataItem = any, CustomData = any> {
    * Current data item index;
    */
   index: number;
+  clickAction?: (e?: any) => void;
+  buttons?: string;
 }
 
 export type TablePageSizes = { label: string, value: number }[];
@@ -127,7 +129,7 @@ export interface TableConfig<DataItem> {
   /**
    * TODO: support default value + rename.
    */
-  rowSizes: number[];
+  rowSizes?: number[];
 
   /**
    * The unique property name from `DataItem`. Usually you will use something like `id`.
@@ -150,6 +152,8 @@ export interface TableConfig<DataItem> {
     * Callback to custom condition to display checkbox input.
   */
   showCheckBox?: (dataItem: DataItem) => boolean;
+
+  fixedLastColunm?: boolean;
 }
 
 export interface ColumnConfig<DataItem = any> {
@@ -199,6 +203,8 @@ export interface ColumnConfig<DataItem = any> {
   width: string;
 
   disableSort?: boolean;
+
+  buttons?: string;
 }
 
 export type ColumnsConfig<DataItem = any> = ColumnConfig<DataItem>[];
