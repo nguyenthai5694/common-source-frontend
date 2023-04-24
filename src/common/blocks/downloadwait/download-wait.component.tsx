@@ -39,7 +39,7 @@ export default function DownloadWait(props: PortalDialogProps<DownloadWaitProps>
         setIsSuccess(false);
         props.portaldata.onError && props.portaldata.onError(err);
 
-        const errorMess = props.portaldata.errMessage || err?.message || text('ERROR_UNEXPECTED');
+        const errorMess = props.portaldata.errMessage || err?.message || 'ERROR_UNEXPECTED';
 
         if (!props.portaldata.shouldReturnErrorMessage) {
           setErrorMessage(errorMess);

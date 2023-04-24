@@ -8,12 +8,12 @@ import { HTTPOptions, RESPONSE_ERROR } from './http.type'
 
 export function displayError(response) {
   if (!response) {
-    addToast({ title: text('ERROR_NETWORK_CONNECTION'), status: 'error' });
+    addToast({ title: 'Erors', status: 'error' });
 
     return;
   }
 
-  addToast({ title: response.message || text('ERROR_UNEXPECTED'), status: 'error' });
+  addToast({ title: response.message || 'ERROR_UNEXPECTED', status: 'error' });
 }
 
 export const handleError = (options: HTTPOptions) => (error: AjaxResponse) => {
@@ -55,7 +55,7 @@ export const handleErrorBlob = (options: HTTPOptions) => (error: AjaxResponse) =
   if (!error?.response) {
     const errorNetwork = {
       response: {
-        message: text('ERROR_NETWORK_CONNECTION'),
+        message: 'ERROR_NETWORK_CONNECTION',
       },
     } as AjaxResponse;
 

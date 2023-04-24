@@ -1,17 +1,20 @@
-import * as React from 'react';
+import React, { useContext } from 'react';
 import { alpha } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { TableConfig } from '../datatable/datatable.type';
+import { DatatableContext } from './datatable.context';
 
 interface TableToolbarProps {
-  numSelected: number;
-  tableConfig: TableConfig<any>;
   onSearch?: (e?: any) => void;
 }
 
-export default function TableToolbar(props: TableToolbarProps) {
-  const { numSelected, tableConfig, onSearch } = props;
+export default function TableToolbar({
+  onSearch,
+}: TableToolbarProps) {
+  const {
+    tableConfig,
+    selected,
+  } = useContext(DatatableContext);
 
   return (
     <div className='table-search'>
@@ -19,7 +22,7 @@ export default function TableToolbar(props: TableToolbarProps) {
         sx={{
           pl: { sm: 2 },
           pr: { xs: 1, sm: 1 },
-          ...(numSelected > 0 && {
+          ...(selected.length > 0 && {
             bgcolor: (theme) =>
               alpha(theme.palette.primary.main, theme.palette.action.activatedOpacity),
           }),

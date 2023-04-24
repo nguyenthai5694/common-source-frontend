@@ -1,8 +1,8 @@
 import React from 'react';
 import { FormikContextType } from 'formik';
 import { DataTableQueries } from 'common/blocks/datatable/datatable.type';
-import { defaultQueries } from 'common/blocks/table-ui/table';
 import PageComponent from 'common/utils/page/page.component'
+import { defaultQueries } from 'app/const/common.const';
 import { ModalService } from 'app/services/modal';
 import AddMenuModal from './components/add-menu-modal.component';
 import { SettingMenuData } from './data-table.config';

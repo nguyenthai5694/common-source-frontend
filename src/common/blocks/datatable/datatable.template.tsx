@@ -1,13 +1,13 @@
 import React, { useEffect, useContext, useRef } from 'react'
 import clsx from 'clsx'
-import { DataTable } from './datatable.component';
+// import { DataTable } from './datatable.component';
 import { DatatableContext } from './datatable.context'
 import { HeaderLowerTemplateProps } from './datatable.type'
 import HeaderLowerTemplate from './header-lower.template';
 import { Table } from './table'
 
 interface DataTableTemplateProps {
-  self: DataTable;
+  self: any;
   totalItem: number;
   pageSize: number;
   headerMiddleData: any;

@@ -25,7 +25,7 @@ const defaultQueries: DataTableQueries = {
   filter: null,
 };
 
-export class DataTable extends GenericComponent<DataTableProps, DataTableState>{
+class DataTable extends GenericComponent<DataTableProps, DataTableState>{
   private dataTableQueries: DataTableQueries = { ...defaultQueries };
 
   private originalColumnsConfig: ColumnsConfig<any>;
@@ -231,7 +231,7 @@ export class DataTable extends GenericComponent<DataTableProps, DataTableState>{
 
   handleShowWarning = (data: Array<any> = []): void => {
     !this.props.disableShowWarning &&
-      this.isClickButtonSearch && data && !data.length && addToast({ status: 'warning', title: text('DAECE220') });
+      this.isClickButtonSearch && data && !data.length && addToast({ status: 'warning', title: '' });
     this.isClickButtonSearch = false
   }
 

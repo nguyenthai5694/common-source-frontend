@@ -13,7 +13,7 @@ export interface SettingMenuData {
 export const tableConfig: TableConfig<SettingMenuData> = {
   headerMiddle: DatatableSearch,
   idProp: 'id',
-  fixedColumnNumber: 0,
+  fixedColumnNumber: 1,
   fixedLastColunm: true,
   // rowSizes: [309, 310, 310, 310, 312],
 };

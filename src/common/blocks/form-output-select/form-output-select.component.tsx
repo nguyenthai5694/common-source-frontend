@@ -25,10 +25,10 @@ export default function FormOutputSelect(props: PortalDialogProps<FormOutputProp
     const modal = new ModalService();
 
     modal.openDialog({
-      children: <span>{text('GENCW015')}</span>,
+      children: <span></span>,
       size: 's',
-      submitLabel: text('BTN_OK'),
-      cancelLabel: text('BTN_CANCEL'),
+      submitLabel: 'BTN_OK',
+      cancelLabel: 'BTN_CANCEL',
       onCancel: modal.close,
       onSubmit: () => {
         props.portalDialogRef.close({

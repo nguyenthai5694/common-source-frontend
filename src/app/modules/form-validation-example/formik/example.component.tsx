@@ -4,16 +4,12 @@ import ExtendAttribute from 'common/blocks/extend-attribute-edit/extend-attribut
 import FormOutputSelect, { TypeFileOutput } from 'common/blocks/form-output-select/form-output-select.component'
 import { CommonSelect } from 'common/form';
 import Button from 'common/parts/button/button.component';
-import { DocumentManagementLawValues } from 'app/const/kian.const';
 import { ModalService } from 'app/services/modal';
 import { getFullPath } from 'app/services/route';
 
 export default function Example() {
   // const [currentNode, setCurrentNode] = useState();
   const [dataExtend, setDataExtend] = useState([]);
-
-  const handleDraffForm = (type) => {
-  }
 
   const handleShujuReferModal = () => {
   }
@@ -329,18 +325,6 @@ export default function Example() {
       <br />
 
       <h2>COM-SC220101 (from DAE-SC011004) (AFTER_ENFORCEMENT)</h2>
-
-      <Button label='COM-SC220101'
-        theme='primary'
-        onClick={() => handleDraffForm(DocumentManagementLawValues.AFTER_ENFORCEMENT)} />
-
-      <br />
-
-      <h2>COM-SC220101 (from DAE-SC011004) (BEFORE_ENFORCEMENT)</h2>
-
-      <Button label='COM-SC220101'
-        theme='primary'
-        onClick={() => handleDraffForm(DocumentManagementLawValues.BEFORE_ENFORCEMENT)} />
 
       <br />
 

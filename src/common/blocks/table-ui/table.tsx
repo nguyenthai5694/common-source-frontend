@@ -1,36 +1,15 @@
 import * as React from 'react';
-import { FormControlLabel, Radio, RadioGroup } from '@mui/material';
 import Box from '@mui/material/Box';
-import Checkbox from '@mui/material/Checkbox';
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TablePagination from '@mui/material/TablePagination';
-import TableRow from '@mui/material/TableRow';
-import { ColumnsConfig, DataTableQueries, TableConfig } from '../datatable/datatable.type';
-import EnhancedTableHead from './table-header';
+import { DataTableQueries } from '../datatable/datatable.type';
+import { DatatableContext } from './datatable.context';
+import DataTableBody from './table-body';
+import TableProps from './table-config';
+import DataTableHead from './table-header';
 import TableToolbar from './table-toolbar';
-
-interface TableProps {
-  columnsConfig: ColumnsConfig<any>;
-  dataItems: any[];
-  tableConfig: TableConfig<any>;
-  onSearch?: (queries: DataTableQueries) => void;
-  onSelectItem?: (items: any) => void;
-  onActionClick?: (items: any) => void;
-  dataTableQueries: DataTableQueries;
-  totalItem: number;
-  checkType?: 'checkbox' | 'radio';
-}
-
-export const defaultQueries: DataTableQueries = {
-  page: 1,
-  size: 10,
-  sort: null,
-  filter: null,
-};
 
 export default function DataTable({
   dataItems,
@@ -43,10 +22,21 @@ export default function DataTable({
   onSelectItem,
   onActionClick,
 }: TableProps) {
-  const [selected, setSelected] = React.useState([]);
-  const [paddingRightTable, setPaddingRightTable] = React.useState(0);
+  /**
+   * Table queies
+   */
   const tableQueries: DataTableQueries = { ...dataTableQueries };
 
+  /**
+ * List item selected
+ */
+  const [selected, setSelected] = React.useState([]);
+
+  /**
+   * 
+   * @param event 
+   * Event select all of type checkbox
+   */
   const handleSelectAllClick = (event) => {
     if (event.target.checked) {
       setSelected(dataItems);
@@ -57,12 +47,23 @@ export default function DataTable({
     setSelected([]);
   };
 
-  const handleClick = (event, item, index?: number) => {
+  /**
+   * 
+   * @param event 
+   * @param item 
+   * @param index 
+   * Event choose record of type checkbox or radio
+   */
+  const handleClick = (event, item: any, index?: number) => {
+    let newSelected = [];
+
     if (checkType === 'checkbox') {
+      //Get item selected
       const selectedItem = selected.find(e => item[`${tableConfig.idProp}`] === e[`${tableConfig.idProp}`])
 
-      let newSelected;
+      //Create new valiabel Selected
 
+      //Check item select with list selected and get newSelected
       if (selectedItem) {
         newSelected = selected.filter(e => item[`${tableConfig.idProp}`] !== e[`${tableConfig.idProp}`])
       } else {
@@ -72,10 +73,12 @@ export default function DataTable({
       }
 
       setSelected(newSelected);
-      onSelectItem(newSelected)
     } else {
-      onSelectItem([item])
+      newSelected = [item]
     }
+
+    //Callback function onSelectItem for Component
+    onSelectItem(newSelected)
   };
 
   /**
@@ -84,7 +87,7 @@ export default function DataTable({
   const callbackOnsearch = React.useCallback((value) => {
     tableQueries.filter = { ...value }
 
-    // call onSearch of Component
+    // call function onSearch of Component
     onSearch(tableQueries);
   }, [tableQueries, onSearch])
 
@@ -94,14 +97,13 @@ export default function DataTable({
   const handleSort = React.useCallback(
     (event, newOrderBy) => {
       const isAsc = dataTableQueries?.sort?.dataKey === newOrderBy && dataTableQueries?.sort?.type === 'asc';
-      const toggledOrder = isAsc ? 'desc' : 'asc';
 
       dataTableQueries.sort = {
         dataKey: newOrderBy,
-        type: toggledOrder,
+        type: isAsc ? 'desc' : 'asc',
       }
 
-      // call onSearch of Component
+      // call function onSearch of Component
       onSearch(dataTableQueries);
     },
     [dataTableQueries, onSearch],
@@ -131,168 +133,81 @@ export default function DataTable({
     [dataTableQueries, onSearch],
   );
 
+  /**
+   * Event first load 
+   */
   React.useEffect(() => {
-    const listTdAction = document.querySelectorAll('.colunm-action-item')
-
-    listTdAction.forEach((item: HTMLElement) => {
-      item.style.height = (item.parentElement.offsetHeight + 2) + 'px'
-    })
-
     let paddingLeft = 0;
 
-    const listTd = document.querySelectorAll('.MuiTableHead-root .table-colunm-fixed')
+    //Get list element tag th has class table-colunm-fixed
+    const listTh = document.querySelectorAll('.MuiTableHead-root .table-colunm-fixed')
 
-    listTd.forEach((item: HTMLElement, index) => {
-      item.style.height = (item.parentElement.offsetHeight) + 'px'
+    //Set position colunm fixed
+    listTh.forEach((item: HTMLElement, index) => {
       item.style.left = paddingLeft + 'px'
-      setWidthHeightBoxFixed(paddingLeft, index, index === listTd.length - 1)
       paddingLeft += item.offsetWidth
-
-      if (index === listTd.length - 1) item.style.borderRight = '1px solid #fff'
     })
 
-    setPaddingRightTable(paddingLeft - 1)
-  }, [dataItems, tableConfig.fixedColumnNumber])
+    //Get list element tag td has class table-colunm-fixed
+    const listTd = document.querySelectorAll('.MuiTableBody-root .table-colunm-fixed')
 
-  const setWidthHeightBoxFixed = (paddingLeft, index, isBorderRight) => {
-    const listTd = document.querySelectorAll('.MuiTableBody-root .table-colunm-fixed.table-colunm-' + index)
+    paddingLeft = 0
 
-    listTd.forEach((item: HTMLElement) => {
-      item.style.height = (item.parentElement.offsetHeight + 1) + 'px'
+    //Set position colunm fixed
+    listTd.forEach((item: HTMLElement, index) => {
       item.style.left = paddingLeft + 'px'
-
-      if (isBorderRight) item.style.borderRight = '1px solid rgba(224, 224, 224, 1)'
+      paddingLeft += item.offsetWidth
     })
-  }
+  }, [dataItems])
 
   return (
     <Box sx={{ width: '100%' }}>
       <Paper sx={{ width: '100%', mb: 2 }} className='data-table'>
-        <TableToolbar numSelected={selected.length} tableConfig={tableConfig} onSearch={callbackOnsearch} />
+        <DatatableContext.Provider
+          value={{
+            dataItems,
+            columnsConfig,
+            tableConfig,
+            onSearch,
+            dataTableQueries,
+            totalItem,
+            checkType,
+            selected,
+          }}
+        >
+          <TableToolbar onSearch={callbackOnsearch} />
 
-        <TableContainer
-          sx={{
-            paddingRight: columnsConfig[columnsConfig.length - 1].width,
-            paddingLeft: paddingRightTable + 'px',
-          }}>
-          <Box>
-            <Table
-              sx={{ minWidth: 750 }}
-              aria-labelledby='tableTitle'
-            >
-              <EnhancedTableHead
-                numSelected={selected.length}
-                order={dataTableQueries.sort?.type}
-                orderBy={dataTableQueries.sort?.dataKey}
-                onSelectAllClick={handleSelectAllClick}
-                onRequestSort={handleSort}
-                rowCount={dataItems.length}
-                headCells={columnsConfig}
-                checkType={checkType}
-                fixedLastColunm={tableConfig.fixedLastColunm}
-                tableConfig={tableConfig}
-              />
+          <TableContainer>
+            <Box>
+              <Table
+                sx={{ minWidth: 750 }}
+                aria-labelledby='tableTitle'
+              >
+                <DataTableHead
+                  onSelectAllClick={handleSelectAllClick}
+                  onRequestSort={handleSort}
+                />
 
-              <TableBody>
-                {dataItems
-                  ? dataItems.map((row, index) => {
-                    const isItemSelected = selected.find(e =>
-                      row[`${tableConfig.idProp}`] === e[`${tableConfig.idProp}`])
-                      ? true : false
-                    const labelId = `enhanced-table-checkbox-${index}`;
+                <DataTableBody
+                  onActionClick={onActionClick}
+                  handleClick={handleClick}
+                />
+              </Table>
+            </Box>
+          </TableContainer>
 
-                    return (
-                      <TableRow
-                        hover
-                        role='checkbox'
-                        aria-checked={isItemSelected}
-                        tabIndex={-1}
-                        key={`${row.name}-${index}`}
-                        selected={isItemSelected}
-                        className={index === 0 ? 'row-first' : ''}
-                      >
-                        {checkType === 'checkbox' &&
-                          <TableCell padding='checkbox' className='table-colunm-0 table-colunm-fixed'>
-                            <Checkbox
-                              color='primary'
-                              checked={isItemSelected}
-                              inputProps={{
-                                'aria-labelledby': labelId,
-                              }}
-                              onClick={(event) => handleClick(event, row, index)}
-                            />
-                          </TableCell>}
+          {dataItems.length > 0 && <TablePagination
+            rowsPerPageOptions={[5, 10, 25]}
+            component='div'
+            count={totalItem}
+            rowsPerPage={dataTableQueries?.size || 10}
+            page={dataTableQueries?.page - 1}
+            onPageChange={handleChangePage}
+            onRowsPerPageChange={handleChangeRowsPerPage}
 
-                        {checkType === 'radio' &&
-                          <TableCell
-                            className='table-checkbox table-colunm-0 table-colunm-fixed'
-                            padding='checkbox'
-                            align='center'
-                          >
-                            <RadioGroup
-                              aria-labelledby='demo-controlled-radio-buttons-group'
-                              name='controlled-radio-buttons-group'
-                            >
-                              <FormControlLabel value={index} control={<Radio />} label=''
-                                onClick={(event) => handleClick(event, row)} />
-                            </RadioGroup>
-                          </TableCell>}
+          />}
 
-                        {columnsConfig && columnsConfig.map((item, i) => {
-                          return (
-                            <TableCell
-                              key={`${item.dataKey}-${i}`} align={item.align}
-                              className={`${tableConfig.fixedLastColunm &&
-                                columnsConfig.length - 1 === i ?
-                                'colunm-action-item' : ''} table-colunm-${checkType ? i + 1 : i} 
-                                ${tableConfig.fixedColumnNumber > i ? 'table-colunm-fixed' : ''}`}
-                              width={item.width}
-                              sx={tableConfig.fixedColumnNumber - 1 === i ? {
-                                borderRight: '1px solid rgba(224, 224, 224, 1)',
-                              } : tableConfig.fixedColumnNumber === i ? {
-                                borderLeft: 'none !important',
-                              } : null}
-                            >
-                              {!item.component && row[item.dataKey]}
-
-                              {item.component && <item.component
-                                dataItem={row}
-                                index={index}
-                                clickAction={onActionClick}
-                                buttons={item.buttons}
-                              />}
-                            </TableCell>
-
-                          )
-                        })}
-
-                      </TableRow>
-                    );
-                  })
-                  : null}
-
-                {dataItems.length === 0 && (
-                  <TableRow
-
-                  >
-                    <TableCell colSpan={columnsConfig.length} >Không có kết quả</TableCell>
-                  </TableRow>
-                )}
-
-              </TableBody>
-            </Table>
-          </Box>
-        </TableContainer>
-
-        {dataItems.length > 0 && <TablePagination
-          rowsPerPageOptions={[5, 10, 25]}
-          component='div'
-          count={totalItem}
-          rowsPerPage={dataTableQueries?.size || 10}
-          page={dataTableQueries?.page - 1}
-          onPageChange={handleChangePage}
-          onRowsPerPageChange={handleChangeRowsPerPage}
-        />}
+        </DatatableContext.Provider>
       </Paper>
 
     </Box >

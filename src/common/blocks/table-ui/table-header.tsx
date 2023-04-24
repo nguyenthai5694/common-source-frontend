@@ -1,33 +1,26 @@
-import * as React from 'react';
+import React, { useContext } from 'react';
 import { Box, Checkbox, TableCell, TableHead, TableRow, TableSortLabel } from '@mui/material';
 import { visuallyHidden } from '@mui/utils';
-import { TableConfig } from '../datatable/datatable.type';
+import { DatatableContext } from './datatable.context';
 
 interface TableHeadProps {
-  numSelected: number;
-  onRequestSort: (e?: any, e1?: any) => void;
   onSelectAllClick: (e?: any) => void;
-  order: 'asc' | 'desc';
-  orderBy: string,
-  rowCount: number,
-  headCells: any,
-  checkType?: 'checkbox' | 'radio';
-  fixedLastColunm?: boolean;
-  tableConfig: TableConfig<any>;
+  onRequestSort: (e?: any, e1?: any) => void;
 }
 
-export default function EnhancedTableHead({
+export default function DataTableHead({
   onSelectAllClick,
-  order,
-  orderBy,
-  numSelected,
-  rowCount,
   onRequestSort,
-  headCells,
-  checkType,
-  fixedLastColunm,
-  tableConfig,
 }: TableHeadProps) {
+  const {
+    tableConfig,
+    columnsConfig,
+    checkType,
+    selected,
+    dataTableQueries,
+    dataItems,
+  } = useContext(DatatableContext);
+
   const createSortHandler = (newOrderBy) => (event) => {
     onRequestSort(event, newOrderBy);
   };
@@ -38,8 +31,8 @@ export default function EnhancedTableHead({
         {checkType === 'checkbox' && <TableCell padding='checkbox' className='table-colunm-fixed'>
           <Checkbox
             color='primary'
-            indeterminate={numSelected > 0 && numSelected < rowCount}
-            checked={rowCount > 0 && numSelected === rowCount}
+            indeterminate={selected.length > 0 && selected.length < dataItems.length}
+            checked={dataItems.length > 0 && selected.length === dataItems.length}
             onChange={onSelectAllClick}
             inputProps={{
               'aria-label': 'select all desserts',
@@ -50,31 +43,26 @@ export default function EnhancedTableHead({
         {checkType === 'radio' && <TableCell padding='checkbox' className='table-colunm-fixed'>
         </TableCell>}
 
-        {headCells.map((headCell, index) => (
+        {columnsConfig.map((headCell: any, index) => (
           <TableCell
             key={`${headCell.dataKey}-${index}`}
             align={'center'}
             padding={headCell.disablePadding ? 'none' : 'normal'}
-            sortDirection={orderBy === headCell.dataKey ? order : false}
+            sortDirection={dataTableQueries.sort?.dataKey === headCell.dataKey ? dataTableQueries.sort?.type : false}
             width={headCell.width}
-            className={`${fixedLastColunm && index === headCells.length - 1 ? 'colunm-action' : ''} 
+            className={`${tableConfig.fixedLastColunm && index === columnsConfig.length - 1 ? 'colunm-action' : ''} 
             ${tableConfig.fixedColumnNumber > index ? 'table-colunm-fixed' : ''}`}
-            sx={tableConfig.fixedColumnNumber - 1 === index ? {
-              borderRight: '1px solid #fff',
-            } : tableConfig.fixedColumnNumber === index ? {
-              borderLeft: 'none !important',
-            } : null}
           >
             {!headCell.disableSort && <TableSortLabel
-              active={orderBy === headCell.dataKey}
-              direction={orderBy === headCell.dataKey ? order : 'asc'}
+              active={dataTableQueries.sort?.dataKey === headCell.dataKey}
+              direction={dataTableQueries.sort?.dataKey === headCell.dataKey ? dataTableQueries.sort?.type : 'asc'}
               onClick={createSortHandler(headCell.dataKey)}
             >
               {headCell.label}
 
-              {orderBy === headCell.dataKey ? (
+              {dataTableQueries.sort?.dataKey === headCell.dataKey ? (
                 <Box component='span' sx={visuallyHidden}>
-                  {order === 'desc' ? 'sorted descending' : 'sorted ascending'}
+                  {dataTableQueries.sort?.type === 'desc' ? 'sorted descending' : 'sorted ascending'}
                 </Box>
               ) : null}
             </TableSortLabel>}

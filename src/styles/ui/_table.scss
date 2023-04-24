@@ -16,56 +16,116 @@
       min-width: 100%;
 
       .colunm-action {
-        position: absolute;
-        top: auto;
+        position: sticky;
+        // top: auto;
         right: 0;
+        z-index: 2;
         margin-top: -1px;
         padding: 17px;
+        background-color: color(--blue-table);
         border-top-width: 1px;
+
+        &::after {
+          position: absolute;
+          top: 0;
+          bottom: -1px;
+          left: 0;
+          width: 30px;
+          border-right: 1px solid color(--white);
+          transform: translateX(-100%);
+          transition: box-shadow 0.3s;
+          content: '';
+          pointer-events: none;
+        }
       }
 
       .colunm-action-item {
-        position: absolute;
-        top: auto;
+        position: sticky;
+        // top: auto;
         right: 0;
+        z-index: 2;
         margin-top: -1px;
+        background-color: color(--white);
         border-top-width: 1px;
+
+        &::after {
+          position: absolute;
+          top: 0;
+          bottom: -1px;
+          left: 0;
+          width: 30px;
+          border-right: 1px solid color(--border-table);
+          transform: translateX(-100%);
+          transition: box-shadow 0.3s;
+          content: '';
+          pointer-events: none;
+        }
       }
     }
 
     .table-colunm-check,
     .MuiTableCell-root.table-colunm-fixed {
-      position: absolute;
-      top: auto;
+      position: sticky;
+      // border-right: 1px solid color(--border-table);
       left: 0;
+      z-index: 2;
+      background-color: color(--white);
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: -2px;
+        bottom: -1px;
+        width: 1px;
+        border-right: 1px solid color(--border-table);
+        transform: translateX(-100%);
+        transition: box-shadow 0.3s;
+        content: '';
+        pointer-events: none;
+
+      }
+    }
+
+    .MuiTableCell-head.table-colunm-fixed {
+      background-color: color(--blue-table);
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: -2px;
+        bottom: -1px;
+        width: 1px;
+        border-right: 1px solid color(--white);
+        transform: translateX(-100%);
+        transition: box-shadow 0.3s;
+        content: '';
+        pointer-events: none;
+
+      }
     }
   }
 
 
   .MuiTableHead-root {
     .MuiTableCell-root {
-      color: #fff;
+      color: color(--white);
       background-color: #0072e5;
-      border-left: 1px solid #fff;
+      border-right: 1px solid color(--white);
 
-      &:first-child {
-        border-left: none;
-
-        &.table-colunm-check {
-          border-right: 1px solid #fff;
-        }
+      &:last-child {
+        border-right: none;
       }
 
       .MuiTableSortLabel-root {
-        color: #fff;
+        color: color(--white);
 
         .MuiTableSortLabel-icon {
-          color: #fff;
+          color: color(--white);
         }
       }
 
       .MuiSvgIcon-root {
-        fill: #fff;
+        fill: color(--white);
       }
 
       &.no-border {
@@ -77,14 +137,10 @@
 
   .MuiTableBody-root {
     .MuiTableCell-root {
-      border-left: 1px solid rgba(224, 224, 224, 1);
+      border-right: 1px solid color(--border-table);
 
-      &:first-child {
-        border-left: none;
-
-        &.table-colunm-check {
-          border-right: 1px solid rgba(224, 224, 224, 1);
-        }
+      &:last-child {
+        border-right: none;
       }
 
       &.no-border {

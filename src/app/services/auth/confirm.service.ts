@@ -4,8 +4,8 @@ import { ModalService } from 'app/services/modal';
 
 export function onConfirmBeforeLeave(callback) {
   const dialogParams = {
-    cancelLabel: text('BTN_CANCEL'),
-    submitLabel: text('BTN_DISCARD_INPUT'),
+    cancelLabel: '',
+    submitLabel: '',
   }
   const isConfirmBeforeLogout = protectedStatusSubject.getValue();
 
@@ -16,7 +16,7 @@ export function onConfirmBeforeLeave(callback) {
       ...dialogParams,
       submitTheme: 'dangerSolid',
       size: 's',
-      children: text('DAESE543'),
+      children: '',
       onCancel: () => {
         modal.close();
       },

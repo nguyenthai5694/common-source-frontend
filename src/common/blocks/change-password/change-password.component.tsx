@@ -5,7 +5,6 @@ import * as Yup from 'yup';
 import Modal from 'common/blocks/modal/modal.component';
 import { displayFormErrors, FormControl, FormWrapper, Input } from 'common/form';
 import Loading from 'common/parts/loading/loading.component';
-import { msg } from 'app/services/message';
 import { ModalService, PortalDialogProps } from 'app/services/modal';
 
 interface ChangePasswordProps {
@@ -25,12 +24,12 @@ export default function ChangePassword(props: PortalDialogProps<ChangePasswordPr
   const [loading, setLoading] = useState(false);
   const [inputValue, setInputValue] = useState(initialValues);
   const validationSchema = Yup.object().shape({
-    oldPass: Yup.string().required(msg('DAECE200', '現在のパスワード')),
-    newPass: Yup.string().required(msg('DAECE200', '新しいパスワード'))
-      .min(rules?.minNumChar, text('DAECE201', '新しいパスワード', rules?.minNumChar)),
-    confirmPass: Yup.string().required(msg('DAECE200', '新しいパスワード（再入力）'))
-      .oneOf([Yup.ref('newPass'), null], text('COMSE037'))
-      .min(rules?.minNumChar, text('DAECE201', '新しいパスワード（再入力）', rules?.minNumChar)),
+    oldPass: Yup.string().required('oldPass'),
+    newPass: Yup.string().required('newPass')
+      .min(rules?.minNumChar, 'newPass'),
+    confirmPass: Yup.string().required('newPass')
+      .oneOf([Yup.ref('newPass'), null], 'newPass')
+      .min(rules?.minNumChar, 'newPass'),
   })
 
   useEffect(() => {
@@ -47,7 +46,7 @@ export default function ChangePassword(props: PortalDialogProps<ChangePasswordPr
     const modal = new ModalService();
 
     modal.openDialog({
-      children: <span>{msg('GENCW003')}</span>,
+      children: <span>{ }</span>,
       size: 's',
       submitLabel: 'はい',
       cancelLabel: 'いいえ',

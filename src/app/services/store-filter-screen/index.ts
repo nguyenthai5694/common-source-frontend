@@ -1,4 +1,3 @@
-import { navPagesTitle } from 'app/const/common.const';
 import 'common/utils/extension/storage-extensions.component';
 import 'common/utils/extension/array-extensions.component';
 
@@ -143,20 +142,20 @@ export function updateScrollTable(tableWrapperEle: HTMLElement, data: DataTableS
 }
 
 export function getBreadcrumbStored(module): Breadcrumb | null {
-  const pathStored = getPathStored();
+  // const pathStored = getPathStored();
   let breadcrumbItem = null;
 
-  if (pathStored && navPagesTitle[module]) {
-    for (let i = 0; i < navPagesTitle[module].length; i++) {
-      if (pathStored === navPagesTitle[module][i].path) {
-        breadcrumbItem = {
-          url: navPagesTitle[module][i].path,
-          label: navPagesTitle[module][i].title,
-        }
-        break;
-      }
-    }
-  }
+  // if (pathStored && navPagesTitle[module]) {
+  //   for (let i = 0; i < navPagesTitle[module].length; i++) {
+  //     if (pathStored === navPagesTitle[module][i].path) {
+  //       breadcrumbItem = {
+  //         url: navPagesTitle[module][i].path,
+  //         label: navPagesTitle[module][i].title,
+  //       }
+  //       break;
+  //     }
+  //   }
+  // }
 
   return breadcrumbItem;
 }

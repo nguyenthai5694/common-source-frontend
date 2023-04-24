@@ -47,7 +47,7 @@ export default function ExtendAttribute(props: PortalDialogProps<ExtendAttribute
     }
 
     if (values.length && values.filter(e => !e.title).length > 0) {
-      addToast({ title: text('COMSE040'), status: 'error' })
+      addToast({ title: 'COMSE040', status: 'error' })
 
       return
     }
