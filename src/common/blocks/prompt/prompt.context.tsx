@@ -32,13 +32,13 @@ export const PromptProvider = ({ children }) => {
   const prevTitle = useRef<string>();
   /** TODO: need remove unused location from list */
   const locationList = useRef([history.location]);
-  const dialogMsg = useRef(text('DAESE543'));
+  const dialogMsg = useRef('');
 
   useEffect(() => {
     // boolean support current obs next native (deprecated)p
     promptSbj.subscribe((data: IPromptSbj | boolean) => {
       if (typeof data === 'boolean') {
-        dialogMsg.current = text('DAESE543');
+        dialogMsg.current = '';
         protectedStatusSubject.next(data);
 
         return;
@@ -47,7 +47,7 @@ export const PromptProvider = ({ children }) => {
       if (!!data.msg) {
         dialogMsg.current = data.msg;
       } else {
-        dialogMsg.current = text('DAESE543');
+        dialogMsg.current = '';
       }
 
       protectedStatusSubject.next(data.status);
@@ -93,8 +93,8 @@ export const PromptProvider = ({ children }) => {
 
   /**  NOTE: API is not consistent, custom params is not public now. */
   const dialogParams = React.useMemo(() => ({
-    cancelLabel: text('BTN_CANCEL'),
-    submitLabel: text('BTN_DISCARD_INPUT'),
+    cancelLabel: 'BTN_CANCEL',
+    submitLabel: 'BTN_CANCEL',
   }), [])
 
   const navigateWithUserConfirmed = React.useCallback(async (nextLocation: Location, action: Action) => {

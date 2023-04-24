@@ -59,7 +59,6 @@ export function Textarea({
   defaultValue,
   defaultStatus = undefined, // undefined or valid or inValid or warn
   defaultMessage,
-  invalidCharactersMessageKey = 'DAECE204',
   maxLength = 20,
   require = false,
   onFocus = () => undefined,

@@ -3,8 +3,8 @@ import React from 'react'
 export default function ProgressBar({
   className = '',
   label = 'ダウンロード',
-  defaultMessage = text('COMSE013'),
-  errorMessage = text('COMSE014'),
+  defaultMessage = '',
+  errorMessage = '',
   value = 0,
   defaultStatus = 'valid',
 }) {

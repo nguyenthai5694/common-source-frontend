@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ChangePassword from 'common/blocks/change-password/change-password.component';
-import ExtendAttribute from 'common/blocks/extend-attribute-edit/extend-attribute.component';
-import FormOutputSelect, { TypeFileOutput } from 'common/blocks/form-output-select/form-output-select.component'
 import { CommonSelect } from 'common/form';
 import Button from 'common/parts/button/button.component';
 import { ModalService } from 'app/services/modal';
@@ -9,7 +7,6 @@ import { getFullPath } from 'app/services/route';
 
 export default function Example() {
   // const [currentNode, setCurrentNode] = useState();
-  const [dataExtend, setDataExtend] = useState([]);
 
   const handleShujuReferModal = () => {
   }
@@ -38,15 +35,7 @@ export default function Example() {
   }
 
   const handleOutputForm = () => {
-    const modalService = new ModalService()
 
-    const submitForm = modalService.openPortalDialog(FormOutputSelect, {
-      typeFileOutput: [TypeFileOutput.CSV],
-    });
-
-    submitForm.afterClosed().subscribe(data => {
-      // console.log(data, 'data');
-    })
   }
   const handleChangePassword = () => {
     const modalService = new ModalService()
@@ -168,14 +157,7 @@ export default function Example() {
     // })
   }
   const handleExtendAttribute = () => {
-    const modalService = new ModalService();
-    const submitForm = modalService.openPortalDialog(ExtendAttribute, {
-      data: dataExtend,
-    })
 
-    submitForm.afterClosed().subscribe(data => {
-      setDataExtend(data);
-    })
   }
 
   const handleDownloadWait = () => {

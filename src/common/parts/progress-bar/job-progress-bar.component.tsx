@@ -61,7 +61,7 @@ export function JobProgressBar({
   errorMessage,
   fushoCode = '',
 }: ProgressBarProps) {
-  const [placeHolderMessage, setPlaceHolderMessage] = useState(errorMessage || text('COMCE011'));
+  const [placeHolderMessage, setPlaceHolderMessage] = useState(errorMessage || 'COMCE011');
   const [isValid, setIsValid] = useState(true);
 
   const [valueProgress] = useState(0);

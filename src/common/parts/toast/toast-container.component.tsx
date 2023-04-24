@@ -8,7 +8,7 @@ function FormItemsInvalid({ totalItemsFormError, status }: { totalItemsFormError
     return null;
   }
 
-  return <div>{text('GENCI1000', totalItemsFormError - 1)}</div>
+  return <div>{ }</div>
 }
 
 export default function ToastContainer() {

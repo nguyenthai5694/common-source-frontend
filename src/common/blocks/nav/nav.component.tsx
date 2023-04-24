@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react'
 import * as _ from 'lodash'
 import { Link, useHistory } from 'react-router-dom'
 import queryString from 'query-string'
-import { PageInfoSessionKeys } from 'app/const/adm.const';
 import { getCustomDataKey } from 'app/services/page-data'
 import { routerNav, setPathNavigation } from 'app/services/store-root-path'
 import { breadcrumbSubject } from '../breadcrumb/breadcrumb.component'
@@ -50,7 +49,7 @@ const updateCurrentPath = (history, setActiveNav) => {
   let locationPathArray = history.location.pathname.split('/').filter(Boolean);
   let locationPathName: string;
   const query = history.location.search;
-  const dataKey = getCustomDataKey(PageInfoSessionKeys.PARSED_QUERIES,
+  const dataKey = getCustomDataKey('',
     history.location.pathname.split('/').slice(-1)[0])
   const sessionQueries = JSON.parse(sessionStorage.getItem(dataKey))
   const values = (!_.isEmpty(queryString.parse(query)) ? queryString.parse(query) : sessionQueries) || {};

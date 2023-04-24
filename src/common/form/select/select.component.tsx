@@ -9,9 +9,7 @@ import InputLabel from '@mui/material/InputLabel/InputLabel';
 import MenuItem from '@mui/material/MenuItem/MenuItem';
 import Select, { SelectChangeEvent } from '@mui/material/Select/Select';
 import { FormControlChildProps } from 'common/form'
-import { isIE } from 'app/services/navigator'
 import { Box } from '@mui/system';
-import { requestAnimation } from 'app/modules/mim/_common/utils/request-animation.util';
 
 export type NormalSelectOptions<V = string | number> = ({ label: string | null, value: V })[];
 
@@ -124,7 +122,6 @@ export function CommonSelect({
   className,
   onChange = (e?: any) => { }, // 変更内容に親コンポーネントにemitする為の関数
   shouldShowError = true,
-  invalidCharactersMessageKey = 'DAECE204',
   customInvalidCharacters = undefined,
   maxBytes,
   statusFilter,
@@ -169,32 +166,6 @@ export function CommonSelect({
 
     target.style.width = selectBoxWrapRef.current.clientWidth + 'px';
   }, [options])
-
-  // Calculate ghosting close buttons' positions after UI is painted on DOM and screen
-  useEffect(() => {
-    setTimeout(() => {
-      requestAnimation(() => {
-        // IE: Handle ghost remove selected value in multiple
-        if (!isIE || !multi) return;
-
-        const rootSelectBox = selectBoxWrapRef.current as HTMLElement;
-        const removeSelectedEl = rootSelectBox?.querySelectorAll('.p-select__multi-remove');
-
-        if (!removeSelectedEl || !removeSelectedEl.length) return;
-
-        const rootRect = rootSelectBox.getBoundingClientRect();
-
-        removeSelectedEl.forEach((el, index) => {
-          const rect = el.getBoundingClientRect();
-          const ghost = rootSelectBox.getElementsByClassName('p-select__multi-remove__ghost' + index)[0] as HTMLElement;
-
-          ghost.style.top = rect.top - rootRect.top + 'px';
-          ghost.style.right = rootRect.right - rect.right + 'px';
-          ghost.style.opacity = '1';
-        });
-      });
-    }, 0);
-  });
 
   const [age, setAge] = React.useState('');
 
