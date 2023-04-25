@@ -1,6 +1,5 @@
 
-import { ColumnsConfig, TableConfig } from 'common/blocks/datatable/datatable.component';
-import TableAction from 'common/blocks/table-ui/table-action';
+import { ColumnsConfig, TableConfig } from 'common/blocks/datatable-ui/datatable.type';
 import DatatableSearch from './components/datatable-search.component';
 // import { ShokangaeData } from './type/shokangae.type';
 export interface SettingMenuData {
@@ -13,42 +12,42 @@ export interface SettingMenuData {
 export const tableConfig: TableConfig<SettingMenuData> = {
   headerMiddle: DatatableSearch,
   idProp: 'id',
-  fixedColumnNumber: 1,
-  fixedLastColunm: true,
-  // rowSizes: [309, 310, 310, 310, 312],
+  pinnedColumnsLeft: ['id'],
+  pinnedColumnsRight: ['actions'],
 };
 
 export const columnsConfig: ColumnsConfig<SettingMenuData> = [
   {
-    label: 'Id',
-    dataKey: 'id',
+    headerName: 'Id',
+    field: 'id',
     align: 'center',
-    width: '200',
+    width: 200,
   },
   {
-    label: 'Name',
-    dataKey: 'name',
+    headerName: 'Name',
+    field: 'name',
     align: 'left',
-    width: '1500px',
+    width: 1500,
   },
   {
-    label: 'Path',
-    dataKey: 'path',
+    headerName: 'Path',
+    field: 'path',
     align: 'left',
-    width: '200px',
+    width: 200,
   },
   {
-    label: 'Icon',
-    dataKey: 'icon',
+    headerName: 'Icon',
+    field: 'icon',
     align: 'right',
-    width: '200px',
+    width: 200,
   },
   {
-    label: 'Action',
+    headerName: 'Action',
+    field: 'actions',
     align: 'center',
-    width: '140px',
+    width: 140,
     disableSort: true,
-    component: TableAction,
+    // component: TableAction,
     buttons: 'view,edit,delete',
   },
 ];

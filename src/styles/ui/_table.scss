@@ -182,3 +182,34 @@
     justify-content: space-between;
   }
 }
+
+//Datatable-ui
+.data-table {
+
+  .MuiDataGrid-columnHeaders,
+  .MuiDataGrid-pinnedColumnHeaders {
+    background-color: color(--blue-table);
+
+    .MuiDataGrid-columnHeaderTitleContainer {
+      justify-content: center;
+    }
+
+    .MuiDataGrid-menuIcon {
+      display: none;
+    }
+
+    .css-yrdy0g-MuiDataGrid-columnHeaderRow {
+      color: color(--white);
+
+      .MuiDataGrid-columnSeparator {
+        visibility: visible;
+      }
+
+      .MuiSvgIcon-root {
+        color: color(--white);
+      }
+    }
+
+  }
+
+}
