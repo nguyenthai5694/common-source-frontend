@@ -215,9 +215,8 @@
     }
 
     .column-head-fixed {
-      position: absolute !important;
+      position: sticky !important;
       background-color: color(--blue-table);
-      border-right: 1px solid color(--white);
       z-index: 1;
 
       &.column-fixed-left {
@@ -237,5 +236,9 @@
     }
   }
 
-
+  .MuiDataGrid-columnHeaders,
+  .MuiDataGrid-columnHeadersInner {
+    position: unset !important;
+    width: 100%;
+  }
 }

@@ -1,4 +1,6 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
+import Box from '@mui/material/Box';
+import CircularProgress from '@mui/material/CircularProgress';
 
 // TODO: remove export default
 export default function Loading() {
@@ -9,6 +11,7 @@ export default function Loading() {
    * Eg: If "Loading" display inside a element having scroll, it will not
    * display as expected.
    */
+  const loadingRef = useRef()
   const loadingElmRef = useMemo(() => {
     const loadingElm = document.createElement('div')
 
@@ -16,7 +19,7 @@ export default function Loading() {
       <div class='p-loading'>
         <div class='p-loading__indicator'>
           <p class='p-loading__text' role='alert' aria-busy='true'>
-            Loading...
+            ${loadingRef.current}
           </p>
         </div>
       </div>
@@ -25,12 +28,19 @@ export default function Loading() {
     document.getElementById('root-loading').appendChild(loadingElm);
 
     return loadingElm;
-  }, []);
+  }, [loadingRef]);
 
   useEffect(
-    () => () => (document.getElementById('root-loading') as any).removeChild(loadingElmRef),
-    [loadingElmRef],
+    () => () => {
+      (document.getElementById('root-loading') as any).removeChild(loadingElmRef)
+      console.log(loadingRef);
+    },
+    [loadingElmRef, loadingRef],
   );
 
-  return <></>;
+  return <>
+    <Box sx={{ display: 'none' }} ref={loadingRef}>
+      <CircularProgress />
+    </Box>
+  </>;
 }

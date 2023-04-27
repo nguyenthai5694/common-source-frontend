@@ -40,7 +40,7 @@ export default function SettingMenuTemplate({ self }: SettingMenuTemplate) {
         onSearch={self.onSearch}
         onItemSelect={self.onSelectItem}
         // onActionClick={self.onActionClick}
-        // dataTableQueries={state.queries}
+        queries={state.queries}
         totalItem={state.totalItem}
       />
 

@@ -362,6 +362,8 @@ export interface DataTableProps {
    * Default: undefined.
    */
   uuid?: string;
+
+  queries: DataTableQueries
 }
 
 export interface LocalSearchHelper {

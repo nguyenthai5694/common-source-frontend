@@ -12,7 +12,7 @@ export interface SettingMenuData {
 export const tableConfig: TableConfig<SettingMenuData> = {
   headerMiddle: DatatableSearch,
   idProp: 'id',
-  pinnedColumnsLeft: ['id'],
+  pinnedColumnsLeft: ['id', 'name'],
   pinnedColumnsRight: ['actions'],
 };
 
@@ -27,7 +27,7 @@ export const columnsConfig: ColumnsConfig<SettingMenuData> = [
     headerName: 'Name',
     field: 'name',
     align: 'left',
-    width: 1500,
+    width: 200,
   },
   {
     headerName: 'Path',

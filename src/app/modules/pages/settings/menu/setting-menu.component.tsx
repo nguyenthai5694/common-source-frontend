@@ -17,12 +17,12 @@ interface DemoState {
 
 export default class SettingMenu extends PageComponent<DemoState> {
   state: DemoState = {
-    isRunning: false,
+    isRunning: true,
     queries: {
       ...defaultQueries,
       sort: {
         type: 'asc',
-        dataKey: 'name',
+        dataKey: 'id',
       },
     },
     data: [],
@@ -64,6 +64,8 @@ export default class SettingMenu extends PageComponent<DemoState> {
    * @param queries Event search of table
    */
   onSearch = (queries: DataTableQueries) => {
+    console.log(queries);
+
     const store = window.localStorage.getItem('listmenu')
 
     this.setState({
