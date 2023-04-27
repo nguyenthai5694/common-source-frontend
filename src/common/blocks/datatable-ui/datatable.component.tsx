@@ -54,9 +54,16 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
             <GridActionsCellItem icon={<DeleteIcon />} label='Delete' />,
           ] : [],
           type: item.field === 'actions' ? 'actions' : '',
+          headerClassName: this.getClassColumnFixed(item.field),
+
         } as GridColDef
       }),
     })
+  }
+
+  getClassColumnFixed = (field: string) => {
+    return this.props.tableConfig.pinnedColumnsLeft.includes(field) ? 'column-head-fixed column-fixed-left' : '' ||
+      this.props.tableConfig.pinnedColumnsRight.includes(field) ? 'column-head-fixed column-fixed-right' : ''
   }
 
   render() {

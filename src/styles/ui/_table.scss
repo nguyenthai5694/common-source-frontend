@@ -185,31 +185,57 @@
 
 //Datatable-ui
 .data-table {
+  .MuiDataGrid-root {
+    position: relative;
 
-  .MuiDataGrid-columnHeaders,
-  .MuiDataGrid-pinnedColumnHeaders {
-    background-color: color(--blue-table);
+    .MuiDataGrid-columnHeaders,
+    .MuiDataGrid-pinnedColumnHeaders {
+      background-color: color(--blue-table);
 
-    .MuiDataGrid-columnHeaderTitleContainer {
-      justify-content: center;
-    }
-
-    .MuiDataGrid-menuIcon {
-      display: none;
-    }
-
-    .css-yrdy0g-MuiDataGrid-columnHeaderRow {
-      color: color(--white);
-
-      .MuiDataGrid-columnSeparator {
-        visibility: visible;
+      .MuiDataGrid-columnHeaderTitleContainer {
+        justify-content: center;
       }
 
-      .MuiSvgIcon-root {
+      .MuiDataGrid-menuIcon {
+        display: none;
+      }
+
+      .css-yrdy0g-MuiDataGrid-columnHeaderRow {
         color: color(--white);
+
+        .MuiDataGrid-columnSeparator {
+          visibility: visible;
+        }
+
+        .MuiSvgIcon-root {
+          color: color(--white);
+        }
+      }
+
+    }
+
+    .column-head-fixed {
+      position: absolute !important;
+      background-color: color(--blue-table);
+      border-right: 1px solid color(--white);
+      z-index: 1;
+
+      &.column-fixed-left {
+        left: 0;
+      }
+
+      &.column-fixed-right {
+        right: 0;
       }
     }
 
+    .column-fixed {
+      position: sticky;
+      left: 0;
+      background-color: color(--white);
+      border-right: 1px solid color(--border-table);
+    }
   }
+
 
 }
