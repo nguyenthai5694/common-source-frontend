@@ -3,10 +3,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import {
-  GridActionsCellItem, GridCallbackDetails,
-  GridColDef, GridEventListener, GridPaginationModel,
-} from '@mui/x-data-grid-pro';
+import { GridActionsCellItem, GridCallbackDetails, GridColDef, GridPaginationModel } from '@mui/x-data-grid';
+import { GridEventListener } from '@mui/x-data-grid';
 import GenericComponent from 'common/utils/generic/generic.component';
 import { DatatableContext } from './datatable.context';
 import DataTableTemplate from './datatable.template';

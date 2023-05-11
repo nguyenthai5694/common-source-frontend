@@ -1,140 +1,6 @@
 @use '../foundation/config' as *;
 
 .data-table {
-  .MuiTableContainer-root {
-    position: relative;
-    overflow: hidden;
-
-    .MuiBox-root {
-      width: 100%;
-      overflow-x: auto;
-      overflow-y: hidden;
-    }
-
-    .MuiTable-root {
-      width: max-content;
-      min-width: 100%;
-
-      .colunm-action {
-        position: sticky;
-        // top: auto;
-        right: 0;
-        z-index: 2;
-        margin-top: -1px;
-        padding: 17px;
-        background-color: color(--blue-table);
-        border-top-width: 1px;
-
-        &::after {
-          position: absolute;
-          top: 0;
-          bottom: -1px;
-          left: 0;
-          width: 30px;
-          border-right: 1px solid color(--white);
-          transform: translateX(-100%);
-          transition: box-shadow 0.3s;
-          content: '';
-          pointer-events: none;
-        }
-      }
-
-      .colunm-action-item {
-        position: sticky;
-        // top: auto;
-        right: 0;
-        z-index: 2;
-        margin-top: -1px;
-        background-color: color(--white);
-        border-top-width: 1px;
-
-        &::after {
-          position: absolute;
-          top: 0;
-          bottom: -1px;
-          left: 0;
-          width: 30px;
-          border-right: 1px solid color(--border-table);
-          transform: translateX(-100%);
-          transition: box-shadow 0.3s;
-          content: '';
-          pointer-events: none;
-        }
-      }
-    }
-
-    .table-colunm-check,
-    .MuiTableCell-root.table-colunm-fixed {
-      position: sticky;
-      // border-right: 1px solid color(--border-table);
-      left: 0;
-      z-index: 2;
-      background-color: color(--white);
-
-      &::after {
-        position: absolute;
-        top: 0;
-        right: -2px;
-        bottom: -1px;
-        width: 1px;
-        border-right: 1px solid color(--border-table);
-        transform: translateX(-100%);
-        transition: box-shadow 0.3s;
-        content: '';
-        pointer-events: none;
-
-      }
-    }
-
-    .MuiTableCell-head.table-colunm-fixed {
-      background-color: color(--blue-table);
-
-      &::after {
-        position: absolute;
-        top: 0;
-        right: -2px;
-        bottom: -1px;
-        width: 1px;
-        border-right: 1px solid color(--white);
-        transform: translateX(-100%);
-        transition: box-shadow 0.3s;
-        content: '';
-        pointer-events: none;
-
-      }
-    }
-  }
-
-
-  .MuiTableHead-root {
-    .MuiTableCell-root {
-      color: color(--white);
-      background-color: #0072e5;
-      border-right: 1px solid color(--white);
-
-      &:last-child {
-        border-right: none;
-      }
-
-      .MuiTableSortLabel-root {
-        color: color(--white);
-
-        .MuiTableSortLabel-icon {
-          color: color(--white);
-        }
-      }
-
-      .MuiSvgIcon-root {
-        fill: color(--white);
-      }
-
-      &.no-border {
-        border-left: 0;
-      }
-    }
-
-  }
-
   .MuiTableBody-root {
     .MuiTableCell-root {
       border-right: 1px solid color(--border-table);
@@ -150,30 +16,6 @@
 
   }
 
-  .table-checkbox {
-    label {
-      margin: 0;
-    }
-  }
-
-  .table-action {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-
-    .table-action-item button {
-      width: 24px;
-      height: 24px;
-      padding: 5px;
-      border: 1px solid rgba(0, 0, 0, 0.87);
-      border-radius: 100%;
-
-      svg {
-        @include fontSize(16);
-      }
-    }
-
-  }
 }
 
 .table-search {
@@ -214,31 +56,7 @@
 
     }
 
-    .column-head-fixed {
-      position: sticky !important;
-      background-color: color(--blue-table);
-      z-index: 1;
-
-      &.column-fixed-left {
-        left: 0;
-      }
-
-      &.column-fixed-right {
-        right: 0;
-      }
-    }
-
-    .column-fixed {
-      position: sticky;
-      left: 0;
-      background-color: color(--white);
-      border-right: 1px solid color(--border-table);
-    }
   }
 
-  .MuiDataGrid-columnHeaders,
-  .MuiDataGrid-columnHeadersInner {
-    position: unset !important;
-    width: 100%;
-  }
+
 }
