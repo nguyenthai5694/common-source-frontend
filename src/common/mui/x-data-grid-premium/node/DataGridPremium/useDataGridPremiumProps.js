@@ -9,8 +9,8 @@ var _objectWithoutPropertiesLoose2 = _interopRequireDefault(require("@babel/runt
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
 var React = _interopRequireWildcard(require("react"));
 var _styles = require("@mui/material/styles");
-var _xDataGridPro = require("@mui/x-data-grid-pro");
-var _internals = require("@mui/x-data-grid-pro/internals");
+var _xDataGridPro = require("common/mui/x-data-grid-pro");
+var _internals = require("common/mui/x-data-grid-pro/internals");
 var _aggregation = require("../hooks/features/aggregation");
 var _dataGridPremiumDefaultSlotsComponents = require("../constants/dataGridPremiumDefaultSlotsComponents");
 const _excluded = ["components", "componentsProps"];
@@ -32,9 +32,9 @@ exports.DATA_GRID_PREMIUM_PROPS_DEFAULT_VALUES = DATA_GRID_PREMIUM_PROPS_DEFAULT
 const defaultSlots = (0, _internals.uncapitalizeObjectKeys)(_dataGridPremiumDefaultSlotsComponents.DATA_GRID_PREMIUM_DEFAULT_SLOTS_COMPONENTS);
 const useDataGridPremiumProps = inProps => {
   const _useThemeProps = (0, _styles.useThemeProps)({
-      props: inProps,
-      name: 'MuiDataGrid'
-    }),
+    props: inProps,
+    name: 'MuiDataGrid'
+  }),
     {
       components,
       componentsProps

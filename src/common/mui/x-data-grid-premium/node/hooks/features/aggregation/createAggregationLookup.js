@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.createAggregationLookup = void 0;
-var _xDataGridPro = require("@mui/x-data-grid-pro");
+var _xDataGridPro = require("common/mui/x-data-grid-pro");
 var _gridAggregationUtils = require("./gridAggregationUtils");
 var _gridAggregationSelectors = require("./gridAggregationSelectors");
 const getAggregationCellValue = ({

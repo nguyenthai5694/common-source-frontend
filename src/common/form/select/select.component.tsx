@@ -81,7 +81,7 @@ export interface SelectProps extends FormControlChildProps {
   maxLength?: number;
 
   // Default false
-  hasBlankOption?: boolean;
+  isBlank?: boolean;
 
   // Default { label: '', value: '' }
   blankOption?: { label: string | null, value: string | number }
@@ -92,6 +92,8 @@ export interface SelectProps extends FormControlChildProps {
   shouldShowInValid?: boolean
 
   isLoading?: boolean;
+
+  label?: string;
 }
 
 export function CommonSelect({
@@ -128,11 +130,12 @@ export function CommonSelect({
   defaultStatusFilter,
   defaultMessageFilter = '',
   maxLength = 1000,
-  hasBlankOption = false,
+  isBlank = false,
   blankOption = { label: '', value: '' },
   onClick,
   shouldShowInValid = false,
   isLoading = false,
+  label = '',
 }: SelectProps) {
   const selectBoxRef = useRef(null)
   const selectBoxWrapRef = useRef(null)
@@ -175,23 +178,28 @@ export function CommonSelect({
   };
 
   return (
-    <Box component={'div'} sx={{ minWidth: 120 }}>
+    <Box component={'div'} sx={{ minWidth: 120 }} className='p-select'>
       <FormControl fullWidth size='small'>
-        <InputLabel id='demo-simple-select-label'>Age</InputLabel>
+        <InputLabel id='demo-simple-select-label'>{label}</InputLabel>
 
         <Select
           labelId='demo-simple-select-label'
           id='demo-simple-select'
           value={age}
-          label='Age'
+          label={label}
           onChange={handleChange}
           name={name}
         >
-          <MenuItem value={10}>Ten</MenuItem>
+          {isBlank && !blankOption && <MenuItem key={'blank'} sx={{ height: '36px' }} >&nbsp;</MenuItem>}
 
-          <MenuItem value={20}>Twenty</MenuItem>
+          {isBlank && blankOption &&
+            <MenuItem sx={{ height: '36px' }} key={'blank'} value={blankOption.value}>{blankOption.label}</MenuItem>
+          }
 
-          <MenuItem value={30}>Thirty</MenuItem>
+          {options && options.map((item) => {
+            return (<MenuItem key={item.value} value={item.value}>{item.label}</MenuItem>)
+          })}
+
         </Select>
       </FormControl>
     </Box>

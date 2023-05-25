@@ -78,8 +78,15 @@ export interface CellComponentProps<DataItem = any, CustomData = any> {
    * Current data item index;
    */
   index: number;
-  clickAction?: (e?: any) => void;
+
   buttons?: string;
+
+  /**
+  * Event click colunm Action
+  * @param e 
+  * @returns 
+  */
+  onActionClick?: (e?: any) => void;
 }
 
 export type TablePageSizes = { label: string, value: number }[];
@@ -364,6 +371,8 @@ export interface DataTableProps {
   uuid?: string;
 
   queries: DataTableQueries
+
+  onActionClick?: (e?: any) => void;
 }
 
 export interface LocalSearchHelper {
@@ -382,6 +391,8 @@ export interface DataTableState {
   settingData: string;
   columns: GridColDef[];
   rows: GridRowsProp;
+  initialState: any,
+  pinnedColumns: any,
 }
 
 export interface HeaderLowerTemplateProps {

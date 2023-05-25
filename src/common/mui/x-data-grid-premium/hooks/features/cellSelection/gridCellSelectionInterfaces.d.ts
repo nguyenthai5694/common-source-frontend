@@ -1,4 +1,4 @@
-import { GridCellCoordinates, GridColDef, GridRowId } from '@mui/x-data-grid-pro';
+import { GridCellCoordinates, GridColDef, GridRowId } from 'common/mui/x-data-grid-pro';
 
 export type GridCellSelectionModel = Record<GridRowId, Record<GridColDef['field'], boolean>>;
 /**

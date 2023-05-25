@@ -1,7 +1,7 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
 import * as React from 'react';
-import { useGridApiEventHandler, useGridApiMethod, gridColumnLookupSelector } from '@mui/x-data-grid-pro';
-import { useGridRegisterPipeProcessor } from '@mui/x-data-grid-pro/internals';
+import { useGridApiEventHandler, useGridApiMethod, gridColumnLookupSelector } from 'common/mui/x-data-grid-pro';
+import { useGridRegisterPipeProcessor } from 'common/mui/x-data-grid-pro/internals';
 import { gridRowGroupingModelSelector, gridRowGroupingSanitizedModelSelector } from './gridRowGroupingSelector';
 import { getRowGroupingFieldFromGroupingCriteria, ROW_GROUPING_STRATEGY, isGroupingColumn, mergeStateWithRowGroupingModel, setStrategyAvailability, getGroupingRules, areGroupingRulesEqual } from './gridRowGroupingUtils';
 export const rowGroupingStateInitializer = (state, props, apiRef) => {
@@ -89,14 +89,14 @@ export const useGridRowGrouping = (apiRef, props) => {
   const stateExportPreProcessing = React.useCallback((prevState, context) => {
     const rowGroupingModelToExport = gridRowGroupingModelSelector(apiRef);
     const shouldExportRowGroupingModel =
-    // Always export if the `exportOnlyDirtyModels` property is not activated
-    !context.exportOnlyDirtyModels ||
-    // Always export if the model is controlled
-    props.rowGroupingModel != null ||
-    // Always export if the model has been initialized
-    props.initialState?.rowGrouping?.model != null ||
-    // Export if the model is not empty
-    Object.keys(rowGroupingModelToExport).length > 0;
+      // Always export if the `exportOnlyDirtyModels` property is not activated
+      !context.exportOnlyDirtyModels ||
+      // Always export if the model is controlled
+      props.rowGroupingModel != null ||
+      // Always export if the model has been initialized
+      props.initialState?.rowGrouping?.model != null ||
+      // Export if the model is not empty
+      Object.keys(rowGroupingModelToExport).length > 0;
     if (!shouldExportRowGroupingModel) {
       return prevState;
     }

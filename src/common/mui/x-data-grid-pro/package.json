@@ -1,9 +1,9 @@
 {
-  "_from": "@mui/x-data-grid-pro",
-  "_id": "@mui/x-data-grid-pro@6.2.1",
+  "_from": "common/mui/x-data-grid-pro",
+  "_id": "common/mui/x-data-grid-pro@6.2.1",
   "_inBundle": false,
   "_integrity": "sha512-a5TrxnKctvOr1tyrAwlcVreQlXMBq6J4cCozHvSc4cQpVfJ7Trtc/T818Ok6dEKCL4j8AXzsgWrMhY2rRjIh1Q==",
-  "_location": "/@mui/x-data-grid-pro",
+  "_location": "/common/mui/x-data-grid-pro",
   "_phantomChildren": {
     "@babel/runtime": "7.21.0",
     "@mui/utils": "5.11.13"
@@ -11,8 +11,8 @@
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "@mui/x-data-grid-pro",
-    "name": "@mui/x-data-grid-pro",
+    "raw": "common/mui/x-data-grid-pro",
+    "name": "common/mui/x-data-grid-pro",
     "escapedName": "@mui%2fx-data-grid-pro",
     "scope": "@mui",
     "rawSpec": "",
@@ -23,9 +23,9 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@mui/x-data-grid-pro/-/x-data-grid-pro-6.2.1.tgz",
+  "_resolved": "https://registry.npmjs.org/common/mui/x-data-grid-pro/-/x-data-grid-pro-6.2.1.tgz",
   "_shasum": "58604d6ca6e5f6aaac81fc5a2b43a54be1307595",
-  "_spec": "@mui/x-data-grid-pro",
+  "_spec": "common/mui/x-data-grid-pro",
   "_where": "D:\\work\\Thaco\\git\\common-source-frontend",
   "author": {
     "name": "MUI Team"
@@ -38,7 +38,7 @@
     "@babel/runtime": "^7.21.0",
     "@mui/utils": "^5.11.13",
     "@mui/x-data-grid": "6.2.1",
-    "@mui/x-license-pro": "6.0.4",
+    "common/mui/x-license-pro": "6.0.4",
     "@types/format-util": "^1.0.2",
     "clsx": "^1.2.1",
     "prop-types": "^15.8.1",
@@ -65,7 +65,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "main": "./node/index.js",
   "module": "./index.js",
-  "name": "@mui/x-data-grid-pro",
+  "name": "common/mui/x-data-grid-pro",
   "peerDependencies": {
     "@mui/material": "^5.4.1",
     "@mui/system": "^5.4.1",

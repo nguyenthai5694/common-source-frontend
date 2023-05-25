@@ -1,6 +1,6 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
 import * as React from 'react';
-import { gridColumnVisibilityModelSelector } from '@mui/x-data-grid-pro';
+import { gridColumnVisibilityModelSelector } from 'common/mui/x-data-grid-pro';
 const updateColumnVisibilityModel = (columnVisibilityModel, rowGroupingModel, prevRowGroupingModel) => {
   const newColumnVisibilityModel = _extends({}, columnVisibilityModel);
   rowGroupingModel == null ? void 0 : rowGroupingModel.forEach(field => {

@@ -3,7 +3,7 @@ import {
     GridExportExtension as GridExportExtensionCommunity,
     GridToolbarExportProps as GridToolbarExportPropsCommunity,
     GridExportDisplayOptions,
-} from '@mui/x-data-grid-pro';
+} from 'common/mui/x-data-grid-pro';
 import type * as Excel from 'exceljs';
 
 export type GridExportFormat = GridExportFormatCommunity | 'excel';

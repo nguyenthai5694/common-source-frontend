@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.setStrategyAvailability = exports.mergeStateWithRowGroupingModel = exports.isGroupingColumn = exports.getRowGroupingFieldFromGroupingCriteria = exports.getRowGroupingCriteriaFromGroupingField = exports.getGroupingRules = exports.getColDefOverrides = exports.getCellGroupingCriteria = exports.filterRowTreeFromGroupingColumns = exports.areGroupingRulesEqual = exports.ROW_GROUPING_STRATEGY = exports.GRID_ROW_GROUPING_SINGLE_GROUPING_FIELD = void 0;
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
-var _internals = require("@mui/x-data-grid-pro/internals");
+var _internals = require("common/mui/x-data-grid-pro/internals");
 var _gridRowGroupingSelector = require("./gridRowGroupingSelector");
 const GRID_ROW_GROUPING_SINGLE_GROUPING_FIELD = '__row_group_by_columns_group__';
 exports.GRID_ROW_GROUPING_SINGLE_GROUPING_FIELD = GRID_ROW_GROUPING_SINGLE_GROUPING_FIELD;

@@ -1,5 +1,5 @@
 import { GridStateColDef, GridColumnGroupLookup } from '@mui/x-data-grid/internals';
-import { GridRowId, GridColDef } from '@mui/x-data-grid-pro';
+import { GridRowId, GridColDef } from 'common/mui/x-data-grid-pro';
 import type * as Excel from 'exceljs';
 import { GridPrivateApiPremium } from '../../../../models/gridApiPremium';
 import { GridExceljsProcessInput, ColumnsStylesInterface, GridExcelExportOptions } from '../gridExcelExportInterface';

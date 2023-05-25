@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { GridColumnMenuItemProps } from '@mui/x-data-grid-pro';
+import { GridColumnMenuItemProps } from 'common/mui/x-data-grid-pro';
 
 declare function GridColumnMenuRowGroupItem(props: GridColumnMenuItemProps): JSX.Element | null;
 // eslint-disable-next-line no-redeclare

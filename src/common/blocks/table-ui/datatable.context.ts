@@ -36,6 +36,13 @@ interface DatatableContextProps {
 
   selected: any[];
 
+  /**
+   * Event click colunm Action
+   * @param e 
+   * @returns 
+   */
+  onActionClick?: (e?: any) => void;
+
 }
 
 export const DatatableContext = createContext<DatatableContextProps>(null);

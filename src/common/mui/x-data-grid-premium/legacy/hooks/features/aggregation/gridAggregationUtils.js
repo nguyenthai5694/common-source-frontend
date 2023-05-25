@@ -1,8 +1,8 @@
 import _slicedToArray from "@babel/runtime/helpers/esm/slicedToArray";
 import _extends from "@babel/runtime/helpers/esm/extends";
 import { unstable_capitalize as capitalize } from '@mui/utils';
-import { GRID_ROOT_GROUP_ID } from '@mui/x-data-grid-pro';
-import { addPinnedRow, isDeepEqual, insertNodeInTree, removeNodeFromTree } from '@mui/x-data-grid-pro/internals';
+import { GRID_ROOT_GROUP_ID } from 'common/mui/x-data-grid-pro';
+import { addPinnedRow, isDeepEqual, insertNodeInTree, removeNodeFromTree } from 'common/mui/x-data-grid-pro/internals';
 export var GRID_AGGREGATION_ROOT_FOOTER_ROW_ID = 'auto-generated-group-footer-root';
 export var getAggregationFooterRowIdFromGroupId = function getAggregationFooterRowIdFromGroupId(groupId) {
   if (groupId == null) {

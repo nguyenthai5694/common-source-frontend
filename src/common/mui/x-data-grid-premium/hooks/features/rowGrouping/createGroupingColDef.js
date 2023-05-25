@@ -1,5 +1,5 @@
-import { GRID_STRING_COL_DEF } from '@mui/x-data-grid-pro';
-import { isSingleSelectColDef } from '@mui/x-data-grid-pro/internals';
+import { GRID_STRING_COL_DEF } from 'common/mui/x-data-grid-pro';
+import { isSingleSelectColDef } from 'common/mui/x-data-grid-pro/internals';
 import { jsx as _jsx } from 'react/jsx-runtime';
 import _extends from '@babel/runtime/helpers/esm/extends';
 import _objectWithoutPropertiesLoose from '@babel/runtime/helpers/esm/objectWithoutPropertiesLoose';

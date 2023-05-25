@@ -1,4 +1,4 @@
-import { GridRowId, GridRowModel, GridValidRowModel, GridGroupNode, GridColDef } from '@mui/x-data-grid-pro';
+import { GridRowId, GridRowModel, GridValidRowModel, GridGroupNode, GridColDef } from 'common/mui/x-data-grid-pro';
 /**
  * Parameters passed to `colDef.groupingValueGetter`.
  */

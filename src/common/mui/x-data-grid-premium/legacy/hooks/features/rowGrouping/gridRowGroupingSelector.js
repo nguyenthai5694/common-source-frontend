@@ -1,5 +1,5 @@
-import { gridColumnLookupSelector } from '@mui/x-data-grid-pro';
-import { createSelector } from '@mui/x-data-grid-pro/internals';
+import { gridColumnLookupSelector } from 'common/mui/x-data-grid-pro';
+import { createSelector } from 'common/mui/x-data-grid-pro/internals';
 var gridRowGroupingStateSelector = function gridRowGroupingStateSelector(state) {
   return state.rowGrouping;
 };

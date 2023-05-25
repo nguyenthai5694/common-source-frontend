@@ -1,25 +1,13 @@
-import React, { useState, useCallback } from 'react'
-import clsx from 'clsx';
-import { FormControlChildProps, ControlStaticType } from 'common/form'
+import React, { useState, useCallback, useEffect } from 'react'
+import { Checkbox, FormControlLabel } from '@mui/material';
+import { FormControlChildProps, ControlStaticType, SelectOptions } from 'common/form'
 
 export interface CheckboxProps extends FormControlChildProps {
+  options: SelectOptions;
+
   label?: string;
 
   value?: string;
-
-  /**
-   * If this value is provided, 'checked' state will be controlled by its parent.
-   * 
-   * Default: undefined
-   */
-  checked?: boolean;
-
-  /**
-   * This property allow client to set initial checked state.
-   * 
-   * Default: false
-   */
-  defaultChecked?: boolean;
 
   className?: string;
 
@@ -28,66 +16,78 @@ export interface CheckboxProps extends FormControlChildProps {
   onBlur?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export function Checkbox({
+export function CommonCheckbox({
+  formik,
+  options = [],
   label,
   name,
-  value,
-  checked,
-  defaultChecked = false,
   disabled = false,
   className = '',
   onChange,
   onBlur,
-  fmOnChange,
-  fmOnBlur,
-  status,
 }: CheckboxProps) {
-  const [innerChecked, setCheckedState] = useState(defaultChecked);
+  const [values, setValues] = useState([])
+
+  useEffect(() => {
+    return () => {
+      formik && setValues(formik.values[`${name}`])
+    }
+  }, [formik, name])
 
   const handleChange = useCallback(
     (e) => {
-      onChange && onChange(e);
+      let newValue = values
+      const currentValue = e.target.value
+      const currentChecked = e.target.checked
 
-      fmOnChange && fmOnChange(e);
+      if (currentChecked && !values.includes(currentValue)) {
+        newValue.push(currentValue)
+      } else if (!currentChecked && values.includes(currentValue)) {
+        newValue = newValue.filter(item => item !== currentValue)
+      }
 
-      setCheckedState(e.target.checked);
+      formik && formik.setFieldValue(name, newValue)
+
+      setValues(newValue)
+
+      // onChange && onChange(e);
+
+      // fmOnChange && fmOnChange(e);
+
+      // setCheckedState(e.target.checked);
     },
-    [onChange, fmOnChange],
+    [formik, name, values],
   );
 
-  const handleBlur = useCallback(
-    (e) => {
-      onBlur && onBlur(e);
+  // const handleBlur = useCallback(
+  //   (e) => {
+  //     onBlur && onBlur(e);
 
-      fmOnBlur && fmOnBlur(e);
-    },
-    [onBlur, fmOnBlur],
-  );
-
-  const isChecked = checked !== undefined ? checked : innerChecked;
+  //     fmOnBlur && fmOnBlur(e);
+  //   },
+  //   [onBlur, fmOnBlur],
+  // );
 
   return (
-    <label className={`p-checkbox ${className}`}>
-      <input
-        value={value}
-        name={name}
-        className='p-checkbox__input'
-        type='checkbox'
-        disabled={disabled}
-        checked={isChecked}
-        onChange={handleChange}
-        onBlur={handleBlur}
-      />
+    <>
+      <label style={{ marginRight: 15 }}>{label}:</label>
 
-      <span className={clsx('p-checkbox__selectable-input', {
-        '-inValid': status === 'inValid',
-      })} />
+      {options && options.map((item) => {
+        const isCheck = values.includes(item.value)
 
-      {label && (
-        <span className='h-ml-8'>{label}</span>
-      )}
-    </label>
+        return (<FormControlLabel key={item.value} control={
+          <Checkbox
+            checked={isCheck}
+            value={item.value}
+            onChange={handleChange}
+            name={name}
+          />
+        }
+          label={item.label} />)
+      })}
+
+    </>
   )
 }
 
-Checkbox.staticType = ControlStaticType.CHECKBOX;
+CommonCheckbox.staticType = ControlStaticType.CHECKBOX;

@@ -1,4 +1,4 @@
-import { GridInitialState as GridInitialStatePro, GridState as GridStatePro } from '@mui/x-data-grid-pro';
+import { GridInitialState as GridInitialStatePro, GridState as GridStatePro } from 'common/mui/x-data-grid-pro';
 import type {
     GridRowGroupingState, GridRowGroupingInitialState,
     GridAggregationState, GridAggregationInitialState, GridCellSelectionModel,

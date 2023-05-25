@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { GridColDef, GridRowId } from '@mui/x-data-grid-pro';
-import { GridColumnRawLookup, GridHydrateRowsValue } from '@mui/x-data-grid-pro/internals';
+import { GridColDef, GridRowId } from 'common/mui/x-data-grid-pro';
+import { GridColumnRawLookup, GridHydrateRowsValue } from 'common/mui/x-data-grid-pro/internals';
 import { DataGridPremiumProcessedProps } from '../../../models/dataGridPremiumProps';
 import { GridApiPremium, GridPrivateApiPremium } from '../../../models/gridApiPremium';
 import { GridStatePremium } from '../../../models/gridStatePremium';

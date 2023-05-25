@@ -161,6 +161,8 @@ export interface InputProps extends FormControlChildProps {
    * isSearch: true | false
    */
   isSearch?: boolean;
+
+  helperText?: string;
 }
 
 const InputSize = {
@@ -178,13 +180,10 @@ export function Input({
   fieldName = '',
   defaultValue,
   size = 's',
-  width = 520,
+  width = undefined,
   defaultStatus = undefined, // undefined or valid or inValid or warn
-  defaultMessage = '',
   maxLength = 1000,
   maxWords = undefined,
-  maxBytes,
-  require = false,
   onFocus = () => undefined,
   onKeyDown = () => undefined,
   onClick = () => undefined,
@@ -192,7 +191,6 @@ export function Input({
   onBlur,
   fmOnChange,
   fmOnBlur,
-  onError,
   isCalendar = false,
   isCalendarOpen = false,
   readonly = false,
@@ -203,17 +201,15 @@ export function Input({
   disableAutoComplete = false,
   allowOnlyNumbersAndSpace = false,
   allowOnlyNumber = false,
-  note = '',
-  linkInput = false, // URL挿入�?かど�?�?
   autoTrim = true,
   customInvalidCharacters = undefined,
   shouldShowError = true,
   showRemainChar = false,
   inputRef,
-  allowValidateSpace = false,
   label = '',
   variant = 'outlined',
   isSearch = false,
+  helperText = '',
 }: InputProps) {
   const [txValue, setTxValue] = useState(value || defaultValue)
   const [_status, changeStatus] = useState(status || defaultStatus)
@@ -226,6 +222,8 @@ export function Input({
       formik.touched = _.set(formik.touched, name, false);
     }
 
+    formik.setFieldTouched(name, true)
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -237,34 +235,15 @@ export function Input({
     setTxValue(value || '');
   }, [value])
 
-  // const [message, changeMessage] = useState(defaultMessage)
-
-  useEffect(() => {
-    // changeMessage(defaultMessage)
-  }, [defaultMessage])
-
   useEffect(() => {
     if (disabled) {
       setInputChangeStatus(false)
     }
   }, [disabled])
 
-  /**
-   * TODO: validate must support formik.
-   */
-  const validate = useCallback(
-    (value) => {
-      // if status is control by parent, use it.
-
-    },
-    [],
-  )
-
   const handleChange = useCallback(
     (e) => {
       onChange && onChange(e);
-
-      shouldValidate && validate(e.currentTarget.value);
 
       clearTimeout(inputTimeout.current);
 
@@ -280,7 +259,7 @@ export function Input({
         setInputChangeStatus(true)
       }
     },
-    [onChange, shouldValidate, validate, formik, fmOnChange, name],
+    [onChange, formik, fmOnChange, name],
   );
 
   const handleBlur = useCallback(
@@ -289,8 +268,6 @@ export function Input({
         e.target.value = e.target.value.slice(0, maxLength);
         e.currentTarget.value = e.currentTarget.value.slice(0, maxLength);
       }
-
-      validate && validate(e.currentTarget.value);
 
       onBlur && onBlur(e);
 
@@ -313,7 +290,7 @@ export function Input({
         setInputChangeStatus(true)
       }
     },
-    [onBlur, formik, fmOnBlur, validate, autoTrim, fmOnChange, maxLength, name, txValue],
+    [onBlur, formik, fmOnBlur, autoTrim, fmOnChange, maxLength, name, txValue],
   );
 
   // die hard with IME mode.
@@ -326,26 +303,6 @@ export function Input({
     }
   }, [onClick, formik, maxLength, name, txValue]);
 
-  // [backspace, left arrow, up arrow, right arrow, down arrow, delete]
-  /* const allowedKeyCodes = [8, 37, 38, 39, 40, 46];
-  // [a, c, v, x, z]
-  const allowedKeyCodesCtrl = [65, 67, 86, 88, 90];
-  const handleKeyDown = useCallback(
-    (e) => {
-      const isAllowed = allowedKeyCodes.includes(e.keyCode)
-      const isShortcut = e.ctrlKey && allowedKeyCodesCtrl.includes(e.keyCode)
-
-      preventAddTextRef.current = false;
-
-      if (!isAllowed && !isShortcut && txValue && maxLength && txValue.length >= maxLength) {
-        preventAddTextRef.current = true;
-      }
-
-      onKeyDown && onKeyDown(e);
-    },
-    [allowedKeyCodes, allowedKeyCodesCtrl, maxLength, onKeyDown, txValue],
-  ); */
-
   // refactor
   const shouldShowFormikErrorMessage =
     (isCalendar && !isCalendarOpen && formik?.getFieldMeta(name).touched) &&
@@ -355,37 +312,15 @@ export function Input({
 
   return (
     <div
-      className={clsx(`p - input ${className}`, {
+      className={clsx(`p-input ${className}`, {
         '-sizeL': size === 'l',
         '-sizeM': size === 'm',
         '-sizeS': size === 's',
         '-calendar': isCalendar,
         '-inValid': !isCalendarOpen && (_status === 'inValid' || shouldShowFormikErrorMessage) && shouldShowError && !isShowRemainChar,
-        '-note': note,
       })}
-      style={{ width }}
+      style={{ width: width || '100%' }}
     >
-      {/* <input
-        id={id}
-        type={type}
-        placeholder={placeholder}
-        name={name}
-        disabled={disabled}
-        value={txValue || ''}
-        className={clsx('p-input__field', {
-          '-inValid': !isCalendarOpen ? (_status === 'inValid' || shouldShowFormikErrorMessage) : false, // ???
-          '-warn': _status === 'warn',
-        })}
-        onFocus={onFocus}
-        onClick={handleClickItself}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        onKeyDown={onKeyDown}
-        readOnly={readonly}
-        autoComplete={disableAutoComplete ? 'off' : 'on'}
-        maxLength={maxLength}
-        ref={inputRef}
-      /> */}
 
       <TextField
         id={id}
@@ -408,13 +343,8 @@ export function Input({
             </InputAdornment>
           ),
         } : {}}
+        helperText={helperText}
       />
-
-      {note && (
-        <p className='p-input__note' role='note'>
-          {note}
-        </p>
-      )}
 
     </div>
   )

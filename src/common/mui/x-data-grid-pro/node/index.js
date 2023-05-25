@@ -1,5 +1,5 @@
 /**
- * @mui/x-data-grid-pro v6.2.1
+ * common/mui/x-data-grid-pro v6.2.1
  *
  * @license MUI X Commercial
  * This source code is licensed under the commercial license found in the
@@ -70,7 +70,7 @@ Object.defineProperty(exports, 'useGridRootProps', {
 });
 require('./typeOverloads');
 var _components = require('@mui/x-data-grid/components');
-var _xLicensePro = require('@mui/x-license-pro');
+var _xLicensePro = require('common/mui/x-license-pro');
 
 Object.keys(_components).forEach(function (key) {
   if (key === 'default' || key === '__esModule') return;

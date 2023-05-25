@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.useGridAggregation = exports.aggregationStateInitializer = void 0;
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
 var React = _interopRequireWildcard(require("react"));
-var _xDataGridPro = require("@mui/x-data-grid-pro");
+var _xDataGridPro = require("common/mui/x-data-grid-pro");
 var _gridAggregationSelectors = require("./gridAggregationSelectors");
 var _gridAggregationUtils = require("./gridAggregationUtils");
 var _createAggregationLookup = require("./createAggregationLookup");

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { GridCallbackDetails, GridValidRowModel, GridGroupNode } from '@mui/x-data-grid-pro';
+import { GridCallbackDetails, GridValidRowModel, GridGroupNode } from 'common/mui/x-data-grid-pro';
 import {
     GridExperimentalProFeatures, DataGridProPropsWithDefaultValue,
     DataGridProPropsWithoutDefaultValue, DataGridPropsWithComplexDefaultValueAfterProcessing,
     DataGridPropsWithComplexDefaultValueBeforeProcessing,
-} from '@mui/x-data-grid-pro/internals';
+} from 'common/mui/x-data-grid-pro/internals';
 import type {
     GridAggregationModel, GridAggregationFunction,
     GridAggregationPosition,

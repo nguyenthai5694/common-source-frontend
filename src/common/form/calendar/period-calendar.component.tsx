@@ -2,9 +2,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react'
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { LocalizationProvider } from '@mui/x-date-pickers-pro';
-import { AdapterDayjs } from '@mui/x-date-pickers-pro/AdapterDayjs';
-import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
+import clsx from 'clsx';
+import { DateRangePicker, LocalizationProvider } from 'common/mui/x-date-pickers-pro';
+import { AdapterDayjs } from 'common/mui/x-date-pickers-pro/node/AdapterDayjs';
 import { FormControlChildProps } from '../form-control';
 import { InputSizes } from '../input/input.component';
 
@@ -44,9 +44,9 @@ export const DATE_INVALID = '日付のフォーマットが異なります。'
 // eslint-disable-next-line complexity
 export function PeriodCalendar({
   formik,
-  size = 'l',
+  size = 's',
   name,
-  width = 280,
+  width = undefined,
   defaultFromValue,
   defaultToValue,
   minDate,
@@ -62,9 +62,16 @@ export function PeriodCalendar({
   disabled = false,
 }: PeriodCalendarProps) {
   return (
-    <div className='p-calendar'
+    <div
+      className={clsx('period-calendar ', {
+        '-sizeL': size === 'l',
+        '-sizeM': size === 'm',
+        '-sizeS': size === 's',
+      })}
+      style={{ width: width || '100%' }}
     >
       <LocalizationProvider dateAdapter={AdapterDayjs}>
+
         <DemoContainer components={['DateRangePicker']}>
           <DateRangePicker localeText={{ start: 'Check-in', end: 'Check-out' }} />
         </DemoContainer>

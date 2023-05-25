@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.GRID_AGGREGATION_FUNCTIONS = void 0;
-var _internals = require("@mui/x-data-grid-pro/internals");
+var _internals = require("common/mui/x-data-grid-pro/internals");
 const sumAgg = {
   apply: ({
     values

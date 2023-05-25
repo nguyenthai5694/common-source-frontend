@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GridBaseColDef } from '@mui/x-data-grid-pro/internals';
+import { GridBaseColDef } from 'common/mui/x-data-grid-pro/internals';
 import { GridApiPremium } from '../../../models/gridApiPremium';
 import { GridAggregationRule } from './gridAggregationInterfaces';
 
@@ -27,5 +27,5 @@ export declare const wrapColumnWithAggregationValue: ({ column, apiRef, aggregat
  */
 export declare const unwrapColumnFromAggregation: ({ column, }: {
     column: GridColDefWithAggregationWrappers;
-}) => GridBaseColDef<import("@mui/x-data-grid-pro").GridValidRowModel, any, any>;
+}) => GridBaseColDef<import("common/mui/x-data-grid-pro").GridValidRowModel, any, any>;
 export { };

@@ -1,7 +1,7 @@
 import _toConsumableArray from "@babel/runtime/helpers/esm/toConsumableArray";
 import * as React from 'react';
-import { gridColumnLookupSelector, gridRowTreeSelector, useFirstRender, GRID_CHECKBOX_SELECTION_FIELD } from '@mui/x-data-grid-pro';
-import { useGridRegisterPipeProcessor, useGridRegisterStrategyProcessor, sortRowTree, createRowTree, updateRowTree } from '@mui/x-data-grid-pro/internals';
+import { gridColumnLookupSelector, gridRowTreeSelector, useFirstRender, GRID_CHECKBOX_SELECTION_FIELD } from 'common/mui/x-data-grid-pro';
+import { useGridRegisterPipeProcessor, useGridRegisterStrategyProcessor, sortRowTree, createRowTree, updateRowTree } from 'common/mui/x-data-grid-pro/internals';
 import { gridRowGroupingModelSelector, gridRowGroupingSanitizedModelSelector } from './gridRowGroupingSelector';
 import { createGroupingColDefForAllGroupingCriteria, createGroupingColDefForOneGroupingCriteria } from './createGroupingColDef';
 import { filterRowTreeFromGroupingColumns, getColDefOverrides, ROW_GROUPING_STRATEGY, isGroupingColumn, setStrategyAvailability, getCellGroupingCriteria, getGroupingRules } from './gridRowGroupingUtils';

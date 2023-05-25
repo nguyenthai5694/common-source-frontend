@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GridColumnMenuProps, GridColumnMenuItemProps } from '@mui/x-data-grid-pro';
+import { GridColumnMenuProps, GridColumnMenuItemProps } from 'common/mui/x-data-grid-pro';
 import { GridColumnMenuAggregationItem } from './GridColumnMenuAggregationItem';
 
 export declare function GridColumnMenuGroupingItem(props: GridColumnMenuItemProps): JSX.Element | null;
@@ -7,7 +7,7 @@ export declare const GRID_COLUMN_MENU_SLOTS_PREMIUM: {
     columnMenuAggregationItem: typeof GridColumnMenuAggregationItem;
     columnMenuGroupingItem: typeof GridColumnMenuGroupingItem;
     columnMenuPinningItem: typeof
-    import('@mui/x-data-grid-pro/components/GridColumnMenuPinningItem').GridColumnMenuPinningItem;
+    import('common/mui/x-data-grid-pro/components/GridColumnMenuPinningItem').GridColumnMenuPinningItem;
     columnMenuSortItem: typeof
     import('@mui/x-data-grid/components/menu/columnMenu/menuItems/GridColumnMenuSortItem').GridColumnMenuSortItem;
     columnMenuFilterItem: typeof

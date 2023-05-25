@@ -77,7 +77,7 @@ export interface CellComponentProps<DataItem = any, CustomData = any> {
    * Current data item index;
    */
   index: number;
-  clickAction?: (e?: any) => void;
+  onActionClick?: (e?: any) => void;
   buttons?: string;
 }
 

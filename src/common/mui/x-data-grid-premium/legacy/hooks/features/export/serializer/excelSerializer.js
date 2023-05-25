@@ -6,7 +6,7 @@ import _typeof from "@babel/runtime/helpers/esm/typeof";
 import _asyncToGenerator from "@babel/runtime/helpers/esm/asyncToGenerator";
 var _defaultColumnsStyles;
 import _regeneratorRuntime from "@babel/runtime/regenerator";
-import { GRID_DATE_COL_DEF, GRID_DATETIME_COL_DEF } from '@mui/x-data-grid-pro';
+import { GRID_DATE_COL_DEF, GRID_DATETIME_COL_DEF } from 'common/mui/x-data-grid-pro';
 import { buildWarning, isObject, isSingleSelectColDef } from '@mui/x-data-grid/internals';
 var getExcelJs = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime.mark(function _callee() {

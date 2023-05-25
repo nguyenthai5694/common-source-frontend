@@ -1,5 +1,5 @@
-import { GridProSlotsComponent, UncapitalizedGridProSlotsComponent } from '@mui/x-data-grid-pro';
-import { UncapitalizeObjectKeys } from '@mui/x-data-grid-pro/internals';
+import { GridProSlotsComponent, UncapitalizedGridProSlotsComponent } from 'common/mui/x-data-grid-pro';
+import { UncapitalizeObjectKeys } from 'common/mui/x-data-grid-pro/internals';
 import { GridPremiumIconSlotsComponent } from './gridPremiumIconSlotsComponent';
 /**
  * Grid components React prop interface containing all the overridable components

@@ -7,8 +7,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.mergeStateWithAggregationModel = exports.getAvailableAggregationFunctions = exports.getAggregationRules = exports.getAggregationFunctionLabel = exports.getAggregationFooterRowIdFromGroupId = exports.canColumnHaveAggregationFunction = exports.areAggregationRulesEqual = exports.addFooterRows = exports.GRID_AGGREGATION_ROOT_FOOTER_ROW_ID = void 0;
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
 var _utils = require("@mui/utils");
-var _xDataGridPro = require("@mui/x-data-grid-pro");
-var _internals = require("@mui/x-data-grid-pro/internals");
+var _xDataGridPro = require("common/mui/x-data-grid-pro");
+var _internals = require("common/mui/x-data-grid-pro/internals");
 const GRID_AGGREGATION_ROOT_FOOTER_ROW_ID = 'auto-generated-group-footer-root';
 exports.GRID_AGGREGATION_ROOT_FOOTER_ROW_ID = GRID_AGGREGATION_ROOT_FOOTER_ROW_ID;
 const getAggregationFooterRowIdFromGroupId = groupId => {

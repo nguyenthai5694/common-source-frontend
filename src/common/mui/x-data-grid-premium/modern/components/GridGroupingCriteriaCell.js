@@ -2,7 +2,7 @@ import _extends from "@babel/runtime/helpers/esm/extends";
 import * as React from 'react';
 import { unstable_composeClasses as composeClasses } from '@mui/utils';
 import Box from '@mui/material/Box';
-import { useGridSelector, gridFilteredDescendantCountLookupSelector, getDataGridUtilityClass } from '@mui/x-data-grid-pro';
+import { useGridSelector, gridFilteredDescendantCountLookupSelector, getDataGridUtilityClass } from 'common/mui/x-data-grid-pro';
 import { useGridApiContext } from '../hooks/utils/useGridApiContext';
 import { useGridRootProps } from '../hooks/utils/useGridRootProps';
 import { jsx as _jsx } from "react/jsx-runtime";

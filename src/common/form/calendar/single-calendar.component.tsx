@@ -25,6 +25,8 @@ interface SingleCalendarProps extends FormControlChildProps {
   position?: undefined | 'top' | 'right' | 'left';
 
   overflow?: boolean;
+
+  label?: string
 }
 
 export function SingleCalendar({
@@ -40,6 +42,7 @@ export function SingleCalendar({
   status,
   position,
   overflow = false,
+  label = '',
 }: SingleCalendarProps) {
   const handChange = (value) => {
     formik.setFieldValue(`${name}`, dayjs(value).format('YYYY/MM/DD'))
@@ -48,7 +51,7 @@ export function SingleCalendar({
   return (
     <div className='single-calendar'>
       <LocalizationProvider dateAdapter={AdapterDayjs} >
-        <DatePicker onChange={handChange} />
+        <DatePicker onChange={handChange} label={label} />
       </LocalizationProvider>
     </div>
 

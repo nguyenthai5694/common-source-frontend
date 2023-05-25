@@ -1,6 +1,6 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
 import * as React from 'react';
-import { gridColumnLookupSelector, useGridApiEventHandler, useGridApiMethod } from '@mui/x-data-grid-pro';
+import { gridColumnLookupSelector, useGridApiEventHandler, useGridApiMethod } from 'common/mui/x-data-grid-pro';
 import { gridAggregationModelSelector } from './gridAggregationSelectors';
 import { getAggregationRules, mergeStateWithAggregationModel, areAggregationRulesEqual } from './gridAggregationUtils';
 import { createAggregationLookup } from './createAggregationLookup';

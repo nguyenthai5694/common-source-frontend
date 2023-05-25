@@ -3,7 +3,7 @@ import _objectWithoutPropertiesLoose from "@babel/runtime/helpers/esm/objectWith
 import _toPropertyKey from "@babel/runtime/helpers/esm/toPropertyKey";
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { useGridSelector } from '@mui/x-data-grid-pro';
+import { useGridSelector } from 'common/mui/x-data-grid-pro';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';

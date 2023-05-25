@@ -1,9 +1,7 @@
 import * as React from 'react';
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
-import { GridActionsCellItem, GridCallbackDetails, GridColDef, GridPaginationModel } from '@mui/x-data-grid';
+import { GridCallbackDetails, GridColDef, GridPaginationModel } from '@mui/x-data-grid';
 import { GridEventListener } from '@mui/x-data-grid';
 import GenericComponent from 'common/utils/generic/generic.component';
 import { DatatableContext } from './datatable.context';
@@ -21,6 +19,8 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
     columnsConfig: null,
     settingData: null,
     sortData: null,
+    initialState: {},
+    pinnedColumns: {},
   };
 
   canvasRef = React.createRef() as any;
@@ -42,6 +42,10 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
 
     this.setState({
       ...this.state,
+      pinnedColumns: {
+        left: this.props.tableConfig.pinnedColumnsLeft,
+        right: this.props.tableConfig.pinnedColumnsRight,
+      },
       columns: this.props.columnsConfig.map(item => {
         return {
           field: item.field,
@@ -49,26 +53,20 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
           align: item.align,
           width: totalWidth >= refWidth ? item.width : (item.width * refWidth / totalWidth),
           editable: item.editable || false,
-          getActions: () => item.field === 'actions' ? [
-            <GridActionsCellItem icon={<EditIcon />} label='Edit' />,
-            <GridActionsCellItem icon={<DeleteIcon />} label='Delete' />,
-          ] : [],
           type: item.field === 'actions' ? 'actions' : '',
-          headerClassName: this.getClassColumnFixed(item.field),
-
+          renderCell: item.component ? () => {
+            return <>
+              <item.component
+                index={1} dataItem={{}}
+                dataKey='233'
+                buttons={item.buttons}
+                onActionClick={this.props.onActionClick}
+              />
+            </>
+          } : undefined,
         } as GridColDef
       }),
     })
-  }
-
-  /**
-   * Add class fixed in header table
-   * @param field 
-   * @returns 
-   */
-  getClassColumnFixed = (field: string) => {
-    return this.props.tableConfig.pinnedColumnsLeft.includes(field) ? 'column-head-fixed column-fixed-left' : '' ||
-      this.props.tableConfig.pinnedColumnsRight.includes(field) ? 'column-head-fixed column-fixed-right' : ''
   }
 
   /**
@@ -99,6 +97,16 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
     } else {
       this.queries.sort.dataKey = params.field
     }
+
+    this.props.onSearch(this.queries)
+  }
+
+  /**
+   * 
+   * @param filter Event search filter
+   */
+  onHeaderSearch = (filter: any) => {
+    this.queries.filter = filter
 
     this.props.onSearch(this.queries)
   }

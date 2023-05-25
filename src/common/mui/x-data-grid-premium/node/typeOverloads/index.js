@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-require("@mui/x-data-grid-pro/typeOverloads");
+require("common/mui/x-data-grid-pro/typeOverloads");
 var _modules = require("./modules");
 Object.keys(_modules).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;

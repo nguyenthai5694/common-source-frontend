@@ -3,8 +3,8 @@ import _extends from "@babel/runtime/helpers/esm/extends";
 var _excluded = ["components", "componentsProps"];
 import * as React from 'react';
 import { useThemeProps } from '@mui/material/styles';
-import { DATA_GRID_PRO_PROPS_DEFAULT_VALUES, GRID_DEFAULT_LOCALE_TEXT } from '@mui/x-data-grid-pro';
-import { computeSlots, uncapitalizeObjectKeys } from '@mui/x-data-grid-pro/internals';
+import { DATA_GRID_PRO_PROPS_DEFAULT_VALUES, GRID_DEFAULT_LOCALE_TEXT } from 'common/mui/x-data-grid-pro';
+import { computeSlots, uncapitalizeObjectKeys } from 'common/mui/x-data-grid-pro/internals';
 import { GRID_AGGREGATION_FUNCTIONS } from '../hooks/features/aggregation';
 import { DATA_GRID_PREMIUM_DEFAULT_SLOTS_COMPONENTS } from '../constants/dataGridPremiumDefaultSlotsComponents';
 
@@ -25,9 +25,9 @@ export var DATA_GRID_PREMIUM_PROPS_DEFAULT_VALUES = _extends({}, DATA_GRID_PRO_P
 var defaultSlots = uncapitalizeObjectKeys(DATA_GRID_PREMIUM_DEFAULT_SLOTS_COMPONENTS);
 export var useDataGridPremiumProps = function useDataGridPremiumProps(inProps) {
   var _useThemeProps = useThemeProps({
-      props: inProps,
-      name: 'MuiDataGrid'
-    }),
+    props: inProps,
+    name: 'MuiDataGrid'
+  }),
     components = _useThemeProps.components,
     componentsProps = _useThemeProps.componentsProps,
     themedProps = _objectWithoutProperties(_useThemeProps, _excluded);

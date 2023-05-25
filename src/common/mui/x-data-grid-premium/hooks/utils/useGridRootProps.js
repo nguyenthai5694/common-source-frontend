@@ -1,2 +1,2 @@
-import { useGridRootProps as useCommunityGridRootProps } from '@mui/x-data-grid-pro';
+import { useGridRootProps as useCommunityGridRootProps } from 'common/mui/x-data-grid-pro';
 export const useGridRootProps = useCommunityGridRootProps;

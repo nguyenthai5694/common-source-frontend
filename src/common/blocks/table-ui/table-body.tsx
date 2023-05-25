@@ -85,7 +85,7 @@ export default function DataTableBody({
                     {item.component && <item.component
                       dataItem={row}
                       index={index}
-                      clickAction={onActionClick}
+                      onActionClick={onActionClick}
                       buttons={item.buttons}
                     />}
                   </TableCell>

@@ -1,6 +1,6 @@
 import React from 'react'
 import DataTable from 'common/blocks/datatable-ui/datatable.component';
-import { DataGridPremium } from 'common/mui/x-data-grid-premium';
+import { DataGridPremium, GridToolbar } from 'common/mui/x-data-grid-premium';
 import TableToolbar from './table-toolbar';
 
 interface DataTableTemplate {
@@ -13,11 +13,9 @@ export default function DataTableTemplate({ self }: DataTableTemplate) {
   return (
 
     <div style={{ height: 'auto', width: '100%' }}>
-      <TableToolbar onSearch={props.onSearch} />
+      <TableToolbar onSearch={self.onHeaderSearch} />
 
-      {/* <DataGrid
-        loading={false}
-        apiRef={apiRef}
+      <DataGridPremium
         rows={props.dataItems}
         columns={state.columns}
         onColumnHeaderClick={self.handleModelSort}
@@ -27,7 +25,7 @@ export default function DataTableTemplate({ self }: DataTableTemplate) {
         paginationMode='server'
         paginationModel={{
           page: props.queries.page - 1,
-          pageSize: props.queries.size,
+          pageSize: props.queries.size | 10,
         }}
         sortingMode='server'
         sortModel={[{
@@ -35,11 +33,11 @@ export default function DataTableTemplate({ self }: DataTableTemplate) {
           sort: props.queries.sort?.type,
         }]}
         rowCount={props.queries.size}
-      /> */}
-
-      <DataGridPremium
-        rows={props.dataItems}
-        columns={state.columns}
+        initialState={state.initialState}
+        pinnedColumns={state.pinnedColumns}
+        slots={{
+          toolbar: GridToolbar,
+        }}
       />
     </div>
   )

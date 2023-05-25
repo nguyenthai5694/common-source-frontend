@@ -4,8 +4,8 @@ import { Form, Formik, FieldArray, FormikProps } from 'formik';
 import { withRouter, RouteComponentProps } from 'react-router-dom'
 import * as Yup from 'yup';
 import {
-  FormControl, Checkbox, CommonSelect, Input,
-  Radio, Textarea, RichTextarea,
+  FormControl, CommonCheckbox, CommonSelect, Input,
+  CommonRadio, Textarea, RichTextarea,
   InputTags, displayFormErrors,
 } from 'common/form';
 import Button from 'common/parts/button/button.component';
@@ -208,11 +208,17 @@ class UserForm extends Component<RouteComponentProps> {
                               <label htmlFor={`users.${index}.arr_checkbox`}>DOB</label>
 
                               <FormControl name={`users.${index}.arr_checkbox`}>
-                                <Checkbox label={'利用規約を読みました 1'} value='val_1' className={'h-mt-10'} />
+                                <CommonCheckbox
+                                  options={[]} label={'利用規約を読みました 1'} value='val_1' className={'h-mt-10'}
+                                />
 
-                                <Checkbox label={'利用規約を読みました 2'} value='val_2' className={'h-mt-10'} />
+                                <CommonCheckbox
+                                  options={[]} label={'利用規約を読みました 2'} value='val_2' className={'h-mt-10'}
+                                />
 
-                                <Checkbox label={'利用規約を読みました 3'} value='val_3' className={'h-mt-10'} />
+                                <CommonCheckbox
+                                  options={[]} label={'利用規約を読みました 3'} value='val_3' className={'h-mt-10'}
+                                />
                               </FormControl>
                             </div>
                           </div>
@@ -294,11 +300,11 @@ class UserForm extends Component<RouteComponentProps> {
 
                 <div className={clsx('form-control')}>
                   <FormControl name='checkbox'>
-                    <Checkbox label={'利用規約を読みました 1'} value='val_1' className={'h-mt-10'} />
+                    <CommonCheckbox options={[]} label={'利用規約を読みました 1'} value='val_1' className={'h-mt-10'} />
 
-                    <Checkbox label={'利用規約を読みました 2'} value='val_2' className={'h-mt-10'} />
+                    <CommonCheckbox options={[]} label={'利用規約を読みました 2'} value='val_2' className={'h-mt-10'} />
 
-                    <Checkbox label={'利用規約を読みました 3'} value='val_3' className={'h-mt-10'} />
+                    <CommonCheckbox options={[]} label={'利用規約を読みました 3'} value='val_3' className={'h-mt-10'} />
                   </FormControl>
                 </div>
 
@@ -308,11 +314,11 @@ class UserForm extends Component<RouteComponentProps> {
 
                 <div className={clsx('form-control')}>
                   <FormControl name='radio_type1'>
-                    <Radio value={'個人'} label={'個人'} />
+                    <CommonRadio options={[]} value={'個人'} label={'個人'} />
 
-                    <Radio value={'所属'} label={'所属'} />
+                    <CommonRadio options={[]} value={'所属'} label={'所属'} />
 
-                    <Radio value={'役職'} label={'役職'} />
+                    <CommonRadio options={[]} value={'役職'} label={'役職'} />
                   </FormControl>
                 </div>
 

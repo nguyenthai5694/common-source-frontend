@@ -1,52 +1,86 @@
-"use strict";
+/* eslint-disable max-len */
+/* eslint-disable import/order */
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-Object.defineProperty(exports, "__esModule", {
-  value: true
+var _interopRequireDefault = require('@babel/runtime/helpers/interopRequireDefault');
+
+Object.defineProperty(exports, '__esModule', {
+  value: true,
 });
 exports.DataGridPremium = void 0;
-var React = _interopRequireWildcard(require("react"));
-var _propTypes = _interopRequireDefault(require("prop-types"));
-var _xLicensePro = require("@mui/x-license-pro");
-var _utils = require("@mui/utils");
-var _xDataGridPro = require("@mui/x-data-grid-pro");
-var _internals = require("@mui/x-data-grid-pro/internals");
-var _useDataGridPremiumComponent = require("./useDataGridPremiumComponent");
-var _useDataGridPremiumProps = require("./useDataGridPremiumProps");
-var _releaseInfo = require("../utils/releaseInfo");
-var _jsxRuntime = require("react/jsx-runtime");
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+var React = _interopRequireWildcard(require('react'));
+var _propTypes = _interopRequireDefault(require('prop-types'));
+var _xLicensePro = require('common/mui/x-license-pro');
+var _utils = require('@mui/utils');
+var _xDataGridPro = require('common/mui/x-data-grid-pro');
+var _internals = require('common/mui/x-data-grid-pro/internals');
+var _releaseInfo = require('../utils/releaseInfo');
+var _useDataGridPremiumComponent = require('./useDataGridPremiumComponent');
+var _useDataGridPremiumProps = require('./useDataGridPremiumProps');
+var _jsxRuntime = require('react/jsx-runtime');
+
+function _getRequireWildcardCache(nodeInterop) {
+  if (typeof WeakMap !== 'function') return null;
+
+  var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap();
+
+  return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+  if (!nodeInterop && obj && obj.__esModule) { return obj; }
+
+  if (obj === null || typeof obj !== 'object' && typeof obj !== 'function') { return { default: obj }; }
+
+  var cache = _getRequireWildcardCache(nodeInterop);
+
+  if (cache && cache.has(obj)) { return cache.get(obj); }
+
+  var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (key !== 'default' && Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; }
+    }
+  } newObj.default = obj;
+
+  if (cache) { cache.set(obj, newObj); }
+
+  return newObj;
+}
 const releaseInfo = (0, _releaseInfo.getReleaseInfo)();
 const DataGridPremiumRaw = /*#__PURE__*/React.forwardRef(function DataGridPremium(inProps, ref) {
   const props = (0, _useDataGridPremiumProps.useDataGridPremiumProps)(inProps);
   const privateApiRef = (0, _useDataGridPremiumComponent.useDataGridPremiumComponent)(props.apiRef, props);
+
   (0, _xLicensePro.useLicenseVerifier)('x-data-grid-premium', releaseInfo);
   const pinnedColumns = (0, _xDataGridPro.useGridSelector)(privateApiRef, _xDataGridPro.gridPinnedColumnsSelector);
+
   return /*#__PURE__*/(0, _jsxRuntime.jsx)(_xDataGridPro.GridContextProvider, {
-    privateApiRef: privateApiRef,
-    props: props,
+    privateApiRef,
+    props,
     children: /*#__PURE__*/(0, _jsxRuntime.jsxs)(_xDataGridPro.GridRoot, {
       className: props.className,
       style: props.style,
       sx: props.sx,
-      ref: ref,
+      ref,
       children: [/*#__PURE__*/(0, _jsxRuntime.jsx)(_xDataGridPro.GridHeader, {}), /*#__PURE__*/(0, _jsxRuntime.jsx)(_xDataGridPro.GridBody, {
         VirtualScrollerComponent: _internals.DataGridProVirtualScroller,
         ColumnHeadersProps: {
-          pinnedColumns
+          pinnedColumns,
         },
         children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_xLicensePro.Watermark, {
-          packageName: "x-data-grid-premium",
-          releaseInfo: releaseInfo
-        })
-      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_xDataGridPro.GridFooterPlaceholder, {})]
-    })
+          packageName: 'x-data-grid-premium',
+          releaseInfo,
+        }),
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)(_xDataGridPro.GridFooterPlaceholder, {})],
+    }),
   });
 });
 const DataGridPremium = /*#__PURE__*/React.memo(DataGridPremiumRaw);
+
 exports.DataGridPremium = DataGridPremium;
-process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
+process.env.NODE_ENV !== 'production' ? DataGridPremiumRaw.propTypes = {
   // ----------------------------- Warning --------------------------------
   // | These PropTypes are generated from the TypeScript type definitions |
   // | To update them edit the TypeScript types and run "yarn proptypes"  |
@@ -71,7 +105,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
    * The ref object that allows grid manipulation. Can be instantiated with `useGridApiRef()`.
    */
   apiRef: _propTypes.default.shape({
-    current: _propTypes.default.object.isRequired
+    current: _propTypes.default.object.isRequired,
   }),
   /**
    * The label of the grid.
@@ -109,6 +143,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
     if (!props.pagination && props.checkboxSelectionVisibleOnly) {
       return new Error('MUI: The `checkboxSelectionVisibleOnly` prop has no effect when the pagination is not enabled.');
     }
+
     return null;
   }),
   /**
@@ -257,7 +292,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
   experimentalFeatures: _propTypes.default.shape({
     columnGrouping: _propTypes.default.bool,
     lazyLoading: _propTypes.default.bool,
-    warnIfFocusStateIsNotSynced: _propTypes.default.bool
+    warnIfFocusStateIsNotSynced: _propTypes.default.bool,
   }),
   /**
    * Filtering can be processed on the server or client-side.
@@ -268,6 +303,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
     if (props.treeData && props.filterMode === 'server') {
       return new Error('MUI: The `filterMode="server"` prop is not available when the `treeData` is enabled.');
     }
+
     return null;
   }),
   /**
@@ -278,11 +314,11 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
       field: _propTypes.default.string.isRequired,
       id: _propTypes.default.oneOfType([_propTypes.default.number, _propTypes.default.string]),
       operator: _propTypes.default.string.isRequired,
-      value: _propTypes.default.any
+      value: _propTypes.default.any,
     })).isRequired,
     logicOperator: _propTypes.default.oneOf(['and', 'or']),
     quickFilterLogicOperator: _propTypes.default.oneOf(['and', 'or']),
-    quickFilterValues: _propTypes.default.array
+    quickFilterValues: _propTypes.default.array,
   }),
   /**
    * Determines the position of an aggregated value.
@@ -372,6 +408,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
     if (props.pagination && props.hideFooterRowCount) {
       return new Error('MUI: The `hideFooterRowCount` prop has no effect when the pagination is enabled.');
     }
+
     return null;
   }),
   /**
@@ -434,7 +471,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
     debug: _propTypes.default.func.isRequired,
     error: _propTypes.default.func.isRequired,
     info: _propTypes.default.func.isRequired,
-    warn: _propTypes.default.func.isRequired
+    warn: _propTypes.default.func.isRequired,
   }),
   /**
    * Allows to pass the logging level or false to turn off logging.
@@ -736,21 +773,21 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
    */
   paginationModel: _propTypes.default.shape({
     page: _propTypes.default.number.isRequired,
-    pageSize: _propTypes.default.number.isRequired
+    pageSize: _propTypes.default.number.isRequired,
   }),
   /**
    * The column fields to display pinned to left or right.
    */
   pinnedColumns: _propTypes.default.shape({
     left: _propTypes.default.arrayOf(_propTypes.default.string),
-    right: _propTypes.default.arrayOf(_propTypes.default.string)
+    right: _propTypes.default.arrayOf(_propTypes.default.string),
   }),
   /**
    * Rows data to pin on top or bottom.
    */
   pinnedRows: _propTypes.default.shape({
     bottom: _propTypes.default.arrayOf(_propTypes.default.object),
-    top: _propTypes.default.arrayOf(_propTypes.default.object)
+    top: _propTypes.default.arrayOf(_propTypes.default.object),
   }),
   /**
    * Callback called before updating a row with new values in the row and cell editing.
@@ -868,7 +905,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
    */
   sortModel: _propTypes.default.arrayOf(_propTypes.default.shape({
     field: _propTypes.default.string.isRequired,
-    sort: _propTypes.default.oneOf(['asc', 'desc'])
+    sort: _propTypes.default.oneOf(['asc', 'desc']),
   })),
   /**
    * The system prop that allows defining system overrides as well as additional CSS styles.
@@ -899,5 +936,5 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
    * @param {GridCellSelectionModel} cellSelectionModel Object in the shape of [[GridCellSelectionModel]] containing the selected cells.
    * @param {GridCallbackDetails} details Additional details for this callback.
    */
-  unstable_onCellSelectionModelChange: _propTypes.default.func
+  unstable_onCellSelectionModelChange: _propTypes.default.func,
 } : void 0;

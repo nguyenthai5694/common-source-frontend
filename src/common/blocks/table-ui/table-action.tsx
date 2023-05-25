@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -8,15 +8,12 @@ import { CellComponentProps } from '../datatable/datatable.type';
 
 export default function TableAction(props: CellComponentProps) {
   const [buttons] = React.useState(props.buttons ? props.buttons.split(',') : [])
-  const actionClick = (action) => {
-    props.clickAction(action)
-  }
 
   return (
     <div className='table-action'>
       {buttons.includes('view') && <div className='table-action-item table-action-view'>
         <Tooltip title='View'>
-          <IconButton onClick={() => actionClick('view')}>
+          <IconButton onClick={() => props.onActionClick('view')}>
             <VisibilityIcon />
           </IconButton>
         </Tooltip>
@@ -24,7 +21,7 @@ export default function TableAction(props: CellComponentProps) {
 
       {buttons.includes('edit') && <div className='table-action-item table-action-edit'>
         <Tooltip title='Edit'>
-          <IconButton onClick={() => actionClick('edit')}>
+          <IconButton onClick={() => props.onActionClick('edit')}>
             <EditIcon />
           </IconButton>
         </Tooltip>
@@ -33,7 +30,7 @@ export default function TableAction(props: CellComponentProps) {
 
       {buttons.includes('delete') && <div className='table-action-item table-action-delete'>
         <Tooltip title='Delete'>
-          <IconButton onClick={() => actionClick('delete')}>
+          <IconButton onClick={() => props.onActionClick('delete')}>
             <DeleteIcon />
           </IconButton>
         </Tooltip>

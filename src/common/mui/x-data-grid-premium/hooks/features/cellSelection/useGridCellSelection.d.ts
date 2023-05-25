@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GridStateInitializer } from '@mui/x-data-grid-pro/internals';
+import { GridStateInitializer } from 'common/mui/x-data-grid-pro/internals';
 import { DataGridPremiumProcessedProps } from '../../../models/dataGridPremiumProps';
 import { GridPrivateApiPremium } from '../../../models/gridApiPremium';
 

@@ -1,4 +1,4 @@
-import { isNumber } from '@mui/x-data-grid-pro/internals';
+import { isNumber } from 'common/mui/x-data-grid-pro/internals';
 const sumAgg = {
   apply: ({
     values

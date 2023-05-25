@@ -1,19 +1,22 @@
-import _extends from "@babel/runtime/helpers/esm/extends";
 import * as React from 'react';
-import { gridColumnLookupSelector, useGridApiEventHandler, useGridApiMethod } from '@mui/x-data-grid-pro';
+import { gridColumnLookupSelector, useGridApiEventHandler, useGridApiMethod } from 'common/mui/x-data-grid-pro';
+import _extends from '@babel/runtime/helpers/esm/extends';
+import { createAggregationLookup } from './createAggregationLookup';
 import { gridAggregationModelSelector } from './gridAggregationSelectors';
 import { getAggregationRules, mergeStateWithAggregationModel, areAggregationRulesEqual } from './gridAggregationUtils';
-import { createAggregationLookup } from './createAggregationLookup';
+
 export const aggregationStateInitializer = (state, props, apiRef) => {
   var _ref, _props$aggregationMod, _props$initialState, _props$initialState$a;
+
   apiRef.current.caches.aggregation = {
     rulesOnLastColumnHydration: {},
-    rulesOnLastRowHydration: {}
+    rulesOnLastRowHydration: {},
   };
+
   return _extends({}, state, {
     aggregation: {
-      model: (_ref = (_props$aggregationMod = props.aggregationModel) != null ? _props$aggregationMod : (_props$initialState = props.initialState) == null ? void 0 : (_props$initialState$a = _props$initialState.aggregation) == null ? void 0 : _props$initialState$a.model) != null ? _ref : {}
-    }
+      model: (_ref = (_props$aggregationMod = props.aggregationModel) != null ? _props$aggregationMod : (_props$initialState = props.initialState) == null ? void 0 : (_props$initialState$a = _props$initialState.aggregation) == null ? void 0 : _props$initialState$a.model) != null ? _ref : {},
+    },
   });
 };
 export const useGridAggregation = (apiRef, props) => {
@@ -22,7 +25,7 @@ export const useGridAggregation = (apiRef, props) => {
     propModel: props.aggregationModel,
     propOnChange: props.onAggregationModelChange,
     stateSelector: gridAggregationModelSelector,
-    changeEvent: 'aggregationModelChange'
+    changeEvent: 'aggregationModelChange',
   });
 
   /**
@@ -30,6 +33,7 @@ export const useGridAggregation = (apiRef, props) => {
    */
   const setAggregationModel = React.useCallback(model => {
     const currentModel = gridAggregationModelSelector(apiRef);
+
     if (currentModel !== model) {
       apiRef.current.setState(mergeStateWithAggregationModel(model));
       apiRef.current.forceUpdate();
@@ -40,17 +44,19 @@ export const useGridAggregation = (apiRef, props) => {
       apiRef,
       getAggregationPosition: props.getAggregationPosition,
       aggregationFunctions: props.aggregationFunctions,
-      aggregationRowsScope: props.aggregationRowsScope
+      aggregationRowsScope: props.aggregationRowsScope,
     });
+
     apiRef.current.setState(state => _extends({}, state, {
       aggregation: _extends({}, state.aggregation, {
-        lookup: aggregationLookup
-      })
+        lookup: aggregationLookup,
+      }),
     }));
   }, [apiRef, props.getAggregationPosition, props.aggregationFunctions, props.aggregationRowsScope]);
   const aggregationApi = {
-    setAggregationModel
+    setAggregationModel,
   };
+
   useGridApiMethod(apiRef, aggregationApi, 'public');
 
   /**
@@ -59,12 +65,12 @@ export const useGridAggregation = (apiRef, props) => {
   const checkAggregationRulesDiff = React.useCallback(() => {
     const {
       rulesOnLastRowHydration,
-      rulesOnLastColumnHydration
+      rulesOnLastColumnHydration,
     } = apiRef.current.caches.aggregation;
     const aggregationRules = props.disableAggregation ? {} : getAggregationRules({
       columnsLookup: gridColumnLookupSelector(apiRef),
       aggregationModel: gridAggregationModelSelector(apiRef),
-      aggregationFunctions: props.aggregationFunctions
+      aggregationFunctions: props.aggregationFunctions,
     });
 
     // Re-apply the row hydration to add / remove the aggregation footers
@@ -79,6 +85,7 @@ export const useGridAggregation = (apiRef, props) => {
       apiRef.current.requestPipeProcessorsApplication('hydrateColumns');
     }
   }, [apiRef, applyAggregation, props.aggregationFunctions, props.disableAggregation]);
+
   useGridApiEventHandler(apiRef, 'aggregationModelChange', checkAggregationRulesDiff);
   useGridApiEventHandler(apiRef, 'columnsChange', checkAggregationRulesDiff);
   useGridApiEventHandler(apiRef, 'filteredRowsSet', applyAggregation);

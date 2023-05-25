@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GridApi } from '@mui/x-data-grid-pro';
+import { GridApi } from 'common/mui/x-data-grid-pro';
 import { GridInitialStatePremium } from '../../models/gridStatePremium';
 import { DataGridPremiumProps } from '../../models/dataGridPremiumProps';
 /**

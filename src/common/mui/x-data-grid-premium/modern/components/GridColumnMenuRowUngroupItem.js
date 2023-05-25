@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { gridColumnLookupSelector, useGridSelector } from '@mui/x-data-grid-pro';
+import { gridColumnLookupSelector, useGridSelector } from 'common/mui/x-data-grid-pro';
 import { useGridApiContext } from '../hooks/utils/useGridApiContext';
 import { gridRowGroupingSanitizedModelSelector } from '../hooks/features/rowGrouping/gridRowGroupingSelector';
 import { useGridRootProps } from '../hooks/utils/useGridRootProps';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GridValidRowModel } from '@mui/x-data-grid-pro';
+import { GridValidRowModel } from 'common/mui/x-data-grid-pro';
 import { DataGridPremiumProps } from '../models/dataGridPremiumProps';
 
 interface DataGridPremiumComponent {

@@ -2,6 +2,19 @@
 
 .single-calendar,
 .p-calendar {
+
+  .MuiInputBase-root {
+    height: 40px;
+  }
+
+  label {
+    top: -8px;
+
+    &.MuiInputLabel-shrink {
+      top: 0;
+    }
+  }
+
   input {
     display: block;
     box-sizing: content-box;
@@ -9,7 +22,7 @@
     min-width: 0;
     height: 1.4375em;
     margin: 0;
-    padding: 8.5px 14px;
+    padding: 0 14px;
     padding-top: 1px;
     color: currentColor;
     font: inherit;

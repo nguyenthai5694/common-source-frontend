@@ -33,7 +33,6 @@ export default function Loading() {
   useEffect(
     () => () => {
       (document.getElementById('root-loading') as any).removeChild(loadingElmRef)
-      console.log(loadingRef);
     },
     [loadingElmRef, loadingRef],
   );

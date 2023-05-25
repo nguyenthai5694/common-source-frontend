@@ -1,16 +1,17 @@
 /* eslint-disable max-lines */
 // eslint-disable-next-line max-lines
 import * as React from 'react';
+import { jsx as _jsx } from 'react/jsx-runtime';
+import { jsxs as _jsxs } from 'react/jsx-runtime';
+import { useLicenseVerifier } from 'common/mui/x-license-pro';
+import { Watermark } from 'common/mui/x-license-pro';
+import { chainPropTypes } from '@mui/utils';
+import PropTypes from 'prop-types';
 import {
   GridBody, GridFooterPlaceholder, GridHeader, GridRoot, GridContextProvider,
   useGridSelector, gridPinnedColumnsSelector,
-} from '@mui/x-data-grid-pro';
-import { DataGridProVirtualScroller } from '@mui/x-data-grid-pro/internals';
-import { jsx as _jsx } from 'react/jsx-runtime';
-import { jsxs as _jsxs } from 'react/jsx-runtime';
-import { chainPropTypes } from '@mui/utils';
-import { Watermark } from '@mui/x-license-pro';
-import PropTypes from 'prop-types';
+} from '../../x-data-grid-pro';
+import { DataGridProVirtualScroller } from '../../x-data-grid-pro/internals';
 import { getReleaseInfo } from '../utils/releaseInfo';
 import { useDataGridPremiumComponent } from './useDataGridPremiumComponent';
 import { useDataGridPremiumProps } from './useDataGridPremiumProps';
@@ -20,7 +21,7 @@ const DataGridPremiumRaw = /*#__PURE__*/React.forwardRef(function DataGridPremiu
   const props = useDataGridPremiumProps(inProps);
   const privateApiRef = useDataGridPremiumComponent(props.apiRef, props);
 
-  // useLicenseVerifier('x-data-grid-premium', releaseInfo);
+  useLicenseVerifier('x-data-grid-premium', releaseInfo);
   const pinnedColumns = useGridSelector(privateApiRef, gridPinnedColumnsSelector);
 
   return /*#__PURE__*/_jsx(GridContextProvider, {

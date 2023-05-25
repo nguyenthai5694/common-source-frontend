@@ -1,64 +1,72 @@
-import _extends from "@babel/runtime/helpers/esm/extends";
+import { addPinnedRow, isDeepEqual, insertNodeInTree, removeNodeFromTree } from 'common/mui/x-data-grid-pro/internals';
+import _extends from '@babel/runtime/helpers/esm/extends';
 import { unstable_capitalize as capitalize } from '@mui/utils';
-import { GRID_ROOT_GROUP_ID } from '@mui/x-data-grid-pro';
-import { addPinnedRow, isDeepEqual, insertNodeInTree, removeNodeFromTree } from '@mui/x-data-grid-pro/internals';
+import { GRID_ROOT_GROUP_ID } from '../../../../x-data-grid-pro';
+
 export const GRID_AGGREGATION_ROOT_FOOTER_ROW_ID = 'auto-generated-group-footer-root';
 export const getAggregationFooterRowIdFromGroupId = groupId => {
   if (groupId == null) {
     return GRID_AGGREGATION_ROOT_FOOTER_ROW_ID;
   }
+
   return `auto-generated-group-footer-${groupId}`;
 };
 export const canColumnHaveAggregationFunction = ({
   colDef,
   aggregationFunctionName,
-  aggregationFunction
+  aggregationFunction,
 }) => {
   if (!colDef || !colDef.aggregable) {
     return false;
   }
+
   if (!aggregationFunction) {
     return false;
   }
+
   if (colDef.availableAggregationFunctions != null) {
     return colDef.availableAggregationFunctions.includes(aggregationFunctionName);
   }
+
   if (!aggregationFunction.columnTypes) {
     return true;
   }
+
   return aggregationFunction.columnTypes.includes(colDef.type);
 };
 export const getAvailableAggregationFunctions = ({
   aggregationFunctions,
-  colDef
+  colDef,
 }) => Object.keys(aggregationFunctions).filter(aggregationFunctionName => canColumnHaveAggregationFunction({
   colDef,
   aggregationFunctionName,
-  aggregationFunction: aggregationFunctions[aggregationFunctionName]
+  aggregationFunction: aggregationFunctions[aggregationFunctionName],
 }));
 export const mergeStateWithAggregationModel = aggregationModel => state => _extends({}, state, {
   aggregation: _extends({}, state.aggregation, {
-    model: aggregationModel
-  })
+    model: aggregationModel,
+  }),
 });
 export const getAggregationRules = ({
   columnsLookup,
   aggregationModel,
-  aggregationFunctions
+  aggregationFunctions,
 }) => {
   const aggregationRules = {};
+
   Object.entries(aggregationModel).forEach(([field, columnItem]) => {
     if (columnsLookup[field] && canColumnHaveAggregationFunction({
       colDef: columnsLookup[field],
       aggregationFunctionName: columnItem,
-      aggregationFunction: aggregationFunctions[columnItem]
+      aggregationFunction: aggregationFunctions[columnItem],
     })) {
       aggregationRules[field] = {
         aggregationFunctionName: columnItem,
-        aggregationFunction: aggregationFunctions[columnItem]
+        aggregationFunction: aggregationFunctions[columnItem],
       };
     }
   });
+
   return aggregationRules;
 };
 /**
@@ -68,49 +76,54 @@ export const addFooterRows = ({
   groupingParams,
   apiRef,
   getAggregationPosition,
-  hasAggregationRule
+  hasAggregationRule,
 }) => {
   let newGroupingParams = _extends({}, groupingParams, {
     tree: _extends({}, groupingParams.tree),
-    treeDepths: _extends({}, groupingParams.treeDepths)
+    treeDepths: _extends({}, groupingParams.treeDepths),
   });
   const updateChildGroupFooter = groupNode => {
     const shouldHaveFooter = hasAggregationRule && getAggregationPosition(groupNode) === 'footer';
+
     if (shouldHaveFooter) {
       const footerId = getAggregationFooterRowIdFromGroupId(groupNode.id);
+
       if (groupNode.footerId !== footerId) {
         if (groupNode.footerId != null) {
           removeNodeFromTree({
             node: newGroupingParams.tree[groupNode.footerId],
             tree: newGroupingParams.tree,
-            treeDepths: newGroupingParams.treeDepths
+            treeDepths: newGroupingParams.treeDepths,
           });
         }
+
         const footerNode = {
           id: footerId,
           parent: groupNode.id,
           depth: groupNode ? groupNode.depth + 1 : 0,
-          type: 'footer'
+          type: 'footer',
         };
+
         insertNodeInTree({
           node: footerNode,
           tree: newGroupingParams.tree,
-          treeDepths: newGroupingParams.treeDepths
+          treeDepths: newGroupingParams.treeDepths,
         });
       }
     } else if (groupNode.footerId != null) {
       removeNodeFromTree({
         node: newGroupingParams.tree[groupNode.footerId],
         tree: newGroupingParams.tree,
-        treeDepths: newGroupingParams.treeDepths
+        treeDepths: newGroupingParams.treeDepths,
       });
       newGroupingParams.tree[groupNode.id] = _extends({}, newGroupingParams.tree[groupNode.id], {
-        footerId: null
+        footerId: null,
       });
     }
   };
   const updateRootGroupFooter = groupNode => {
     const shouldHaveFooter = hasAggregationRule && getAggregationPosition(groupNode) === 'footer';
+
     if (shouldHaveFooter) {
       newGroupingParams = addPinnedRow({
         groupingParams: newGroupingParams,
@@ -118,7 +131,7 @@ export const addFooterRows = ({
         rowId: getAggregationFooterRowIdFromGroupId(null),
         position: 'bottom',
         apiRef,
-        isAutoGenerated: true
+        isAutoGenerated: true,
       });
     }
   };
@@ -128,14 +141,18 @@ export const addFooterRows = ({
     } else {
       updateChildGroupFooter(groupNode);
     }
+
     groupNode.children.forEach(childId => {
       const childNode = newGroupingParams.tree[childId];
+
       if (childNode.type === 'group') {
         updateGroupFooter(childNode);
       }
     });
   };
+
   updateGroupFooter(newGroupingParams.tree[GRID_ROOT_GROUP_ID]);
+
   return newGroupingParams;
 };
 
@@ -145,28 +162,34 @@ export const addFooterRows = ({
 export const areAggregationRulesEqual = (previousValue, newValue) => {
   const previousFields = Object.keys(previousValue != null ? previousValue : {});
   const newFields = Object.keys(newValue);
+
   if (!isDeepEqual(previousFields, newFields)) {
     return false;
   }
+
   return newFields.every(field => {
     const previousRule = previousValue == null ? void 0 : previousValue[field];
     const newRule = newValue[field];
+
     if ((previousRule == null ? void 0 : previousRule.aggregationFunction) !== (newRule == null ? void 0 : newRule.aggregationFunction)) {
       return false;
     }
+
     if ((previousRule == null ? void 0 : previousRule.aggregationFunctionName) !== (newRule == null ? void 0 : newRule.aggregationFunctionName)) {
       return false;
     }
+
     return true;
   });
 };
 export const getAggregationFunctionLabel = ({
   apiRef,
-  aggregationRule
+  aggregationRule,
 }) => {
   if (aggregationRule.aggregationFunction.label != null) {
     return aggregationRule.aggregationFunction.label;
   }
+
   try {
     return apiRef.current.getLocaleText(`aggregationFunctionLabel${capitalize(aggregationRule.aggregationFunctionName)}`);
   } catch (e) {

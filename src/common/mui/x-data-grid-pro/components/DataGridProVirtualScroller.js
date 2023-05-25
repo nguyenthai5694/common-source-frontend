@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import * as React from 'react';
 import { styled, alpha, useTheme } from '@mui/material/styles';
 import {

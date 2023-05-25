@@ -1,43 +1,50 @@
+/* eslint-disable max-len */
+/* eslint-disable max-lines */
 import * as React from 'react';
-import PropTypes from 'prop-types';
-import { useLicenseVerifier, Watermark } from '@mui/x-license-pro';
+import { jsx as _jsx } from 'react/jsx-runtime';
+import { jsxs as _jsxs } from 'react/jsx-runtime';
+import { GridBody, GridFooterPlaceholder, GridHeader, GridRoot, GridContextProvider, useGridSelector, gridPinnedColumnsSelector } from 'common/mui/x-data-grid-pro';
+import { DataGridProVirtualScroller } from 'common/mui/x-data-grid-pro/internals';
+import { useLicenseVerifier } from 'common/mui/x-license-pro';
+import { Watermark } from 'common/mui/x-license-pro';
 import { chainPropTypes } from '@mui/utils';
-import { GridBody, GridFooterPlaceholder, GridHeader, GridRoot, GridContextProvider, useGridSelector, gridPinnedColumnsSelector } from '@mui/x-data-grid-pro';
-import { DataGridProVirtualScroller } from '@mui/x-data-grid-pro/internals';
+import PropTypes from 'prop-types';
+import { getReleaseInfo } from '../utils/releaseInfo';
 import { useDataGridPremiumComponent } from './useDataGridPremiumComponent';
 import { useDataGridPremiumProps } from './useDataGridPremiumProps';
-import { getReleaseInfo } from '../utils/releaseInfo';
-import { jsx as _jsx } from "react/jsx-runtime";
-import { jsxs as _jsxs } from "react/jsx-runtime";
+
 var releaseInfo = getReleaseInfo();
 var DataGridPremiumRaw = /*#__PURE__*/React.forwardRef(function DataGridPremium(inProps, ref) {
   var props = useDataGridPremiumProps(inProps);
   var privateApiRef = useDataGridPremiumComponent(props.apiRef, props);
+
   useLicenseVerifier('x-data-grid-premium', releaseInfo);
   var pinnedColumns = useGridSelector(privateApiRef, gridPinnedColumnsSelector);
+
   return /*#__PURE__*/_jsx(GridContextProvider, {
-    privateApiRef: privateApiRef,
-    props: props,
+    privateApiRef,
+    props,
     children: /*#__PURE__*/_jsxs(GridRoot, {
       className: props.className,
       style: props.style,
       sx: props.sx,
-      ref: ref,
+      ref,
       children: [/*#__PURE__*/_jsx(GridHeader, {}), /*#__PURE__*/_jsx(GridBody, {
         VirtualScrollerComponent: DataGridProVirtualScroller,
         ColumnHeadersProps: {
-          pinnedColumns: pinnedColumns
+          pinnedColumns,
         },
         children: /*#__PURE__*/_jsx(Watermark, {
-          packageName: "x-data-grid-premium",
-          releaseInfo: releaseInfo
-        })
-      }), /*#__PURE__*/_jsx(GridFooterPlaceholder, {})]
-    })
+          packageName: 'x-data-grid-premium',
+          releaseInfo,
+        }),
+      }), /*#__PURE__*/_jsx(GridFooterPlaceholder, {})],
+    }),
   });
 });
+
 export var DataGridPremium = /*#__PURE__*/React.memo(DataGridPremiumRaw);
-process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
+process.env.NODE_ENV !== 'production' ? DataGridPremiumRaw.propTypes = {
   // ----------------------------- Warning --------------------------------
   // | These PropTypes are generated from the TypeScript type definitions |
   // | To update them edit the TypeScript types and run "yarn proptypes"  |
@@ -62,7 +69,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
    * The ref object that allows grid manipulation. Can be instantiated with `useGridApiRef()`.
    */
   apiRef: PropTypes.shape({
-    current: PropTypes.object.isRequired
+    current: PropTypes.object.isRequired,
   }),
   /**
    * The label of the grid.
@@ -100,6 +107,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
     if (!props.pagination && props.checkboxSelectionVisibleOnly) {
       return new Error('MUI: The `checkboxSelectionVisibleOnly` prop has no effect when the pagination is not enabled.');
     }
+
     return null;
   }),
   /**
@@ -248,7 +256,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
   experimentalFeatures: PropTypes.shape({
     columnGrouping: PropTypes.bool,
     lazyLoading: PropTypes.bool,
-    warnIfFocusStateIsNotSynced: PropTypes.bool
+    warnIfFocusStateIsNotSynced: PropTypes.bool,
   }),
   /**
    * Filtering can be processed on the server or client-side.
@@ -259,6 +267,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
     if (props.treeData && props.filterMode === 'server') {
       return new Error('MUI: The `filterMode="server"` prop is not available when the `treeData` is enabled.');
     }
+
     return null;
   }),
   /**
@@ -269,11 +278,11 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
       field: PropTypes.string.isRequired,
       id: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
       operator: PropTypes.string.isRequired,
-      value: PropTypes.any
+      value: PropTypes.any,
     })).isRequired,
     logicOperator: PropTypes.oneOf(['and', 'or']),
     quickFilterLogicOperator: PropTypes.oneOf(['and', 'or']),
-    quickFilterValues: PropTypes.array
+    quickFilterValues: PropTypes.array,
   }),
   /**
    * Determines the position of an aggregated value.
@@ -363,6 +372,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
     if (props.pagination && props.hideFooterRowCount) {
       return new Error('MUI: The `hideFooterRowCount` prop has no effect when the pagination is enabled.');
     }
+
     return null;
   }),
   /**
@@ -425,7 +435,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
     debug: PropTypes.func.isRequired,
     error: PropTypes.func.isRequired,
     info: PropTypes.func.isRequired,
-    warn: PropTypes.func.isRequired
+    warn: PropTypes.func.isRequired,
   }),
   /**
    * Allows to pass the logging level or false to turn off logging.
@@ -727,21 +737,21 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
    */
   paginationModel: PropTypes.shape({
     page: PropTypes.number.isRequired,
-    pageSize: PropTypes.number.isRequired
+    pageSize: PropTypes.number.isRequired,
   }),
   /**
    * The column fields to display pinned to left or right.
    */
   pinnedColumns: PropTypes.shape({
     left: PropTypes.arrayOf(PropTypes.string),
-    right: PropTypes.arrayOf(PropTypes.string)
+    right: PropTypes.arrayOf(PropTypes.string),
   }),
   /**
    * Rows data to pin on top or bottom.
    */
   pinnedRows: PropTypes.shape({
     bottom: PropTypes.arrayOf(PropTypes.object),
-    top: PropTypes.arrayOf(PropTypes.object)
+    top: PropTypes.arrayOf(PropTypes.object),
   }),
   /**
    * Callback called before updating a row with new values in the row and cell editing.
@@ -859,7 +869,7 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
    */
   sortModel: PropTypes.arrayOf(PropTypes.shape({
     field: PropTypes.string.isRequired,
-    sort: PropTypes.oneOf(['asc', 'desc'])
+    sort: PropTypes.oneOf(['asc', 'desc']),
   })),
   /**
    * The system prop that allows defining system overrides as well as additional CSS styles.
@@ -890,5 +900,5 @@ process.env.NODE_ENV !== "production" ? DataGridPremiumRaw.propTypes = {
    * @param {GridCellSelectionModel} cellSelectionModel Object in the shape of [[GridCellSelectionModel]] containing the selected cells.
    * @param {GridCallbackDetails} details Additional details for this callback.
    */
-  unstable_onCellSelectionModelChange: PropTypes.func
+  unstable_onCellSelectionModelChange: PropTypes.func,
 } : void 0;

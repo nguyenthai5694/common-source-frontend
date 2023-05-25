@@ -132,7 +132,7 @@ export function SelectGroup({
                 disabled={!_options[index] || disableAll}
                 onChange={handleChange(index, label.name)}
                 size={size}
-                hasBlankOption={label.hasBlankOption}
+                isBlank={label.hasBlankOption}
                 filter={filter}
               />
             </FormControl>

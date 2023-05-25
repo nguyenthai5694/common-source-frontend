@@ -1,4 +1,4 @@
-import { createSelector } from '@mui/x-data-grid-pro/internals';
+import { createSelector } from 'common/mui/x-data-grid-pro/internals';
 export const gridAggregationStateSelector = state => state.aggregation;
 
 /**

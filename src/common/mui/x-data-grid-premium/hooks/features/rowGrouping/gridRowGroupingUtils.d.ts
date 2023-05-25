@@ -2,8 +2,8 @@ import * as React from 'react';
 import {
     GridRowId, GridRowTreeConfig, GridFilterState,
     GridFilterModel, GridRowModel, GridColDef, GridKeyValue,
-} from '@mui/x-data-grid-pro';
-import { GridAggregatedFilterItemApplier, GridColumnRawLookup, GridApiCommunity } from '@mui/x-data-grid-pro/internals';
+} from 'common/mui/x-data-grid-pro';
+import { GridAggregatedFilterItemApplier, GridColumnRawLookup, GridApiCommunity } from 'common/mui/x-data-grid-pro/internals';
 import { DataGridPremiumProcessedProps } from '../../../models/dataGridPremiumProps';
 import { GridPrivateApiPremium } from '../../../models/gridApiPremium';
 import { GridStatePremium } from '../../../models/gridStatePremium';
@@ -30,7 +30,7 @@ export declare const filterRowTreeFromGroupingColumns:
     (params: FilterRowTreeFromTreeDataParams) => Omit<GridFilterState, 'filterModel'>;
 export declare const getColDefOverrides:
     (groupingColDefProp: DataGridPremiumProcessedProps['groupingColDef'], fields: string[]) =>
-        import('@mui/x-data-grid-pro').GridGroupingColDefOverride<any> | null | undefined;
+        import('common/mui/x-data-grid-pro').GridGroupingColDefOverride<any> | null | undefined;
 export declare const mergeStateWithRowGroupingModel:
     (rowGroupingModel: GridRowGroupingModel) => (state: GridStatePremium) => GridStatePremium;
 export declare const setStrategyAvailability:

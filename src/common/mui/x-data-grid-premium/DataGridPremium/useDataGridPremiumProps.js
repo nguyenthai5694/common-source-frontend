@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { useThemeProps } from '@mui/material/styles';
-import { DATA_GRID_PRO_PROPS_DEFAULT_VALUES, GRID_DEFAULT_LOCALE_TEXT } from '@mui/x-data-grid-pro';
-import { computeSlots, uncapitalizeObjectKeys } from '@mui/x-data-grid-pro/internals';
 import _extends from '@babel/runtime/helpers/esm/extends';
 import _objectWithoutPropertiesLoose from '@babel/runtime/helpers/esm/objectWithoutPropertiesLoose';
+import { DATA_GRID_PRO_PROPS_DEFAULT_VALUES, GRID_DEFAULT_LOCALE_TEXT } from '../../x-data-grid-pro';
+import { computeSlots, uncapitalizeObjectKeys } from '../../x-data-grid-pro/internals';
 import { DATA_GRID_PREMIUM_DEFAULT_SLOTS_COMPONENTS } from '../constants/dataGridPremiumDefaultSlotsComponents';
 import { GRID_AGGREGATION_FUNCTIONS } from '../hooks/features/aggregation';
 

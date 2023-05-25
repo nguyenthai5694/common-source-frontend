@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { GridColDef, GridGroupingColDefOverride } from '@mui/x-data-grid-pro';
-import { GridColumnRawLookup } from '@mui/x-data-grid-pro/internals';
+import { GridColDef, GridGroupingColDefOverride } from 'common/mui/x-data-grid-pro';
+import { GridColumnRawLookup } from 'common/mui/x-data-grid-pro/internals';
 import { GridApiPremium } from '../../../models/gridApiPremium';
 
 interface CreateGroupingColDefMonoCriteriaParams {

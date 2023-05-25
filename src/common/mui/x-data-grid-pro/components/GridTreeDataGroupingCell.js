@@ -1,23 +1,26 @@
-import _extends from "@babel/runtime/helpers/esm/extends";
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import { unstable_composeClasses as composeClasses } from '@mui/utils';
+/* eslint-disable max-len */
 import Box from '@mui/material/Box';
 import { useGridSelector, gridFilteredDescendantCountLookupSelector, getDataGridUtilityClass } from '@mui/x-data-grid';
-import { useGridRootProps } from '../hooks/utils/useGridRootProps';
+import { jsx as _jsx } from 'react/jsx-runtime';
+import { jsxs as _jsxs } from 'react/jsx-runtime';
+import _extends from '@babel/runtime/helpers/esm/extends';
+import { unstable_composeClasses as composeClasses } from '@mui/utils';
+import PropTypes from 'prop-types';
 import { useGridApiContext } from '../hooks/utils/useGridApiContext';
-import { jsx as _jsx } from "react/jsx-runtime";
-import { jsxs as _jsxs } from "react/jsx-runtime";
+import { useGridRootProps } from '../hooks/utils/useGridRootProps';
+
 const useUtilityClasses = ownerState => {
   const {
-    classes
+    classes,
   } = ownerState;
   const slots = {
     root: ['treeDataGroupingCell'],
-    toggle: ['treeDataGroupingCellToggle']
+    toggle: ['treeDataGroupingCellToggle'],
   };
+
   return composeClasses(slots, getDataGridUtilityClass, classes);
 };
+
 function GridTreeDataGroupingCell(props) {
   var _filteredDescendantCo, _rootProps$slotProps;
   const {
@@ -26,12 +29,12 @@ function GridTreeDataGroupingCell(props) {
     formattedValue,
     rowNode,
     hideDescendantCount,
-    offsetMultiplier = 2
+    offsetMultiplier = 2,
   } = props;
   const rootProps = useGridRootProps();
   const apiRef = useGridApiContext();
   const ownerState = {
-    classes: rootProps.classes
+    classes: rootProps.classes,
   };
   const classes = useUtilityClasses(ownerState);
   const filteredDescendantCountLookup = useGridSelector(apiRef, gridFilteredDescendantCountLookupSelector);
@@ -46,26 +49,26 @@ function GridTreeDataGroupingCell(props) {
   return /*#__PURE__*/_jsxs(Box, {
     className: classes.root,
     sx: {
-      ml: rowNode.depth * offsetMultiplier
+      ml: rowNode.depth * offsetMultiplier,
     },
-    children: [/*#__PURE__*/_jsx("div", {
+    children: [/*#__PURE__*/_jsx('div', {
       className: classes.toggle,
       children: filteredDescendantCount > 0 && /*#__PURE__*/_jsx(rootProps.slots.baseIconButton, _extends({
-        size: "small",
+        size: 'small',
         onClick: handleClick,
         tabIndex: -1,
-        "aria-label": rowNode.childrenExpanded ? apiRef.current.getLocaleText('treeDataCollapse') : apiRef.current.getLocaleText('treeDataExpand')
+        'aria-label': rowNode.childrenExpanded ? apiRef.current.getLocaleText('treeDataCollapse') : apiRef.current.getLocaleText('treeDataExpand'),
       }, rootProps == null ? void 0 : (_rootProps$slotProps = rootProps.slotProps) == null ? void 0 : _rootProps$slotProps.baseIconButton, {
         children: /*#__PURE__*/_jsx(Icon, {
-          fontSize: "inherit"
-        })
-      }))
-    }), /*#__PURE__*/_jsxs("span", {
-      children: [formattedValue === undefined ? rowNode.groupingKey : formattedValue, !hideDescendantCount && filteredDescendantCount > 0 ? ` (${filteredDescendantCount})` : '']
-    })]
+          fontSize: 'inherit',
+        }),
+      })),
+    }), /*#__PURE__*/_jsxs('span', {
+      children: [formattedValue === undefined ? rowNode.groupingKey : formattedValue, !hideDescendantCount && filteredDescendantCount > 0 ? ` (${filteredDescendantCount})` : ''],
+    })],
   });
 }
-process.env.NODE_ENV !== "production" ? GridTreeDataGroupingCell.propTypes = {
+process.env.NODE_ENV !== 'production' ? GridTreeDataGroupingCell.propTypes = {
   // ----------------------------- Warning --------------------------------
   // | These PropTypes are generated from the TypeScript type definitions |
   // | To update them edit the TypeScript types and run "yarn proptypes"  |
@@ -93,8 +96,8 @@ process.env.NODE_ENV !== "production" ? GridTreeDataGroupingCell.propTypes = {
    */
   focusElementRef: PropTypes.oneOfType([PropTypes.func, PropTypes.shape({
     current: PropTypes.shape({
-      focus: PropTypes.func.isRequired
-    })
+      focus: PropTypes.func.isRequired,
+    }),
   })]),
   /**
    * The cell value formatted with the column valueFormatter.
@@ -134,6 +137,6 @@ process.env.NODE_ENV !== "production" ? GridTreeDataGroupingCell.propTypes = {
    * The cell value.
    * If the column has `valueGetter`, use `params.row` to directly access the fields.
    */
-  value: PropTypes.any
+  value: PropTypes.any,
 } : void 0;
 export { GridTreeDataGroupingCell };

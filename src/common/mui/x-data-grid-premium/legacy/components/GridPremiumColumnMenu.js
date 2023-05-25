@@ -1,7 +1,7 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { GridGenericColumnMenu, GRID_COLUMN_MENU_SLOTS, GRID_COLUMN_MENU_SLOT_PROPS } from '@mui/x-data-grid-pro';
+import { GridGenericColumnMenu, GRID_COLUMN_MENU_SLOTS, GRID_COLUMN_MENU_SLOT_PROPS } from 'common/mui/x-data-grid-pro';
 import { GridColumnMenuAggregationItem } from './GridColumnMenuAggregationItem';
 import { isGroupingColumn } from '../hooks/features/rowGrouping';
 import { GridColumnMenuRowGroupItem } from './GridColumnMenuRowGroupItem';

@@ -1,5 +1,6 @@
 
 import { ColumnsConfig, TableConfig } from 'common/blocks/datatable-ui/datatable.type';
+import TableAction from 'common/blocks/table-ui/table-action';
 import DatatableSearch from './components/datatable-search.component';
 // import { ShokangaeData } from './type/shokangae.type';
 export interface SettingMenuData {
@@ -27,7 +28,7 @@ export const columnsConfig: ColumnsConfig<SettingMenuData> = [
     headerName: 'Name',
     field: 'name',
     align: 'left',
-    width: 200,
+    width: 1000,
   },
   {
     headerName: 'Path',
@@ -40,6 +41,7 @@ export const columnsConfig: ColumnsConfig<SettingMenuData> = [
     field: 'icon',
     align: 'right',
     width: 200,
+
   },
   {
     headerName: 'Action',
@@ -47,7 +49,7 @@ export const columnsConfig: ColumnsConfig<SettingMenuData> = [
     align: 'center',
     width: 140,
     disableSort: true,
-    // component: TableAction,
+    component: TableAction,
     buttons: 'view,edit,delete',
   },
 ];

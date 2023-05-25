@@ -1,8 +1,10 @@
-import React, { useCallback, useState, useRef } from 'react'
-import clsx from 'clsx';
-import { FormControlChildProps, ControlStaticType } from 'common/form'
+import React, { useCallback, useState, useEffect } from 'react'
+import { FormControlLabel, FormLabel, Radio, RadioGroup } from '@mui/material';
+import { FormControlChildProps, ControlStaticType, SelectOptions } from 'common/form'
 
 export interface RadioProps extends FormControlChildProps {
+  options: SelectOptions;
+
   labelId?: string;
 
   label?: string;
@@ -11,20 +13,6 @@ export interface RadioProps extends FormControlChildProps {
    * Default: ''
    */
   value?: string | number;
-
-  /**
-   * If this value is provided, 'checked' state will be controlled by its parent.
-   *
-   * Default: undefined
-   */
-  checked?: boolean;
-
-  /**
-   * This property allow client to set initial checked state.
-   *
-   * Default: false
-   */
-  defaultChecked?: boolean;
 
   /**
    * Default: ''
@@ -38,16 +26,15 @@ export interface RadioProps extends FormControlChildProps {
   onBlur?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export function Radio({
+export function CommonRadio({
+  formik,
+  options = [],
   id,
   labelId = undefined,
   label,
   name,
   value = '',
-  disabled = false,
   className = '',
-  checked,
-  defaultChecked = false,
   text = '',
   onChange,
   onBlur,
@@ -55,68 +42,51 @@ export function Radio({
   fmOnBlur,
   status,
 }: RadioProps) {
-  const radioRef = useRef<HTMLInputElement>(null);
-  const [innerChecked, setCheckedState] = useState(defaultChecked);
-  let isChecked = checked !== undefined ? checked : innerChecked;
+  const [selected, setSelected] = useState('')
 
-  if (radioRef.current && checked === undefined) {
-    isChecked = radioRef.current.checked;
-  }
+  useEffect(() => {
+    return () => {
+      formik && setSelected(formik.values[`${name}`])
+    }
+  }, [formik, name])
 
   const handleChange = useCallback(
     (e) => {
       onChange && onChange(e);
 
       fmOnChange && fmOnChange(e);
-
-      setCheckedState(e.target.checked);
     },
     [onChange, fmOnChange],
   );
 
-  const handleBlur = useCallback(
-    (e) => {
-      onBlur && onBlur(e);
-
-      fmOnBlur && fmOnBlur(e);
-    },
-    [onBlur, fmOnBlur],
-  );
-
-  // Support for modal
-  const handleKeyDown = (e) => {
-    const code = e.keyCode ? e.keyCode : e.which;
-    const keyCodeEnter = 13;
-
-    if (code === keyCodeEnter) {
-      radioRef.current?.click();
-    }
-  }
-
   return (
-    <label className={`p-radio ${className}`} onKeyDown={handleKeyDown}>
-      <input
-        id={id}
-        ref={radioRef}
-        className='p-radio__radio'
-        type='radio'
+    <>
+
+      <RadioGroup
+        row
+        aria-labelledby='demo-radio-buttons-group-label'
+        defaultValue='female'
         name={name}
-        value={value}
-        checked={isChecked}
-        disabled={disabled}
-        onChange={handleChange}
-        onBlur={handleBlur}
-      />
+      >
+        <FormLabel sx={{ display: 'flex', alignItems: 'center', marginRight: '15px' }}>{label}: </FormLabel>
 
-      <span id={labelId} className={clsx('p-radio__text', {
-        '-inValid': status === 'inValid',
-      })}>{label}</span>
+        {options && options.map((item) => {
+          const isCheck = selected === item.value
 
-      {text && <span className={clsx('p-radio__aux', {
-        '-inValid': status === 'inValid',
-      })}>{text}</span>}
-    </label>
+          return (<FormControlLabel key={item.value} control={
+            <Radio
+              checked={isCheck}
+              value={item.value}
+              onChange={handleChange}
+              name={name}
+            />
+          }
+            label={item.label} />)
+        })}
+
+      </RadioGroup>
+    </>
   )
 }
 
-Radio.staticType = ControlStaticType.RADIO;
+CommonRadio.staticType = ControlStaticType.RADIO;

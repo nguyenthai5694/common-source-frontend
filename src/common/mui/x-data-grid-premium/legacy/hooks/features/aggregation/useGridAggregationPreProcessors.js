@@ -1,8 +1,8 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
 import _toConsumableArray from "@babel/runtime/helpers/esm/toConsumableArray";
 import * as React from 'react';
-import { gridColumnLookupSelector } from '@mui/x-data-grid-pro';
-import { useGridRegisterPipeProcessor } from '@mui/x-data-grid-pro/internals';
+import { gridColumnLookupSelector } from 'common/mui/x-data-grid-pro';
+import { useGridRegisterPipeProcessor } from 'common/mui/x-data-grid-pro/internals';
 import { getAvailableAggregationFunctions, addFooterRows, getAggregationRules, mergeStateWithAggregationModel } from './gridAggregationUtils';
 import { wrapColumnWithAggregationValue, unwrapColumnFromAggregation } from './wrapColumnWithAggregation';
 import { gridAggregationModelSelector } from './gridAggregationSelectors';

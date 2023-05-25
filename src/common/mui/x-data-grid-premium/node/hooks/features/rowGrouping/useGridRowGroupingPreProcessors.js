@@ -5,8 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.useGridRowGroupingPreProcessors = void 0;
 var React = _interopRequireWildcard(require("react"));
-var _xDataGridPro = require("@mui/x-data-grid-pro");
-var _internals = require("@mui/x-data-grid-pro/internals");
+var _xDataGridPro = require("common/mui/x-data-grid-pro");
+var _internals = require("common/mui/x-data-grid-pro/internals");
 var _gridRowGroupingSelector = require("./gridRowGroupingSelector");
 var _createGroupingColDef = require("./createGroupingColDef");
 var _gridRowGroupingUtils = require("./gridRowGroupingUtils");

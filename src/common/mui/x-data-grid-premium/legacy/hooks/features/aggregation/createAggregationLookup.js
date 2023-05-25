@@ -1,4 +1,4 @@
-import { gridColumnLookupSelector, gridFilteredRowsLookupSelector, gridRowTreeSelector, GRID_ROOT_GROUP_ID } from '@mui/x-data-grid-pro';
+import { gridColumnLookupSelector, gridFilteredRowsLookupSelector, gridRowTreeSelector, GRID_ROOT_GROUP_ID } from 'common/mui/x-data-grid-pro';
 import { getAggregationRules } from './gridAggregationUtils';
 import { gridAggregationModelSelector } from './gridAggregationSelectors';
 var getAggregationCellValue = function getAggregationCellValue(_ref) {

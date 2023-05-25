@@ -3,8 +3,8 @@ import _extends from "@babel/runtime/helpers/esm/extends";
 const _excluded = ["leafField", "mainGroupingCriteria", "hideDescendantCount"],
   _excluded2 = ["leafField", "mainGroupingCriteria", "hideDescendantCount"];
 import * as React from 'react';
-import { GRID_STRING_COL_DEF } from '@mui/x-data-grid-pro';
-import { isSingleSelectColDef } from '@mui/x-data-grid-pro/internals';
+import { GRID_STRING_COL_DEF } from 'common/mui/x-data-grid-pro';
+import { isSingleSelectColDef } from 'common/mui/x-data-grid-pro/internals';
 import { GridGroupingColumnFooterCell } from '../../../components/GridGroupingColumnFooterCell';
 import { GridGroupingCriteriaCell } from '../../../components/GridGroupingCriteriaCell';
 import { GridGroupingColumnLeafCell } from '../../../components/GridGroupingColumnLeafCell';

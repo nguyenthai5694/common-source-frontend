@@ -1,5 +1,5 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
-import { passFilterLogic } from '@mui/x-data-grid-pro/internals';
+import { passFilterLogic } from 'common/mui/x-data-grid-pro/internals';
 import { gridRowGroupingSanitizedModelSelector } from './gridRowGroupingSelector';
 export const GRID_ROW_GROUPING_SINGLE_GROUPING_FIELD = '__row_group_by_columns_group__';
 export const ROW_GROUPING_STRATEGY = 'grouping-columns';

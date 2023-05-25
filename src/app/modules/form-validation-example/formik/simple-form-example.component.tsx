@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { Checkbox, CustomSelect, Input, Radio, Textarea, InputTags } from 'common/form';
+import { CommonCheckbox, CustomSelect, Input, CommonRadio, Textarea, InputTags } from 'common/form';
 
 class SimpleForm extends Component<any, any> {
   constructor(props) {
@@ -105,11 +105,21 @@ class SimpleForm extends Component<any, any> {
         <label>Checkbox:</label>
 
         <div className={'form-control'}>
-          <Checkbox name={'checkbox1'} value={this.state.checkbox1} onChange={this.handleCheckboxChange}
-            className={'h-mt-10'} label={'件名'} />
+          <CommonCheckbox
+            options={[]}
+            name={'checkbox1'}
+            value={this.state.checkbox1}
+            onChange={this.handleCheckboxChange}
+            className={'h-mt-10'} label={'件名'}
+          />
 
-          <Checkbox name={'checkbox2'} value={this.state.checkbox2} onChange={this.handleCheckboxChange}
-            className={'h-mt-10'} label={'文書'} />
+          <CommonCheckbox
+            options={[]}
+            name={'checkbox2'}
+            value={this.state.checkbox2}
+            onChange={this.handleCheckboxChange}
+            className={'h-mt-10'} label={'文書'}
+          />
         </div>
 
         <br></br><br></br>
@@ -117,9 +127,21 @@ class SimpleForm extends Component<any, any> {
         <label>Radio:</label>
 
         <div className={'form-control'}>
-          <Radio name={'radio'} value={'個人'} label={'個人'} defaultChecked={true} onChange={this.handleInputChange} />
+          <CommonRadio
+            options={[]}
+            name={'radio'}
+            value={'個人'}
+            label={'個人'}
+            onChange={this.handleInputChange}
+          />
 
-          <Radio name={'radio'} value={'所属'} label={'所属'} onChange={this.handleInputChange} />
+          <CommonRadio
+            options={[]}
+            name={'radio'}
+            value={'所属'}
+            label={'所属'}
+            onChange={this.handleInputChange}
+          />
         </div>
 
         <br></br><br></br>

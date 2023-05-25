@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback, ReactNode } from 'react';
-import { Checkbox } from 'common/form';
+import { CommonCheckbox } from 'common/form';
 import Button from 'common/parts/button/button.component';
 import useOnClickOutside from 'app/hooks/use-on-click-outside.hook';
 
@@ -101,7 +101,8 @@ export default function VisibleChanger({
           <h2 className='p-visible-changer__title'>{title}</h2>
 
           {_list.map((item, index) => (
-            <Checkbox
+            <CommonCheckbox
+              options={[]}
               name='column'
               checked={item.isVisible}
               label={item.label}

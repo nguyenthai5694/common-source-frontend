@@ -1,0 +1,72 @@
+@use '../foundation/config' as *;
+
+.p-calendar {
+  input {
+    display: block;
+    box-sizing: content-box;
+    width: 100%;
+    min-width: 0;
+    height: 1.4375em;
+    margin: 0;
+    padding: 8.5px 14px;
+    padding-top: 1px;
+    color: currentColor;
+    font: inherit;
+    letter-spacing: inherit;
+    background: none;
+    border: 0;
+    animation-name: mui-auto-fill-cancel;
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
+}
+
+.p-calendar {
+  label {
+    top: -8px;
+  }
+}
+
+.period-calendar {
+  &.-sizeS {
+    label {
+      top: -8px;
+
+      &.MuiInputLabel-shrink {
+        top: 0;
+      }
+    }
+
+    .MuiInputBase-root {
+      height: 40px;
+    }
+
+    input {
+      box-sizing: content-box;
+      width: 100%;
+      min-width: 0;
+      height: 1.4375em;
+      margin: 0;
+      padding: 0px 14px;
+      padding-top: 1px;
+      color: currentColor;
+      font: inherit;
+      letter-spacing: inherit;
+      background: none;
+      border: 0;
+      animation-name: mui-auto-fill-cancel;
+      animation-name: mui-auto-fill-cancel;
+      animation-duration: 10ms;
+      animation-duration: 10ms;
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+
+  input {
+    font-size: 14px;
+  }
+}

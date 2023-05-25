@@ -69,7 +69,7 @@ Object.defineProperty(exports, "useGridRootProps", {
   }
 });
 require("./typeOverloads");
-var _xLicensePro = require("@mui/x-license-pro");
+var _xLicensePro = require("common/mui/x-license-pro");
 var _components = require("@mui/x-data-grid/components");
 Object.keys(_components).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -82,7 +82,7 @@ Object.keys(_components).forEach(function (key) {
     }
   });
 });
-var _components2 = require("@mui/x-data-grid-pro/components");
+var _components2 = require("common/mui/x-data-grid-pro/components");
 Object.keys(_components2).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
@@ -118,7 +118,7 @@ Object.keys(_hooks).forEach(function (key) {
     }
   });
 });
-var _hooks2 = require("@mui/x-data-grid-pro/hooks");
+var _hooks2 = require("common/mui/x-data-grid-pro/hooks");
 Object.keys(_hooks2).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
@@ -154,7 +154,7 @@ Object.keys(_models).forEach(function (key) {
     }
   });
 });
-var _models2 = require("@mui/x-data-grid-pro/models");
+var _models2 = require("common/mui/x-data-grid-pro/models");
 Object.keys(_models2).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
@@ -202,7 +202,7 @@ Object.keys(_utils).forEach(function (key) {
     }
   });
 });
-var _utils2 = require("@mui/x-data-grid-pro/utils");
+var _utils2 = require("common/mui/x-data-grid-pro/utils");
 Object.keys(_utils2).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
@@ -262,6 +262,6 @@ Object.keys(_components3).forEach(function (key) {
     }
   });
 });
-var _xDataGridPro = require("@mui/x-data-grid-pro");
+var _xDataGridPro = require("common/mui/x-data-grid-pro");
 var _reexports = require("./typeOverloads/reexports");
 var _reexports2 = require("./components/reexports");

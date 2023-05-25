@@ -5,8 +5,9 @@ import {
 } from '@mui/x-data-grid';
 import { jsx as _jsx } from 'react/jsx-runtime';
 import { jsxs as _jsxs } from 'react/jsx-runtime';
+import { useLicenseVerifier } from 'common/mui/x-license-pro';
+import { Watermark } from 'common/mui/x-license-pro';
 import { chainPropTypes } from '@mui/utils';
-import { Watermark } from '@mui/x-license-pro';
 import PropTypes from 'prop-types';
 import { DataGridProVirtualScroller } from '../components/DataGridProVirtualScroller';
 import { gridPinnedColumnsSelector } from '../hooks/features/columnPinning/gridColumnPinningSelector';
@@ -19,7 +20,7 @@ const DataGridProRaw = /*#__PURE__*/React.forwardRef(function DataGridPro(inProp
   const props = useDataGridProProps(inProps);
   const privateApiRef = useDataGridProComponent(props.apiRef, props);
 
-  // useLicenseVerifier('x-data-grid-pro', releaseInfo);
+  useLicenseVerifier('x-data-grid-pro', releaseInfo);
   const pinnedColumns = useGridSelector(privateApiRef, gridPinnedColumnsSelector);
 
   return /*#__PURE__*/_jsx(GridContextProvider, {

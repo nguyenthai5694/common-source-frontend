@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { GridExportMenuItemProps } from '@mui/x-data-grid-pro';
+import { GridExportMenuItemProps } from 'common/mui/x-data-grid-pro';
 import { GridExcelExportOptions } from '../hooks/features/export';
 
 export type GridExcelExportMenuItemProps = GridExportMenuItemProps<GridExcelExportOptions>;

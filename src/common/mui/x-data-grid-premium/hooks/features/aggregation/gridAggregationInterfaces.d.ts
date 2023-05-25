@@ -1,7 +1,7 @@
 import {
     GridValueFormatterParams, GridRowId,
     GridRowModel, GridColDef,
-} from '@mui/x-data-grid-pro';
+} from 'common/mui/x-data-grid-pro';
 
 export interface GridAggregationState {
     model: GridAggregationModel;

@@ -1,6 +1,6 @@
 import _extends from "@babel/runtime/helpers/esm/extends";
 import _toConsumableArray from "@babel/runtime/helpers/esm/toConsumableArray";
-import { passFilterLogic } from '@mui/x-data-grid-pro/internals';
+import { passFilterLogic } from 'common/mui/x-data-grid-pro/internals';
 import { gridRowGroupingSanitizedModelSelector } from './gridRowGroupingSelector';
 export var GRID_ROW_GROUPING_SINGLE_GROUPING_FIELD = '__row_group_by_columns_group__';
 export var ROW_GROUPING_STRATEGY = 'grouping-columns';

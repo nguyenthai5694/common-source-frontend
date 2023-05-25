@@ -1,0 +1,107 @@
+{
+  "_from": "@mui/x-date-pickers-pro",
+  "_id": "@mui/x-date-pickers-pro@6.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-QU4eKacOjGunBGjcGyMJDH+D3ZtYtz+zOXbWKNjGspWr1kZQuACVyPqPugfKA+itE7wfZh6XAWgsX5Xnq9x3yQ==",
+  "_location": "/@mui/x-date-pickers-pro",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@mui/x-date-pickers-pro",
+    "name": "@mui/x-date-pickers-pro",
+    "escapedName": "@mui%2fx-date-pickers-pro",
+    "scope": "@mui",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@mui/x-date-pickers-pro/-/x-date-pickers-pro-6.0.4.tgz",
+  "_shasum": "5edd864b4618ff181e7d2625c100557dfbe3c212",
+  "_spec": "@mui/x-date-pickers-pro",
+  "_where": "D:\\work\\Thaco\\git\\common-source-frontend",
+  "author": {
+    "name": "MUI Team"
+  },
+  "bugs": {
+    "url": "https://github.com/mui/mui-x/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@babel/runtime": "^7.21.0",
+    "@date-io/date-fns": "^2.16.0",
+    "@date-io/dayjs": "^2.16.0",
+    "@date-io/luxon": "^2.16.1",
+    "@date-io/moment": "^2.16.1",
+    "@mui/utils": "^5.11.13",
+    "@mui/x-date-pickers": "6.0.4",
+    "common/mui/x-license-pro": "6.0.3",
+    "clsx": "^1.2.1",
+    "prop-types": "^15.8.1",
+    "react-transition-group": "^4.4.5"
+  },
+  "deprecated": false,
+  "description": "The commercial edition of the date picker components (MUI X).",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "homepage": "https://mui.com/x/react-date-pickers/",
+  "keywords": [
+    "react",
+    "react-component",
+    "mui",
+    "material-ui",
+    "material design",
+    "datepicker",
+    "daterangepicker",
+    "timepicker",
+    "datetimepicker"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "./node/index.js",
+  "module": "./index.js",
+  "name": "@mui/x-date-pickers-pro",
+  "peerDependencies": {
+    "@mui/material": "^5.4.1",
+    "@mui/system": "^5.4.1",
+    "date-fns": "^2.25.0",
+    "dayjs": "^1.10.7",
+    "luxon": "^3.0.2",
+    "moment": "^2.29.4",
+    "react": "^17.0.2 || ^18.0.0",
+    "react-dom": "^17.0.2 || ^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "date-fns": {
+      "optional": true
+    },
+    "dayjs": {
+      "optional": true
+    },
+    "luxon": {
+      "optional": true
+    },
+    "moment": {
+      "optional": true
+    }
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mui/mui-x.git",
+    "directory": "packages/x-date-pickers-pro"
+  },
+  "setupFiles": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "sideEffects": false,
+  "types": "./index.d.ts",
+  "version": "6.0.4"
+}

@@ -10,9 +10,7 @@ interface TableToolbarProps {
 export default function TableToolbar({
   onSearch,
 }: TableToolbarProps) {
-  const {
-    tableConfig,
-  } = useContext(DatatableContext);
+  const { tableConfig } = useContext(DatatableContext);
 
   return (
     <div className='table-search'>

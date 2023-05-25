@@ -7,8 +7,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.useGridRowGrouping = exports.rowGroupingStateInitializer = void 0;
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
 var React = _interopRequireWildcard(require("react"));
-var _xDataGridPro = require("@mui/x-data-grid-pro");
-var _internals = require("@mui/x-data-grid-pro/internals");
+var _xDataGridPro = require("common/mui/x-data-grid-pro");
+var _internals = require("common/mui/x-data-grid-pro/internals");
 var _gridRowGroupingSelector = require("./gridRowGroupingSelector");
 var _gridRowGroupingUtils = require("./gridRowGroupingUtils");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -99,14 +99,14 @@ const useGridRowGrouping = (apiRef, props) => {
   const stateExportPreProcessing = React.useCallback((prevState, context) => {
     const rowGroupingModelToExport = (0, _gridRowGroupingSelector.gridRowGroupingModelSelector)(apiRef);
     const shouldExportRowGroupingModel =
-    // Always export if the `exportOnlyDirtyModels` property is not activated
-    !context.exportOnlyDirtyModels ||
-    // Always export if the model is controlled
-    props.rowGroupingModel != null ||
-    // Always export if the model has been initialized
-    props.initialState?.rowGrouping?.model != null ||
-    // Export if the model is not empty
-    Object.keys(rowGroupingModelToExport).length > 0;
+      // Always export if the `exportOnlyDirtyModels` property is not activated
+      !context.exportOnlyDirtyModels ||
+      // Always export if the model is controlled
+      props.rowGroupingModel != null ||
+      // Always export if the model has been initialized
+      props.initialState?.rowGrouping?.model != null ||
+      // Export if the model is not empty
+      Object.keys(rowGroupingModelToExport).length > 0;
     if (!shouldExportRowGroupingModel) {
       return prevState;
     }

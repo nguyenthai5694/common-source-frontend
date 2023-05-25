@@ -1,5 +1,5 @@
-import { GridKeyValue, GridValidRowModel } from '@mui/x-data-grid-pro';
-import type { GridControlledStateEventLookupPro, GridApiCachesPro } from '@mui/x-data-grid-pro/typeOverloads';
+import { GridKeyValue, GridValidRowModel } from 'common/mui/x-data-grid-pro';
+import type { GridControlledStateEventLookupPro, GridApiCachesPro } from 'common/mui/x-data-grid-pro/typeOverloads';
 import type {
     GridRowGroupingModel, GridAggregationModel,
     GridAggregationCellMeta, GridAggregationHeaderMeta,
@@ -63,7 +63,7 @@ export interface GridApiCachesPremium extends GridApiCachesPro {
     rowGrouping: GridRowGroupingInternalCache;
     aggregation: GridAggregationInternalCache;
 }
-declare module '@mui/x-data-grid-pro' {
+declare module 'common/mui/x-data-grid-pro' {
     interface GridControlledStateEventLookup extends
         GridControlledStateEventLookupPro, GridControlledStateEventLookupPremium {
     }
@@ -74,7 +74,7 @@ declare module '@mui/x-data-grid-pro' {
     interface GridApiCaches extends GridApiCachesPremium {
     }
 }
-declare module '@mui/x-data-grid-pro/internals' {
+declare module 'common/mui/x-data-grid-pro/internals' {
     interface GridApiCaches extends GridApiCachesPremium {
     }
     interface GridBaseColDef<R, V, F> extends GridColDefPremium<R, V, F> {

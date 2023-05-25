@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.useDataGridPremiumComponent = void 0;
-var _internals = require("@mui/x-data-grid-pro/internals");
+var _internals = require("common/mui/x-data-grid-pro/internals");
 var _useGridAggregation = require("../hooks/features/aggregation/useGridAggregation");
 var _useGridAggregationPreProcessors = require("../hooks/features/aggregation/useGridAggregationPreProcessors");
 var _useGridRowGrouping = require("../hooks/features/rowGrouping/useGridRowGrouping");

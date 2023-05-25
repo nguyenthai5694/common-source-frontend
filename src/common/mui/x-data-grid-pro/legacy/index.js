@@ -1,5 +1,5 @@
 /**
- * @mui/x-data-grid-pro v6.2.1
+ * common/mui/x-data-grid-pro v6.2.1
  *
  * @license MUI X Commercial
  * This source code is licensed under the commercial license found in the
@@ -7,7 +7,7 @@
  */
 import './typeOverloads';
 
-export { LicenseInfo } from '@mui/x-license-pro';
+export { LicenseInfo } from 'common/mui/x-license-pro';
 export * from '@mui/x-data-grid/components';
 export * from '@mui/x-data-grid/constants';
 export * from '@mui/x-data-grid/hooks';
