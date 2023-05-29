@@ -1,10 +1,12 @@
 /* eslint-disable max-lines */
 /* eslint-disable react-hooks/exhaustive-deps */
-import React from 'react'
+import React, { useCallback } from 'react'
+import { DateRangePicker, LocalizationProvider } from '@mui/x-date-pickers-pro';
+import { AdapterDayjs } from '@mui/x-date-pickers-pro/node/AdapterDayjs';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import clsx from 'clsx';
-import { DateRangePicker, LocalizationProvider } from 'common/mui/x-date-pickers-pro';
-import { AdapterDayjs } from 'common/mui/x-date-pickers-pro/node/AdapterDayjs';
+import dayjs from 'dayjs';
+import { FORMAT_DATE } from 'app/const/common.const';
 import { FormControlChildProps } from '../form-control';
 import { InputSizes } from '../input/input.component';
 
@@ -13,12 +15,6 @@ export interface PeriodCalendarProps extends FormControlChildProps {
 
   maxDate?: string;
 
-  defaultStatus?: undefined | 'valid' | 'inValid' | 'warn';
-
-  defaultMessage?: string;
-
-  defaultFromValue?: string;
-  defaultToValue?: string;
   require?: boolean;
 
   width?: number;
@@ -37,30 +33,44 @@ export interface PeriodCalendarProps extends FormControlChildProps {
   validation?: boolean
 
   disabled?: boolean;
+
+  localText?: string[]
 }
 
-export const DATE_INVALID = '日付のフォーマットが異なります。'
-
-// eslint-disable-next-line complexity
 export function PeriodCalendar({
   formik,
   size = 's',
   name,
   width = undefined,
-  defaultFromValue,
-  defaultToValue,
   minDate,
   maxDate,
-  defaultStatus,
-  defaultMessage,
   require = false,
   onChange = (a) => undefined,
-  value,
   status,
   index = undefined,
   validation = false,
   disabled = false,
+  localText,
 }: PeriodCalendarProps) {
+  /**
+   * Event change
+   */
+  const handleChange = useCallback(
+    (e) => {
+      onChange && onChange(e);
+
+      //Set Touched
+      formik && formik.setFieldTouched(name, true)
+
+      //Set Value
+      formik && formik.setFieldValue(name, [
+        dayjs(e[0]).format(FORMAT_DATE),
+        dayjs(e[1]).format(FORMAT_DATE),
+      ])
+    },
+    [onChange, formik, name],
+  );
+
   return (
     <div
       className={clsx('period-calendar ', {
@@ -73,7 +83,15 @@ export function PeriodCalendar({
       <LocalizationProvider dateAdapter={AdapterDayjs}>
 
         <DemoContainer components={['DateRangePicker']}>
-          <DateRangePicker localeText={{ start: 'Check-in', end: 'Check-out' }} />
+          <DateRangePicker
+            localeText={{ start: localText ? localText[0] : undefined, end: localText ? localText[1] : undefined }}
+            onChange={handleChange}
+            value={formik.values[`${name}`] ?
+              [dayjs(formik.values[`${name}`][0]), dayjs(formik.values[`${name}`][1])] : undefined}
+            format={FORMAT_DATE}
+            minDate={minDate ? dayjs(minDate) : undefined}
+            maxDate={maxDate ? dayjs(maxDate) : undefined}
+          />
         </DemoContainer>
       </LocalizationProvider>
     </div>

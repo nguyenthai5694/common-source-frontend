@@ -63,10 +63,9 @@ export default class SettingUsers extends PageComponent<UsersState> {
    * @param queries Event search of table
    */
   onSearch = (queries: DataTableQueries) => {
-    console.log(queries);
+    const store = window.localStorage.getItem('listUser')
 
-    const store = window.localStorage.getItem('listmenu')
-
+    console.log(JSON.parse(store));
     this.setState({
       ...this.state,
       data: store ? JSON.parse(store) : [],

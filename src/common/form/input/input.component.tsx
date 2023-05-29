@@ -213,16 +213,17 @@ export function Input({
 }: InputProps) {
   const [txValue, setTxValue] = useState(value || defaultValue)
   const [_status, changeStatus] = useState(status || defaultStatus)
+  const [isError, setError] = useState(false)
   const [isInputChanged, setInputChangeStatus] = useState(false)
   const inputTimeout = useRef(null);
   // const preventAddTextRef = useRef(false)
 
   useEffect(() => {
-    if (formik && !formik.getFieldMeta(name).value) {
-      formik.touched = _.set(formik.touched, name, false);
-    }
+    // if (formik && !formik.getFieldMeta(name).value) {
+    //   formik.touched = _.set(formik.touched, name, false);
+    // }
 
-    formik.setFieldTouched(name, true)
+    // formik.setFieldTouched(name, true)
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -230,6 +231,12 @@ export function Input({
   useEffect(() => {
     changeStatus(status);
   }, [status])
+
+  useEffect(() => {
+    if (formik && !formik.isValid && formik.errors[`${name}`]) {
+      setError(true)
+    } else setError(false)
+  }, [formik, name])
 
   useEffect(() => {
     setTxValue(value || '');
@@ -343,7 +350,11 @@ export function Input({
             </InputAdornment>
           ),
         } : {}}
-        helperText={helperText}
+        // helperText={helperText}
+        error={isError}
+        inputProps={{
+          maxLength,
+        }}
       />
 
     </div>

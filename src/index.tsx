@@ -13,10 +13,10 @@ import ModalContainer from 'common/blocks/modal/modal-container.component'
 // import { PromptProvider } from 'common/blocks/prompt'
 import ToastContainer from 'common/parts/toast/toast-container.component'
 import Bootstrap from 'common/utils/bootstrap/bootstrap.component'
+import License from 'common/utils/license/license.component'
 import { ErrorBoundary } from 'common/utils/page/error-boundary.component';
 import store from 'app/stores'
 import 'app/services/global'
-
 import './styles/main.scss'
 
 ReactDOM.render(
@@ -25,13 +25,15 @@ ReactDOM.render(
     <ErrorBoundary>
       <BrowserRouter>
         {/* <PromptProvider> */}
-        <Bootstrap />
+        <License>
+          <Bootstrap />
 
-        <div id='modal-root'>
-          <ModalContainer />
-        </div>
+          <div id='modal-root'>
+            <ModalContainer />
+          </div>
 
-        <ToastContainer />
+          <ToastContainer />
+        </License>
 
         {/* </PromptProvider> */}
       </BrowserRouter>

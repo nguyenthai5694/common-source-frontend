@@ -4,41 +4,74 @@ import TableAction from 'common/blocks/table-ui/table-action';
 import DatatableSearch from './datatable-search.component';
 // import { ShokangaeData } from './type/shokangae.type';
 export interface SettingMenuData {
-  id: number
+  id: number;
+  firstName: string
+  lastName: string
+  date: string;
+  phone: string;
+  sex: string;
+  email: string;
   name: string;
-  path: number;
-  icon: number;
 }
 
 export const tableConfig: TableConfig<SettingMenuData> = {
   headerMiddle: DatatableSearch,
-  idProp: 'id',
-  pinnedColumnsLeft: ['id', 'name'],
-  pinnedColumnsRight: ['actions'],
+  idProp: 'firstName',
+  pinnedColumnsLeft: ['id', 'firstName', 'lastName'],
+  // pinnedColumnsRight: ['actions'],
 };
+
+export const columnGroupingModel = [
+  {
+    groupId: 'naming',
+    headerName: 'Full name (freeReordering)',
+    freeReordering: false,
+    children: [{ field: 'lastName' }, { field: 'firstName' }],
+  },
+];
 
 export const columnsConfig: ColumnsConfig<SettingMenuData> = [
   {
-    headerName: 'Id',
+    headerName: 'ID',
     field: 'id',
     align: 'center',
     width: 200,
   },
   {
-    headerName: 'Name',
-    field: 'name',
-    align: 'left',
-    width: 1000,
+    headerName: 'First Name',
+    field: 'firstName',
+    align: 'center',
+    width: 200,
   },
   {
-    headerName: 'Path',
-    field: 'path',
+    headerName: 'Last Name',
+    field: 'lastName',
     align: 'left',
     width: 200,
   },
   {
-    headerName: 'Icon',
-    field: 'icon',
+    headerName: 'Birth Day',
+    field: 'date',
+    align: 'left',
+    width: 400,
+  },
+  {
+    headerName: 'Gender',
+    field: 'sex',
+    align: 'right',
+    width: 200,
+
+  },
+  {
+    headerName: 'Phone',
+    field: 'phone',
+    align: 'right',
+    width: 200,
+
+  },
+  {
+    headerName: 'Email',
+    field: 'email',
     align: 'right',
     width: 200,
 

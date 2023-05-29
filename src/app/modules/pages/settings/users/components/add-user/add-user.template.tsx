@@ -21,7 +21,7 @@ export default function AddUserTemplate({ self }: AddUserTemplate) {
   const validationSchema = Yup.object().shape({
     firstName: Yup.string().trim()
       .required('First Name required')
-      .max(2, 'Maxlength 100'),
+      .max(100, 'Maxlength 100'),
   })
 
   const listOptionSex: SelectOptions = [
@@ -54,6 +54,9 @@ export default function AddUserTemplate({ self }: AddUserTemplate) {
           firstName: '',
           gender: ['0'],
           gender2: '0',
+          rangeDate: ['2023-05-01', '2023-05-30'],
+          date: '2023-05-20',
+
         }}
         validationSchema={validationSchema}
         onSubmit={() => { console.log('Submit') }}
@@ -96,7 +99,7 @@ export default function AddUserTemplate({ self }: AddUserTemplate) {
                               item
                             >
                               <FormControl name='firstName'>
-                                <Input label='First name' helperText='Please specify the first name' />
+                                <Input label='First name' maxLength={10} />
                               </FormControl>
                             </Grid>
 
@@ -146,8 +149,11 @@ export default function AddUserTemplate({ self }: AddUserTemplate) {
                               md={6}
                               item
                             >
-                              <FormControl name='country'>
-                                <PeriodCalendar />
+                              <FormControl name='rangeDate'>
+                                <PeriodCalendar
+                                  localText={['Start', 'End']}
+                                  minDate='2023-05-01'
+                                />
                               </FormControl>
 
                             </Grid>
@@ -201,7 +207,11 @@ export default function AddUserTemplate({ self }: AddUserTemplate) {
                               item
                             >
                               <FormControl name='date'>
-                                <SingleCalendar label='Birth Day' />
+                                <SingleCalendar
+                                  label='Birth Day'
+                                  minDate='2023-05-01'
+                                  maxDate='2023-06-30'
+                                />
                               </FormControl>
 
                             </Grid>

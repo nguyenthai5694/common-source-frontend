@@ -373,6 +373,8 @@ export interface DataTableProps {
   queries: DataTableQueries
 
   onActionClick?: (e?: any) => void;
+
+  columnGroupingModel?: any;
 }
 
 export interface LocalSearchHelper {

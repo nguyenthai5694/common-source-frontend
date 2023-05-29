@@ -36,13 +36,21 @@ export default class AddUser extends PageComponent<AddUserState> {
    * Event submit form
    */
   handSubmitForm() {
-    //Validate
-    console.log(this.formRef.current.values);
+    this.formRef.current.submitForm().then(() => {
+      //Validate
+      if (!this.formRef.current.isValid) {
+        displayFormErrors(this.formRef.current);
 
-    if (!this.formRef.current.isValid) {
-      displayFormErrors(this.formRef.current);
+        return
+      }
 
-      return
-    }
+      let store = window.localStorage.getItem('listUser') ? JSON.parse(window.localStorage.getItem('listUser')) : [];
+
+      store.push(this.formRef.current.values)
+
+      window.localStorage.setItem('listUser', JSON.stringify(store))
+
+      this.props.history.push('/setting/users')
+    });
   }
 }
