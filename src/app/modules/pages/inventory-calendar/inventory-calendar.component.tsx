@@ -4,18 +4,18 @@ import { DataTableQueries } from 'common/blocks/datatable/datatable.type';
 import PageComponent from 'common/utils/page/page.component'
 import { defaultQueries } from 'app/const/common.const';
 import { ModalService } from 'app/services/modal';
-import { SettingMenuData } from './data-table.config';
-import SettingUsersTemplate from './setting-users.template';
+import { InventoryCalendarData } from './data-table.config';
+import InventoryCalendarTemplate from './inventory-calendar.template';
 
-interface UsersState {
+interface InventoryCalendarState {
   isRunning: boolean,
   queries: DataTableQueries,
-  data: SettingMenuData[],
+  data: InventoryCalendarData[],
   totalItem: number,
 }
 
-export default class SettingUsers extends PageComponent<UsersState> {
-  state: UsersState = {
+export default class InventoryCalendar extends PageComponent<InventoryCalendarState> {
+  state: InventoryCalendarState = {
     isRunning: true,
     queries: {
       ...defaultQueries,
@@ -30,10 +30,13 @@ export default class SettingUsers extends PageComponent<UsersState> {
 
   formRef = React.createRef<FormikContextType<any>>();
 
-  pageTitle = 'Setting Users';
+  pageTitle = '棚卸計画管理';
 
   breadcrumb = [
-
+    {
+      label: '棚卸計画管理',
+      url: '/inventory-calendar',
+    },
   ];
 
   private modalService = new ModalService();
@@ -63,27 +66,35 @@ export default class SettingUsers extends PageComponent<UsersState> {
    * @param queries Event search of table
    */
   onSearch = (queries: DataTableQueries) => {
-    const store = window.localStorage.getItem('listUser')
+    // console.log(queries);
 
     this.setState({
       ...this.state,
-      data: store ? JSON.parse(store) : [],
+      data: this.hardCodeDate(this.state.queries.page - 1, this.state.queries.size),
       queries,
-      totalItem: 7,
+      totalItem: 102,
     })
   }
 
   render() {
     return (
-      <SettingUsersTemplate self={this} />
+      <InventoryCalendarTemplate self={this} />
     )
   }
 
-  /** 
-   * Event add record 
-  */
-  handAddUser = () => {
-    // Open dialog Add Menu
-    this.props.history.push('/setting/add-user')
+  hardCodeDate(pages, size) {
+    let res = []
+
+    for (let index = pages * size; index < (pages + 1) * size; index++) {
+      res.push({
+        id: index,
+        colectDate: '2023/05 - 2回目',
+        date: '2023/05/10',
+        name: 'Dang Tran Minh',
+        typeName: Math.random() >= 0.5 ? '棚卸中' : '完了',
+      } as InventoryCalendarData)
+    }
+
+    return res;
   }
 }

@@ -1,12 +1,10 @@
 
 import { ColumnsConfig, TableConfig } from 'common/blocks/datatable-ui/datatable.type';
 import TableAction from 'common/blocks/table-ui/table-action';
-import DatatableSearch from './components/datatable-search.component';
 import { SettingMenuData } from './dashboard.type';
 // import { ShokangaeData } from './type/shokangae.type';
 
 export const tableConfig: TableConfig<SettingMenuData> = {
-  headerMiddle: DatatableSearch,
   idProp: 'id',
   pinnedColumnsLeft: ['id', 'name'],
   pinnedColumnsRight: ['actions'],

@@ -1,6 +1,8 @@
 /* eslint-disable max-lines */
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useCallback } from 'react'
+import React, { useCallback, useRef } from 'react'
+import EventIcon from '@mui/icons-material/Event';
+import { IconButton } from '@mui/material';
 import { DateRangePicker, LocalizationProvider } from '@mui/x-date-pickers-pro';
 import { AdapterDayjs } from '@mui/x-date-pickers-pro/node/AdapterDayjs';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
@@ -52,6 +54,7 @@ export function PeriodCalendar({
   disabled = false,
   localText,
 }: PeriodCalendarProps) {
+  const calendarRef = useRef()
   /**
    * Event change
    */
@@ -71,6 +74,12 @@ export function PeriodCalendar({
     [onChange, formik, name],
   );
 
+  const handOpen = () => {
+    const currentRef = calendarRef.current as HTMLElement
+
+    currentRef.getElementsByTagName('input')[0].click()
+  }
+
   return (
     <div
       className={clsx('period-calendar ', {
@@ -79,19 +88,24 @@ export function PeriodCalendar({
         '-sizeS': size === 's',
       })}
       style={{ width: width || '100%' }}
+      ref={calendarRef}
     >
       <LocalizationProvider dateAdapter={AdapterDayjs}>
 
         <DemoContainer components={['DateRangePicker']}>
           <DateRangePicker
-            localeText={{ start: localText ? localText[0] : undefined, end: localText ? localText[1] : undefined }}
+            localeText={{ start: localText ? localText[0] : '', end: localText ? localText[1] : '' }}
             onChange={handleChange}
-            value={formik.values[`${name}`] ?
-              [dayjs(formik.values[`${name}`][0]), dayjs(formik.values[`${name}`][1])] : undefined}
+            // value={formik.values[`${name}`] ?
+            //   [dayjs(formik.values[`${name}`][0]), dayjs(formik.values[`${name}`][1])] : undefined}
             format={FORMAT_DATE}
             minDate={minDate ? dayjs(minDate) : undefined}
             maxDate={maxDate ? dayjs(maxDate) : undefined}
           />
+
+          <IconButton aria-label='Calendar' onClick={handOpen}>
+            <EventIcon />
+          </IconButton>
         </DemoContainer>
       </LocalizationProvider>
     </div>

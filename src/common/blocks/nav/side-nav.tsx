@@ -1,12 +1,10 @@
 import React from 'react'
-import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
+import PersonIcon from '@mui/icons-material/Person';
 import {
+  Avatar,
   Box,
-  Divider,
   Link,
   Stack,
-  SvgIcon,
-  Typography,
 } from '@mui/material';
 import { useRouter } from 'app/modules/routes';
 import Logo from '../layout/logo/logo';
@@ -27,7 +25,7 @@ export default function SideNav(props) {
           height: '100%',
         },
         '& .simplebar-scrollbar:before': {
-          background: 'neutral.400',
+          background: '#101D64',
         },
       }}
     >
@@ -44,44 +42,19 @@ export default function SideNav(props) {
           </Link>
         </Box>
 
-        <Box
-          sx={{
-            alignItems: 'center',
-            backgroundColor: 'rgba(255, 255, 255, 0.04)',
-            borderRadius: 1,
-            cursor: 'pointer',
-            display: 'flex',
-            justifyContent: 'space-between',
-            mt: 2,
-            p: '12px',
-          }}
-        >
-          <div>
-            <Typography
-              color='inherit'
-              variant='subtitle1'
-            >
-              Devias
-            </Typography>
-
-            <Typography
-              color='neutral.400'
-              variant='body2'
-            >
-              Production
-            </Typography>
-          </div>
-
-          <SvgIcon
-            fontSize='small'
-            sx={{ color: 'neutral.500' }}
-          >
-            <UnfoldMoreIcon />
-          </SvgIcon>
-        </Box>
       </Box>
 
-      <Divider sx={{ borderColor: 'neutral.700' }} />
+      <Box sx={{
+        p: 3,
+        display: 'flex',
+        alignItems: 'center',
+        gap: '10px',
+      }}>
+        <Avatar>
+          <PersonIcon />
+        </Avatar>
+        User Name
+      </Box>
 
       <Box
         component='nav'
@@ -121,25 +94,6 @@ export default function SideNav(props) {
 
     </Box >
   );
-
-  // if (lgUp) {
-  //   return (
-  //     <Drawer
-  //       anchor='left'
-  //       open
-  //       PaperProps={{
-  //         sx: {
-  //           backgroundColor: 'neutral.800',
-  //           color: 'common.white',
-  //           width: 280,
-  //         },
-  //       }}
-  //       variant='permanent'
-  //     >
-  //       {content}
-  //     </Drawer>
-  //   );
-  // }
 
   return (
     <div className='main-menu'>

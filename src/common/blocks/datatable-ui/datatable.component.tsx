@@ -1,6 +1,4 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import { GridCallbackDetails, GridColDef, GridPaginationModel } from '@mui/x-data-grid';
 import { GridEventListener } from '@mui/x-data-grid';
 import GenericComponent from 'common/utils/generic/generic.component';
@@ -21,6 +19,10 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
     sortData: null,
     initialState: {},
     pinnedColumns: {},
+    paginationModel: {
+      page: 0,
+      pageSize: 10,
+    },
   };
 
   canvasRef = React.createRef() as any;
@@ -33,7 +35,7 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
   componentDidMount(): void {
     this.queries = this.props.queries
 
-    let totalWidth = 0
+    let totalWidth = 1
     const refWidth = this.canvasRef.current.offsetWidth
 
     this.props.columnsConfig.forEach(item => {
@@ -42,6 +44,10 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
 
     this.setState({
       ...this.state,
+      paginationModel: {
+        page: this.props.queries.page - 1,
+        pageSize: this.props.queries.size,
+      },
       pinnedColumns: {
         left: this.props.tableConfig.pinnedColumnsLeft,
         right: this.props.tableConfig.pinnedColumnsRight,
@@ -54,10 +60,11 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
           width: totalWidth >= refWidth ? item.width : (item.width * refWidth / totalWidth),
           editable: item.editable || false,
           type: item.field === 'actions' ? 'actions' : '',
-          renderCell: item.component ? () => {
+          sortable: item.disableSort === true ? false : true,
+          renderCell: item.component ? (dataItem) => {
             return <>
               <item.component
-                index={1} dataItem={{}}
+                index={1} dataItem={dataItem.row}
                 dataKey='233'
                 buttons={item.buttons}
                 onActionClick={this.props.onActionClick}
@@ -67,6 +74,18 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
         } as GridColDef
       }),
     })
+  }
+
+  componentDidUpdate(prevProps: Readonly<DataTableProps>, prevState: Readonly<DataTableState>, snapshot?: any): void {
+    if (prevProps !== this.props) {
+      this.setState({
+        ...this.state,
+        paginationModel: {
+          page: this.props.queries.page - 1,
+          pageSize: this.props.queries.size,
+        },
+      })
+    }
   }
 
   /**
@@ -115,24 +134,21 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
     const { props } = this;
 
     return (
-      <Box sx={{ width: '100%' }} ref={this.canvasRef}>
-        <Paper sx={{ width: '100%', mb: 2 }} className='data-table'>
-          <DatatableContext.Provider
-            value={{
-              dataItems: props.dataItems,
-              columnsConfig: props.columnsConfig,
-              tableConfig: props.tableConfig,
-              onSearch: props.onSearch,
-              dataTableQueries: {} as any,
-              totalItem: props.totalItem,
-              checkType: props.selectItemType,
-            }}
-          >
-            <DataTableTemplate self={this} />
-          </DatatableContext.Provider>
-        </Paper>
 
-      </Box >
+      <DatatableContext.Provider
+        value={{
+          dataItems: props.dataItems,
+          columnsConfig: props.columnsConfig,
+          tableConfig: props.tableConfig,
+          onSearch: props.onSearch,
+          dataTableQueries: {} as any,
+          totalItem: props.totalItem,
+          checkType: props.selectItemType,
+        }}
+      >
+        <DataTableTemplate self={this} />
+      </DatatableContext.Provider>
+
     )
   }
 }

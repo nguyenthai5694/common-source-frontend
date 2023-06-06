@@ -49,7 +49,9 @@ $colors: (
   --yellow-4: #fffbde,
   --yellow-12: #fff6b5,
   --blue-table: #0072e5,
-  --border-table: #e0e0e0,
+  --border-table: #DAE2EE,
+  --color-table: #666666,
+  --color-primary: #343434,
 );
 
 @function color($name) {

@@ -47,6 +47,7 @@ export default class AddUser extends PageComponent<AddUserState> {
       let store = window.localStorage.getItem('listUser') ? JSON.parse(window.localStorage.getItem('listUser')) : [];
 
       store.push(this.formRef.current.values)
+      store[store.length - 1].id = store.length
 
       window.localStorage.setItem('listUser', JSON.stringify(store))
 

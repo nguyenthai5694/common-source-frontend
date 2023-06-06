@@ -3,7 +3,7 @@
 // TODO: refactor ALLLLLLLLLLL
 // - nested if else
 // - to many responsibility
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import FormControl from '@mui/material/FormControl/FormControl';
 import InputLabel from '@mui/material/InputLabel/InputLabel';
 import MenuItem from '@mui/material/MenuItem/MenuItem';
@@ -101,10 +101,6 @@ export function CommonSelect({
   name,
   placeholder,
   formik,
-  // INFO: option要素の値を決定するための配列
-  // [{value:'value1',label:'テキスト1'}]
-  // が以下のように扱われる
-  //  <option value="value1">テキスト1</option>
   options,
   disabled = false,
   value,
@@ -137,14 +133,6 @@ export function CommonSelect({
   isLoading = false,
   label = '',
 }: SelectProps) {
-  const selectBoxRef = useRef(null)
-  const selectBoxWrapRef = useRef(null)
-
-  // Update candidate
-
-  // セレクトボックスの開閉状態
-  // 現在選択されているオプションの値
-
   const [selectedValue, changeSelectedValue] = useState(
     formik
       ? multi
@@ -161,31 +149,20 @@ export function CommonSelect({
     changeSelectedValue(value);
   }, [selectedValue, value])
 
-  // Fix error display select if set percent width for select box
-  useEffect(() => {
-    const target = selectBoxRef.current;
-
-    if (!target || !selectBoxWrapRef.current.clientWidth) return;
-
-    target.style.width = selectBoxWrapRef.current.clientWidth + 'px';
-  }, [options])
-
-  const [age, setAge] = React.useState('');
-
   const handleChange = (event: SelectChangeEvent) => {
-    setAge(event.target.value as string);
+    changeSelectedValue(event.target.value);
     formik.setFieldValue(`${name}`, event.target.value)
   };
 
   return (
     <Box component={'div'} sx={{ minWidth: 120 }} className='p-select'>
       <FormControl fullWidth size='small'>
-        <InputLabel id='demo-simple-select-label'>{label}</InputLabel>
+        <InputLabel>{label}</InputLabel>
 
         <Select
           labelId='demo-simple-select-label'
           id='demo-simple-select'
-          value={age}
+          value={selectedValue}
           label={label}
           onChange={handleChange}
           name={name}

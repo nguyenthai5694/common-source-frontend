@@ -1,3 +1,5 @@
+@use '../foundation/config' as *;
+
 .b-page-wraper {
   display: flex;
   flex-direction: column;
@@ -10,7 +12,12 @@
 }
 
 .b-page-wraper_top {
-  margin: 13px 0 15px;
+  @include fontSize(12);
+
+  svg {
+    @include fontSize(20);
+    margin-right: 10px;
+  }
 }
 
 .b-page-wraper_top,
@@ -26,5 +33,5 @@
 
 .b-page-wraper_bottom {
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }

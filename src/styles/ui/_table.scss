@@ -19,6 +19,9 @@
 }
 
 .table-search {
+  background-color: #EDF0F4;
+  margin-bottom: 20px;
+
   .u-table-filter__group {
     display: flex;
     justify-content: space-between;
@@ -32,7 +35,16 @@
 
     .MuiDataGrid-columnHeaders,
     .MuiDataGrid-pinnedColumnHeaders {
-      background-color: color(--blue-table);
+      background-color: #F0F0F0;
+
+      .MuiDataGrid-columnHeader {
+        // border-top: 1px solid #e0e0e0;
+        border-right: 1px solid color(--border-table);
+
+        &.MuiDataGrid-columnHeader--moving {
+          background-color: inherit;
+        }
+      }
 
       .MuiDataGrid-columnHeaderTitleContainer {
         justify-content: center;
@@ -43,14 +55,19 @@
       }
 
       .css-yrdy0g-MuiDataGrid-columnHeaderRow {
-        color: color(--white);
+        color: color(--color-table);
+
+        .MuiDataGrid-columnHeaderTitle {
+          font-weight: bold;
+        }
 
         .MuiDataGrid-columnSeparator {
           visibility: visible;
         }
 
         .MuiSvgIcon-root {
-          color: color(--white);
+          color: color(--color-table);
+          font-weight: 700;
         }
       }
 
@@ -60,8 +77,9 @@
       }
 
       .table-hearder-border {
-        border-top: 1px solid #fff;
-        border-right: 1px solid #fff;
+        // border-top: 1px solid #DAE2EE;
+        border-right: 1px solid color(--border-table);
+        z-index: 1;
       }
 
       .hearder-group {
@@ -74,15 +92,26 @@
 
     .MuiDataGrid-virtualScroller {
       .MuiDataGrid-cell {
-        border-top: 1px solid #f0f0f0;
-        border-right: 1px solid #f0f0f0;
+        border-right: 1px solid;
+        border-color: color(--border-table);
+        background-color: color(--white);
+        color: color(--color-table);
+        font-weight: 700;
+        padding: 15px 10px;
       }
     }
 
     .table-action {
       display: flex;
-      gap: 10px;
+      gap: 15px;
       justify-content: center;
+      cursor: pointer;
+      align-items: center;
+
+      .table-action-item {
+        display: flex;
+        align-items: center;
+      }
 
       .table-action-item button {
         width: 24px;
@@ -90,12 +119,10 @@
         padding: 5px;
         border: 1px solid rgba(0, 0, 0, 0.87);
         border-radius: 100%;
-
-
       }
 
       svg {
-        @include fontSize(16);
+        @include fontSize(20);
       }
 
     }

@@ -1,4 +1,5 @@
 import React from 'react'
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import CancelIcon from '@mui/icons-material/Cancel';
 import GroupIcon from '@mui/icons-material/Group';
 import LockIcon from '@mui/icons-material/Lock';
@@ -18,6 +19,29 @@ export const items = [
         <SignalCellularAltIcon />
       </SvgIcon>
     ),
+  },
+  {
+    title: 'Inventory calendar',
+    path: '/inventory-calendar',
+    icon: (
+      <SvgIcon fontSize='small'>
+        <CalendarTodayIcon />
+      </SvgIcon>
+    ),
+    children: [
+      {
+        title: 'Inventory calendar 1',
+        path: '/inventory-calendar',
+      },
+      {
+        title: 'Inventory calendar 2',
+        path: '/inventory-calendar2',
+      },
+      {
+        title: 'Inventory calendar 3',
+        path: '/inventory-calendar3',
+      },
+    ],
   },
   {
     title: 'Customers',

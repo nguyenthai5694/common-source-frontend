@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import { Box, FormLabel } from '@mui/material';
 import { useField, useFormikContext, FieldHookConfig, FormikContextType } from 'formik';
 import { formItemsOrder } from '../helper/form-item-order.service'
 import { ControlStaticType } from './form-control.type'
@@ -14,6 +15,10 @@ export interface FormControlProps {
   fromDatatable?: boolean;
   onBlur?: (e?: any) => void;
   onChange?: (e?: any) => void;
+  /**
+   * Lable item
+   */
+  label?: string;
 }
 
 export interface FormControlChildProps {
@@ -165,8 +170,14 @@ export function FormControl(props: FormControlProps) {
   });
 
   return (
-    <>
+    <Box sx={{
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px',
+    }}>
+      {props.label && <FormLabel sx={{ whiteSpace: 'nowrap' }}>{props.label}</FormLabel>}
+
       {childrenWithProps}
-    </>
+    </Box>
   );
 }

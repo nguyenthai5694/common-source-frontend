@@ -7,7 +7,7 @@ import { Subscription } from 'rxjs';
 // import SideNav from 'common/blocks/nav/side-nav';
 // import TopNav from 'common/blocks/nav/top-nav';
 import SideNav from 'common/blocks/nav/side-nav';
-import TopNav from 'common/blocks/nav/top-nav';
+// import TopNav from 'common/blocks/nav/top-nav';
 import PageError, { PageErrorType } from 'common/blocks/page-error/page-error.component';
 import Loading from 'common/parts/loading/loading.component'
 // import { MenuListItem } from 'app/api/common/get-menu.api'
@@ -137,7 +137,7 @@ export default function NormalLayout(props) {
 
   return (
     <div className='app'>
-      <TopNav />
+      {/* <TopNav /> */}
 
       <SideNav
         onClose={() => setOpenNav(false)}

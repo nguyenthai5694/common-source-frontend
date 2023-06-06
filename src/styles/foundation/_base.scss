@@ -122,9 +122,11 @@ body,
 
 body {
   box-sizing: border-box;
-  color: color(--black);
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  color: color(--color-primary);
+  // font-family: 'Work Sans', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   background-color: #f2f3f5;
+  overflow: hidden !important;
 }
 
 *,
@@ -172,4 +174,8 @@ textarea {
 
 .gap-15 {
   gap: 15px;
+}
+
+.gap-50 {
+  gap: 50px;
 }

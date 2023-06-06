@@ -154,7 +154,7 @@ export interface ColumnConfig<DataItem = any> {
   /**
    * Value must be a property key of `DataItem`.
    */
-  field?: (keyof DataItem & string) | 'actions';
+  field?: (keyof DataItem & string) | 'actions' | '';
 
   /**
    * Specify component that will be used to display cell content.
@@ -375,6 +375,8 @@ export interface DataTableProps {
   onActionClick?: (e?: any) => void;
 
   columnGroupingModel?: any;
+
+  height?: string,
 }
 
 export interface LocalSearchHelper {
@@ -395,6 +397,7 @@ export interface DataTableState {
   rows: GridRowsProp;
   initialState: any,
   pinnedColumns: any,
+  paginationModel: any;
 }
 
 export interface HeaderLowerTemplateProps {

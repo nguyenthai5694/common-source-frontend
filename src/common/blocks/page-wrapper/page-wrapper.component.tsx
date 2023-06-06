@@ -1,5 +1,7 @@
 import React, { useEffect, ReactNode } from 'react'
+import HomeIcon from '@mui/icons-material/Home';
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 import Breadcrumb, { Page } from 'common/blocks/breadcrumb/breadcrumb.component'
 import PageError, { PageErrorType } from 'common/blocks/page-error/page-error.component';
 import { titleSubject } from 'common/blocks/prompt'
@@ -87,6 +89,10 @@ export default function PageWrapper({
       {!hideTop && (
         <>
           <div className='b-page-wraper_top'>
+            <Link to={'/'}>
+              <HomeIcon />
+            </Link>
+
             <Breadcrumb pages={pages} isCustomBreadcrumb={isCustomBreadcrumb} />
 
             {rightBreadcrumbBlock}

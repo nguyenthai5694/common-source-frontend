@@ -6,7 +6,8 @@ $_scroll-bar-width: 17px;
   flex-direction: column;
   min-width: 1024px - $_scroll-bar-width;
   min-height: 100%;
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  // font-family: 'Work Sans', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 .app__main {
@@ -76,5 +77,5 @@ $_scroll-bar-width: 17px;
   width: 280px;
   height: 100%;
   color: #fff;
-  background-color: rgb(28, 37, 54);
+  background-color: #101D64;
 }

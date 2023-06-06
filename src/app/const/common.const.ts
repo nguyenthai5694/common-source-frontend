@@ -8,4 +8,4 @@ export const defaultQueries: DataTableQueries = {
   filter: null,
 }
 
-export const FORMAT_DATE = 'YYYY-MM-DD'
+export const FORMAT_DATE = 'DD/MM/YYYY'

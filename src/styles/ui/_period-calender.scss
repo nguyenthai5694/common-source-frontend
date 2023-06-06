@@ -32,6 +32,25 @@
 }
 
 .period-calendar {
+  position: relative;
+
+  .MuiStack-root {
+    padding: 0;
+  }
+
+  .MuiButtonBase-root {
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    margin-top: 0;
+    font-size: 1.3rem;
+    z-index: 1;
+
+    .MuiSvgIcon-root {
+      font-size: 1.3rem;
+    }
+  }
+
   &.-sizeS {
     label {
       top: -8px;
@@ -41,8 +60,50 @@
       }
     }
 
-    .MuiInputBase-root {
-      height: 40px;
+    .MuiFormControl-root {
+      border: 1px solid rgba(0, 0, 0, 0.23);
+      position: relative;
+
+      .MuiInputBase-root {
+        height: 40px;
+        width: 150px;
+
+        fieldset {
+          display: none;
+        }
+      }
+
+      &:first-child {
+        margin-right: 0;
+        border-right: none;
+        border-radius: 4px 0 0 4px;
+
+        &::after {
+          content: '-';
+          position: absolute;
+          top: 3px;
+          right: 20px;
+        }
+      }
+
+      &:last-child {
+        margin-left: 0;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+        // width: 170px;
+
+        .MuiInputBase-root {
+          border-left: none;
+
+          input {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+
+    .MuiTypography-root {
+      display: none;
     }
 
     input {
@@ -53,7 +114,7 @@
       margin: 0;
       padding: 0px 14px;
       padding-top: 1px;
-      color: currentColor;
+      color: #222;
       font: inherit;
       letter-spacing: inherit;
       background: none;
@@ -64,9 +125,5 @@
       animation-duration: 10ms;
       -webkit-tap-highlight-color: transparent;
     }
-  }
-
-  input {
-    font-size: 14px;
   }
 }
