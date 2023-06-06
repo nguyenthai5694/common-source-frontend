@@ -1,5 +1,4 @@
-/* eslint-disable no-useless-escape */
-import { DataTableQueries } from 'common/blocks/datatable/datatable.type';
+import { DataTableQueries } from 'common/blocks/datatable-ui/datatable.type'
 
 export const defaultQueries: DataTableQueries = {
   page: 1,

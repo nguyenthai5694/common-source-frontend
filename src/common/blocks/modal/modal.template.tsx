@@ -3,7 +3,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Button } from '@mui/material';
 import clsx from 'clsx'
 import RoundButton from 'common/parts/button/round-button.component'
-import { modalBodyClass, modalBodyInnerClass } from 'common/parts/popover/popover.component'
 import { ModalProps } from './modal.type'
 
 export default function ModalTemplate({ props, modalRef }: {
@@ -100,8 +99,8 @@ export default function ModalTemplate({ props, modalRef }: {
           </button>
         }
 
-        <div className={`b-modal__body ${modalBodyClassName} ${modalBodyClass}`} data-modal-body>
-          <div className={`b-modal__body__inner ${modalBodyInnerClass}`} data-modal-body-inner>{children}</div>
+        <div className={`b-modal__body ${modalBodyClassName}`} data-modal-body>
+          <div className={'b-modal__body__inner'} data-modal-body-inner>{children}</div>
         </div>
 
         {displayBackToTopButton && (<a

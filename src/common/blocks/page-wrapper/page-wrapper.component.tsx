@@ -4,7 +4,6 @@ import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 import Breadcrumb, { Page } from 'common/blocks/breadcrumb/breadcrumb.component'
 import PageError, { PageErrorType } from 'common/blocks/page-error/page-error.component';
-import { titleSubject } from 'common/blocks/prompt'
 import Loading from 'common/parts/loading/loading.component'
 import PageTitle from 'common/parts/page-title/page-title.component'
 
@@ -67,9 +66,6 @@ export default function PageWrapper({
 }: PageWrapperProps) {
   useEffect(() => {
     document.title = `${documentTitle || title}`;
-
-    // notify title changed
-    titleSubject.next(document.title);
   }, [title, documentTitle]);
 
   if (initPageStatus === InitPageStatus.RUNNING) {

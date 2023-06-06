@@ -1,4 +1,3 @@
-import { DataTableQueries } from 'common/blocks/datatable/datatable.component'
 import { ADM_MOCK_API } from 'app/const/env.const'
 import { http } from 'app/services/http'
 
@@ -27,16 +26,11 @@ export interface KanriInfo {
   hznKikanTxt: string,
 }
 
-export function getDaibunruiListApi(queries: DataTableQueries, endPoint: string, isEnforced: boolean) {
+export function getDaibunruiListApi(endPoint: string, isEnforced: boolean) {
   let filter = null
 
   filter = {
-    ...queries.filter,
-    pageNum: queries.page,
-    pageSize: queries.size,
-    sortBy: queries.sort?.dataKey || queries.filter?.sortBy || 'gyoBruiCd',
-    sortType: queries.sort?.type?.toLocaleUpperCase() || queries.filter.sortType?.toLocaleUpperCase() || 'ASC',
-    admType: +!isEnforced,
+
   }
 
   if (isEnforced) {
@@ -44,13 +38,9 @@ export function getDaibunruiListApi(queries: DataTableQueries, endPoint: string,
   }
 }
 
-export function getDaibunruiList(queries: DataTableQueries, endPoint: string) {
+export function getDaibunruiList(endPoint: string) {
   const filter = {
-    ...queries.filter,
-    pageNum: queries.page,
-    pageSize: queries.size,
-    sortBy: queries.sort?.dataKey || queries.filter.sortBy,
-    sortType: queries.sort?.type.toLocaleUpperCase() || 'ASC',
+
   }
 
   const queryStr = new URLSearchParams(filter).toString();
