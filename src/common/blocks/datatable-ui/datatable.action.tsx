@@ -4,7 +4,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import { CellComponentProps } from '../datatable/datatable.type';
+import { CellComponentProps } from './datatable.type';
 
 export default function TableAction(props: CellComponentProps) {
   const [buttons] = React.useState(props.buttons ? props.buttons.split(',') : [])

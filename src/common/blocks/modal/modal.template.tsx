@@ -2,7 +2,6 @@ import React, { MutableRefObject, useCallback } from 'react'
 import CloseIcon from '@mui/icons-material/Close';
 import { Button } from '@mui/material';
 import clsx from 'clsx'
-import RoundButton from 'common/parts/button/round-button.component'
 import { ModalProps } from './modal.type'
 
 export default function ModalTemplate({ props, modalRef }: {
@@ -33,8 +32,8 @@ export default function ModalTemplate({ props, modalRef }: {
     modalScrollElement = '',
     headerTheme = '', // primary
     isShowCloseHidden = true,
-    hasRoundButton = false,
-    roundButtonClass = '',
+    // hasRoundButton = false,
+    // roundButtonClass = '',
   } = props;
 
   const handleCancel = useCallback(() => {
@@ -193,11 +192,11 @@ export default function ModalTemplate({ props, modalRef }: {
           {deleteLabel && <Button variant='contained' endIcon={<CloseIcon />} onClick={handleClickDelete}></Button>}
         </div>
 
-        {hasRoundButton &&
+        {/* {hasRoundButton &&
           <RoundButton className={
             roundButtonClass ? `${roundButtonClass} -in-modal` : '-in-modal'
           } />
-        }
+        } */}
       </div>
     </div>
   )

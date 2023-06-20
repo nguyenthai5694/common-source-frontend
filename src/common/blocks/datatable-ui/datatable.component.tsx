@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { GridCallbackDetails, GridColDef, GridPaginationModel } from '@mui/x-data-grid';
-import { GridEventListener } from '@mui/x-data-grid';
+import { GridCallbackDetails, GridColDef, GridPaginationModel, GridSortModel } from '@mui/x-data-grid';
 import GenericComponent from 'common/utils/generic/generic.component';
 import { DatatableContext } from './datatable.context';
 import DataTableTemplate from './datatable.template';
@@ -8,7 +7,8 @@ import { DataTableProps, DataTableQueries, DataTableState } from './datatable.ty
 
 export default class DataTable extends GenericComponent<DataTableProps, DataTableState>{
   /**
-   * Table queies
+   * DataTableState
+   * Config Init Values State
    */
   state: DataTableState = {
     columns: [],
@@ -25,22 +25,36 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
     },
   };
 
+  /**
+   * Layout Ref
+   */
   canvasRef = React.createRef() as any;
 
+  /**
+   * DataTableQueries
+   */
   queries: DataTableQueries
+
+  /**
+   * Width Window
+   */
+  windowWidth = window.innerWidth
+
+  /**
+   * Height Window
+   */
+  windowHeight = window.innerHeight
+
+  /**
+   * Check event handSetHeight Table
+   */
+  isCheck = true
 
   /**
    * Event DidMount
    */
   componentDidMount(): void {
     this.queries = this.props.queries
-
-    let totalWidth = 1
-    const refWidth = this.canvasRef.current.offsetWidth
-
-    this.props.columnsConfig.forEach(item => {
-      totalWidth += item.width
-    })
 
     this.setState({
       ...this.state,
@@ -52,7 +66,25 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
         left: this.props.tableConfig.pinnedColumnsLeft,
         right: this.props.tableConfig.pinnedColumnsRight,
       },
-      columns: this.props.columnsConfig.map(item => {
+      columns: this.handConvertColumns(),
+    })
+  }
+
+  /**
+   * Event convert column config to GridColDef
+   * @returns GridColDef
+   */
+  handConvertColumns = () => {
+    let totalWidth = 1
+
+    if (this.canvasRef.current) {
+      const refWidth = this.canvasRef.current.offsetWidth
+
+      this.props.columnsConfig.forEach(item => {
+        totalWidth += item.width
+      })
+
+      return this.props.columnsConfig.map(item => {
         return {
           field: item.field,
           headerName: item.headerName,
@@ -60,22 +92,27 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
           width: totalWidth >= refWidth ? item.width : (item.width * refWidth / totalWidth),
           editable: item.editable || false,
           type: item.field === 'actions' ? 'actions' : '',
-          sortable: item.disableSort === true ? false : true,
+          sortable: item.disableSort ? false : true,
           renderCell: item.component ? (dataItem) => {
             return <>
               <item.component
-                index={1} dataItem={dataItem.row}
-                dataKey='233'
+                dataItem={dataItem.row}
                 buttons={item.buttons}
                 onActionClick={this.props.onActionClick}
               />
             </>
           } : undefined,
         } as GridColDef
-      }),
-    })
+      })
+    }
   }
 
+  /**
+   * 
+   * @param prevProps Event Update
+   * @param prevState 
+   * @param snapshot 
+   */
   componentDidUpdate(prevProps: Readonly<DataTableProps>, prevState: Readonly<DataTableState>, snapshot?: any): void {
     if (prevProps !== this.props) {
       this.setState({
@@ -106,18 +143,16 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
    * @param event 
    * @param details 
    */
-  handleModelSort: GridEventListener<'columnHeaderClick'> = (
-    params,  // GridColumnHeaderParams
-    event,   // MuiEvent<React.MouseEvent<HTMLElement>>
-    details, // GridCallbackDetails
-  ) => {
-    if (params.field === this.queries.sort.dataKey) {
-      this.queries.sort.type = this.queries.sort.type === 'asc' ? 'desc' : 'asc'
-    } else {
-      this.queries.sort.dataKey = params.field
-    }
+  handleModelSort = (sortModel: GridSortModel) => {
+    if (sortModel.length) {
+      if (sortModel[0].field === this.queries.sort.dataKey) {
+        this.queries.sort.type = this.queries.sort.type === 'asc' ? 'desc' : 'asc'
+      } else {
+        this.queries.sort.dataKey = sortModel[0].field
+      }
 
-    this.props.onSearch(this.queries)
+      this.props.onSearch(this.queries)
+    }
   }
 
   /**
@@ -126,10 +161,12 @@ export default class DataTable extends GenericComponent<DataTableProps, DataTabl
    */
   onHeaderSearch = (filter: any) => {
     this.queries.filter = filter
-
     this.props.onSearch(this.queries)
   }
 
+  /**
+   * Render
+   */
   render() {
     const { props } = this;
 

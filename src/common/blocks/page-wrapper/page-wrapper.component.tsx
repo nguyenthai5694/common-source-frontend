@@ -1,5 +1,6 @@
-import React, { useEffect, ReactNode } from 'react'
+import React, { useEffect, ReactNode, useRef } from 'react'
 import HomeIcon from '@mui/icons-material/Home';
+import { Box, CircularProgress } from '@mui/material';
 import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 import Breadcrumb, { Page } from 'common/blocks/breadcrumb/breadcrumb.component'
@@ -44,6 +45,8 @@ export interface PageWrapperProps {
    * Use true to control 100% breadcrumb in parent screen, not get label from menu list
    */
   isCustomBreadcrumb?: boolean;
+
+  loadding?: boolean
 }
 
 export default function PageWrapper({
@@ -63,7 +66,10 @@ export default function PageWrapper({
   hasDepartmentSelector = false,
   customPageErrorType,
   isCustomBreadcrumb = false,
+  loadding = false,
 }: PageWrapperProps) {
+  const loadingRef = useRef()
+
   useEffect(() => {
     document.title = `${documentTitle || title}`;
   }, [title, documentTitle]);
@@ -113,6 +119,10 @@ export default function PageWrapper({
       )}
 
       {children}
+
+      {loadding && <Box className='loadding' ref={loadingRef}>
+        <CircularProgress />
+      </Box>}
     </div>
   )
 }

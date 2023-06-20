@@ -56,10 +56,13 @@ export default function AddUserTemplate({ self }: AddUserTemplate) {
           gender2: '0',
           rangeDate: ['2023-05-01', '2023-05-30'],
           date: '2023-05-20',
+          sex: '0',
 
         }}
         validationSchema={validationSchema}
-        onSubmit={() => { console.log('Submit') }}
+        onSubmit={() => {
+          // console.log('Submit') 
+        }}
         // validateOnMount={true}
         validateOnSubmit={true}
         validateOnChange={true}

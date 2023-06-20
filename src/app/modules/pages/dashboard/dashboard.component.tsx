@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormikContextType } from 'formik';
-import { DataTableQueries } from 'common/blocks/datatable/datatable.type';
+import { DataTableQueries } from 'common/blocks/datatable-ui/datatable.type';
 import PageComponent from 'common/utils/page/page.component'
 import { defaultQueries } from 'app/const/common.const';
 import { ModalService } from 'app/services/modal';
@@ -40,7 +40,7 @@ export default class Dashboard extends PageComponent<DashboardState> {
    * @param items Event after click checkbox or radio in table
    */
   onSelectItem = (items) => {
-    console.log(items);
+    // console.log(items);
   }
 
   /**
@@ -48,7 +48,7 @@ export default class Dashboard extends PageComponent<DashboardState> {
    * @param action Event after click action in table
    */
   onActionClick = (action) => {
-    console.log(action);
+    // console.log(action);
   }
 
   /**
@@ -56,7 +56,7 @@ export default class Dashboard extends PageComponent<DashboardState> {
    * @param queries Event search of table
    */
   onSearch = (queries: DataTableQueries) => {
-    console.log(queries);
+    // console.log(queries);
 
     const store = window.localStorage.getItem('listmenu')
 

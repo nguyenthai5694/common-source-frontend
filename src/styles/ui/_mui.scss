@@ -1,15 +1,14 @@
 @use '../foundation/config' as *;
 
 .main-page {
-
   .MuiFormLabel-root {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
+    // font-family: 'Work Sans', sans-serif;
+    @include fontSize(14);
     color: color(--color-primary);
   }
 
   .MuiInputBase-root {
-    font-size: 14px;
+    @include fontSize(14);
     color: color(--color-primary);
   }
 }

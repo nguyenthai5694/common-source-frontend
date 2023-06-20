@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Button } from '@mui/material';
 import { Form, Formik } from 'formik';
-import { HeaderMiddleProps } from 'common/blocks/datatable/datatable.type';
+import { HeaderMiddleProps } from 'common/blocks/datatable-ui/datatable.type';
 import { CommonSelect, FormControl } from 'common/form';
 import { PeriodCalendar } from 'common/form/calendar/period-calendar.component';
 

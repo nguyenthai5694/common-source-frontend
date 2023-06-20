@@ -25,14 +25,14 @@ export default function Loading() {
       </div>
     `;
 
-    document.getElementById('root-loading').appendChild(loadingElm);
+    // document.getElementById('root-loading').appendChild(loadingElm);
 
     return loadingElm;
   }, [loadingRef]);
 
   useEffect(
     () => () => {
-      (document.getElementById('root-loading') as any).removeChild(loadingElmRef)
+      // (document.getElementById('root-loading') as any).removeChild(loadingElmRef)
     },
     [loadingElmRef, loadingRef],
   );

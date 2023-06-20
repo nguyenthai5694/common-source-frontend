@@ -5,7 +5,7 @@ import { GridPagination } from '@mui/x-data-grid';
 import DataTable from 'common/blocks/datatable-ui/datatable.component';
 // import { DataGridPremium, GridToolbar } from 'common/mui/x-data-grid-premium';
 import { DataGridPremium, useGridApiRef, GridEventListener } from '@mui/x-data-grid-premium';
-import TableToolbar from './table-toolbar';
+import TableToolbar from './datatable.toolbar';
 
 interface DataTableTemplate {
   self: DataTable,
@@ -21,28 +21,49 @@ export default function DataTableTemplate({ self }: DataTableTemplate) {
    * */
   const handSetHeight = useCallback(
     () => {
-      if (self.canvasRef && (!props.height || props.height === 'auto')) {
+      if (self.canvasRef && self.canvasRef.current) {
         const hearderElement = self.canvasRef.current as HTMLElement
 
-        hearderElement.style.height = 'auto'
+        if (!props.height || props.height === 'auto') {
+          hearderElement.style.height = 'auto'
+          const dataTableElement = hearderElement.getElementsByClassName('data-table')[0] as HTMLElement
 
-        let dataTableElement = hearderElement.getElementsByClassName('data-table')[0] as HTMLElement
-
-        dataTableElement.style.height = 'auto'
-
-        if (hearderElement.offsetHeight > window.innerHeight - dataTableElement.offsetTop)
-          dataTableElement.style.height = (window.innerHeight - dataTableElement.offsetTop) + 'px'
-        else
           dataTableElement.style.height = 'auto'
+
+          if (hearderElement.offsetHeight > window.innerHeight - dataTableElement.offsetTop) {
+            dataTableElement.style.height = (window.innerHeight - dataTableElement.offsetTop - 25) + 'px'
+          } else {
+            dataTableElement.style.height = 'auto'
+          }
+        }
+
+        const tableBody = hearderElement.querySelector('.MuiDataGrid-virtualScroller') as HTMLElement
+
+        const tableBodyMain = tableBody.querySelector('.MuiDataGrid-virtualScrollerContent') as HTMLElement
+
+        if (tableBodyMain.offsetWidth <= hearderElement.offsetWidth)
+          tableBody.style.overflowX = 'hidden'
       }
     },
-    [props.height, self.canvasRef],
+    [props.height, self],
   )
 
   /**
    * Event resize window
    */
-  window.addEventListener('resize', handSetHeight)
+
+  window.addEventListener('resize', (e) => {
+    if ((self.windowWidth !== window.innerWidth || self.windowHeight !== window.innerHeight) && self.isCheck) {
+      self.windowWidth = window.innerWidth
+      self.windowHeight = window.innerHeight
+      self.isCheck = false
+      setTimeout(() => {
+        handSetHeight();
+        self.updateState('columns', self.handConvertColumns());
+        self.isCheck = true
+      }, 10)
+    }
+  })
 
   React.useEffect(() => {
     const handleEvent: GridEventListener<'renderedRowsIntervalChange'> = (
@@ -147,15 +168,15 @@ export default function DataTableTemplate({ self }: DataTableTemplate) {
 
   return (
 
-    <div style={{ width: '100%' }} ref={self.canvasRef}>
+    <div style={{ width: '100%', height: props.height || 'auto' }} ref={self.canvasRef}>
       {props.tableConfig.headerMiddle && <TableToolbar onSearch={self.onHeaderSearch} />}
 
-      <Box sx={{ width: '100%', mb: 2, height: props.height || 'auto' }} className='data-table' >
+      <Box sx={{ width: '100%', mb: 2 }} className='data-table' >
         <DataGridPremium
           apiRef={apiRef}
           rows={props.dataItems}
           columns={state.columns}
-          onColumnHeaderClick={self.handleModelSort}
+          onSortModelChange={self.handleModelSort}
           onPaginationModelChange={self.handPaginationModelChange}
           checkboxSelection={props.selectItemType === 'checkbox' ? true : false}
           pageSizeOptions={[10, 20, 50, 100]}

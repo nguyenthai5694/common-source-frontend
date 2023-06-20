@@ -1,6 +1,5 @@
 import { createContext } from 'react'
-import { DataTableQueries } from '../datatable/datatable.type';
-import { ColumnsConfig, TableConfig } from './datatable.type';
+import { ColumnsConfig, DataTableQueries, TableConfig } from './datatable.type';
 
 interface DatatableContextProps {
   /**

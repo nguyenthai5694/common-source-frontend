@@ -1,6 +1,8 @@
 @use '../foundation/config' as *;
 
 .data-table {
+  margin-bottom: 0 !important;
+
   .MuiTableBody-root {
     .MuiTableCell-root {
       border-right: 1px solid color(--border-table);
@@ -19,8 +21,8 @@
 }
 
 .table-search {
-  background-color: #EDF0F4;
   margin-bottom: 20px;
+  background-color: #edf0f4;
 
   .u-table-filter__group {
     display: flex;
@@ -35,11 +37,15 @@
 
     .MuiDataGrid-columnHeaders,
     .MuiDataGrid-pinnedColumnHeaders {
-      background-color: #F0F0F0;
+      background-color: #f0f0f0;
 
       .MuiDataGrid-columnHeader {
         // border-top: 1px solid #e0e0e0;
-        border-right: 1px solid color(--border-table);
+        border-left: 1px solid color(--border-table);
+
+        &:first-child {
+          border-left: none;
+        }
 
         &.MuiDataGrid-columnHeader--moving {
           background-color: inherit;
@@ -77,9 +83,9 @@
       }
 
       .table-hearder-border {
+        z-index: 1;
         // border-top: 1px solid #DAE2EE;
         border-right: 1px solid color(--border-table);
-        z-index: 1;
       }
 
       .hearder-group {
@@ -92,21 +98,29 @@
 
     .MuiDataGrid-virtualScroller {
       .MuiDataGrid-cell {
-        border-right: 1px solid;
-        border-color: color(--border-table);
-        background-color: color(--white);
+        padding: 15px 10px;
         color: color(--color-table);
         font-weight: 700;
-        padding: 15px 10px;
+        background-color: color(--white);
+        border-color: color(--border-table);
+        border-left: 1px solid;
+
+        &:first-child {
+          border-left: none;
+        }
+
+        // &:last-child {
+        //   border-left: none;
+        // }
       }
     }
 
     .table-action {
       display: flex;
       gap: 15px;
+      align-items: center;
       justify-content: center;
       cursor: pointer;
-      align-items: center;
 
       .table-action-item {
         display: flex;

@@ -177,6 +177,7 @@ export default function DashboardTemplate({ self }: DashboardTemplate) {
               onActionClick={self.onActionClick}
               queries={state.queries}
               totalItem={state.totalItem}
+              height='512px'
             />
           </Grid>
         </Grid>

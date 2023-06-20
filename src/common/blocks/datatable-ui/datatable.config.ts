@@ -1,10 +1,9 @@
-import { createContext } from 'react'
-import { ColumnsConfig, DataTableQueries, TableConfig } from '../datatable/datatable.type';
+import { ColumnsConfig, DataTableQueries, TableConfig } from './datatable.type';
 
-interface DatatableContextProps {
+export default interface TableProps {
   /**
-     * Colunms Config with Table
-     */
+   * Colunms Config with Table
+   */
   columnsConfig: ColumnsConfig<any>;
   /**
    * Data source with Table
@@ -20,7 +19,18 @@ interface DatatableContextProps {
    * call function onSearch in Component
    */
   onSearch?: (queries: DataTableQueries) => void;
-
+  /**
+   * 
+   * @param items 
+   * all function onSelectItem in Component
+   */
+  onSelectItem?: (items: any[]) => void;
+  /**
+   * 
+   * @param items 
+   * all function onActionClick in Component
+   */
+  onActionClick?: (items: any) => void;
   /**
    * Info table: page, sort, size
    */
@@ -33,16 +43,4 @@ interface DatatableContextProps {
    * Check display checkbox or radio of table
    */
   checkType?: 'checkbox' | 'radio';
-
-  selected: any[];
-
-  /**
-   * Event click colunm Action
-   * @param e 
-   * @returns 
-   */
-  onActionClick?: (e?: any) => void;
-
 }
-
-export const DatatableContext = createContext<DatatableContextProps>(null);

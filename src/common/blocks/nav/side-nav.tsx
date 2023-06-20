@@ -1,10 +1,12 @@
 import React from 'react'
+import LogoutIcon from '@mui/icons-material/Logout';
 import PersonIcon from '@mui/icons-material/Person';
 import {
   Avatar,
   Box,
   Link,
   Stack,
+  Tooltip,
 } from '@mui/material';
 import { useRouter } from 'app/modules/routes';
 import Logo from '../layout/logo/logo';
@@ -15,6 +17,11 @@ import SideNavItem from './side-nav-item';
 export default function SideNav(props) {
   const router = useRouter();
   const pathname = router.pathname;
+
+  const logout = () => {
+    window.localStorage.removeItem('token')
+    router.push('/auth/login')
+  }
 
   // const lgUp = useMediaQuery((theme: any) => theme.breakpoints.up('lg'));
 
@@ -45,15 +52,33 @@ export default function SideNav(props) {
       </Box>
 
       <Box sx={{
-        p: 3,
         display: 'flex',
         alignItems: 'center',
-        gap: '10px',
+        justifyContent: 'space-between',
       }}>
-        <Avatar>
-          <PersonIcon />
-        </Avatar>
-        User Name
+        <Box sx={{
+          p: 3,
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+          position: 'relative',
+        }}>
+          <Avatar>
+            <PersonIcon />
+          </Avatar>
+
+          User Name
+        </Box>
+
+        <Box sx={{
+          cursor: 'pointer',
+        }}
+        >
+          <Tooltip title='Log Out' onClick={logout}>
+            <LogoutIcon />
+          </Tooltip>
+
+        </Box>
       </Box>
 
       <Box
@@ -74,7 +99,13 @@ export default function SideNav(props) {
           }}
         >
           {items.map((item: any) => {
-            const active = item.path ? (pathname === item.path) : false;
+            let active = item.path ? (pathname === item.path) : false;
+
+            if (!active && item.children) {
+              const subMenuActive = item.children.find(e => e.path === pathname)
+
+              active = subMenuActive ? true : false;
+            }
 
             return (
               <SideNavItem

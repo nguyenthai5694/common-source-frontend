@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormikContextType } from 'formik';
-import { DataTableQueries } from 'common/blocks/datatable/datatable.type';
+import { DataTableQueries } from 'common/blocks/datatable-ui/datatable.type';
 import PageComponent from 'common/utils/page/page.component'
 import { defaultQueries } from 'app/const/common.const';
 import { ModalService } from 'app/services/modal';

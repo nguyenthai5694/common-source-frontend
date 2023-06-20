@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormikContextType } from 'formik';
-import { DataTableQueries } from 'common/blocks/datatable/datatable.type';
+import { DataTableQueries } from 'common/blocks/datatable-ui/datatable.type';
 import PageComponent from 'common/utils/page/page.component'
 import { defaultQueries } from 'app/const/common.const';
 import { ModalService } from 'app/services/modal';
@@ -47,7 +47,7 @@ export default class SettingUsers extends PageComponent<UsersState> {
    * @param items Event after click checkbox or radio in table
    */
   onSelectItem = (items) => {
-    console.log(items);
+    // console.log(items);
   }
 
   /**
@@ -55,7 +55,7 @@ export default class SettingUsers extends PageComponent<UsersState> {
    * @param action Event after click action in table
    */
   onActionClick = (action) => {
-    console.log(action);
+    // console.log(action);
   }
 
   /**

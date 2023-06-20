@@ -123,9 +123,7 @@ export default function NormalLayout(props) {
     display: 'flex',
     flex: '1 1 auto',
     maxWidth: '100%',
-    [theme.breakpoints.up('lg')]: {
-      paddingLeft: SIDE_NAV_WIDTH,
-    },
+    paddingLeft: SIDE_NAV_WIDTH,
   }));
 
   const LayoutContainer = styled('div')({

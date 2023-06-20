@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Box, ButtonBase, Stack, SvgIcon } from '@mui/material';
 import { useRouter } from 'app/modules/routes';
@@ -38,6 +38,14 @@ export default function SideNavItem({
     }
   }
 
+  /**
+   * Event check active open sub menu
+   */
+  useEffect(() => {
+    if (active)
+      setSubNav(true)
+  }, [active])
+
   return (
     <>
       <li className={classNames}>
@@ -55,6 +63,8 @@ export default function SideNavItem({
               width: '100%',
               ...(active && {
                 backgroundColor: 'rgba(255, 255, 255, 0.04)',
+                borderLeft: '4px solid #fff',
+                borderRadius: '0 4px 4px 0',
               }),
               '&:hover': {
                 backgroundColor: 'rgba(255, 255, 255, 0.04)',

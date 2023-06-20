@@ -1,7 +1,6 @@
 import React from 'react'
 import DataTable from 'common/blocks/datatable-ui/datatable.component';
 import PageWrapper from 'common/blocks/page-wrapper/page-wrapper.component'
-import Loading from 'common/parts/loading/loading.component'
 import { columnsConfig, tableConfig } from './data-table.config';
 import InventoryCalendar from './inventory-calendar.component';
 
@@ -17,8 +16,8 @@ export default function InventoryCalendarTemplate({ self }: InventoryCalendarTem
       title={self.pageTitle}
       pages={self.breadcrumb}
       className='t-inventory-calendar'
+      loadding={state.isRunning}
     >
-      {state.isRunning && <Loading />}
 
       < DataTable
         columnsConfig={columnsConfig}

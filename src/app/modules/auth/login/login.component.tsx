@@ -82,7 +82,7 @@ export default class Login extends PageComponent<LoginState> {
     // const loginSub = login(values.domain, values.user).subscribe(
     //   () => {
     this.updateState('isRunning', false);
-    this.props.history.push('/dashboard');
+    this.props.history.push('/');
     //   },
     //   () => this.updateState('isRunning', false),
     // )

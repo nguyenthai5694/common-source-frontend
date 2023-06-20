@@ -1,6 +1,4 @@
-/* eslint-disable max-lines */
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useCallback, useRef } from 'react'
+import React, { useCallback, useRef, useState } from 'react'
 import EventIcon from '@mui/icons-material/Event';
 import { IconButton } from '@mui/material';
 import { DateRangePicker, LocalizationProvider } from '@mui/x-date-pickers-pro';
@@ -55,6 +53,9 @@ export function PeriodCalendar({
   localText,
 }: PeriodCalendarProps) {
   const calendarRef = useRef()
+
+  const [defaultValue] = useState(formik?.values[name] ? true : false)
+
   /**
    * Event change
    */
@@ -74,11 +75,28 @@ export function PeriodCalendar({
     [onChange, formik, name],
   );
 
+  /**
+   * Event click icon open calendar
+   */
   const handOpen = () => {
     const currentRef = calendarRef.current as HTMLElement
 
     currentRef.getElementsByTagName('input')[0].click()
   }
+
+  /**
+   * DateRangePicker Props config
+   */
+  const dateRangePickerProps = {
+    onChange: handleChange,
+    localeText: { start: localText ? localText[0] : '', end: localText ? localText[1] : '' },
+    format: FORMAT_DATE,
+    minDate: minDate ? dayjs(minDate) : undefined,
+    maxDate: maxDate ? dayjs(maxDate) : undefined,
+  } as any
+
+  // Add field value if has defaultValue
+  if (defaultValue) dateRangePickerProps.value = [dayjs(formik.values[name][0]), dayjs(formik.values[name][1])]
 
   return (
     <div
@@ -87,20 +105,14 @@ export function PeriodCalendar({
         '-sizeM': size === 'm',
         '-sizeS': size === 's',
       })}
-      style={{ width: width || '100%' }}
+      style={{ width: width || '304px' }}
       ref={calendarRef}
     >
       <LocalizationProvider dateAdapter={AdapterDayjs}>
 
         <DemoContainer components={['DateRangePicker']}>
           <DateRangePicker
-            localeText={{ start: localText ? localText[0] : '', end: localText ? localText[1] : '' }}
-            onChange={handleChange}
-            // value={formik.values[`${name}`] ?
-            //   [dayjs(formik.values[`${name}`][0]), dayjs(formik.values[`${name}`][1])] : undefined}
-            format={FORMAT_DATE}
-            minDate={minDate ? dayjs(minDate) : undefined}
-            maxDate={maxDate ? dayjs(maxDate) : undefined}
+            {...dateRangePickerProps}
           />
 
           <IconButton aria-label='Calendar' onClick={handOpen}>

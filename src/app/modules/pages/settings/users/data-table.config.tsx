@@ -1,6 +1,6 @@
 
+import TableAction from 'common/blocks/datatable-ui/datatable.action';
 import { ColumnsConfig, TableConfig } from 'common/blocks/datatable-ui/datatable.type';
-import TableAction from 'common/blocks/table-ui/table-action';
 import DatatableSearch from './datatable-search.component';
 // import { ShokangaeData } from './type/shokangae.type';
 export interface SettingMenuData {

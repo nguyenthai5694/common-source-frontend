@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormikContextType } from 'formik';
-import { DataTableQueries } from 'common/blocks/datatable/datatable.type';
+import { DataTableQueries } from 'common/blocks/datatable-ui/datatable.type';
 import PageComponent from 'common/utils/page/page.component'
 import { defaultQueries } from 'app/const/common.const';
 import { ModalService } from 'app/services/modal';
@@ -73,6 +73,7 @@ export default class InventoryCalendar extends PageComponent<InventoryCalendarSt
       data: this.hardCodeDate(this.state.queries.page - 1, this.state.queries.size),
       queries,
       totalItem: 102,
+      isRunning: false,
     })
   }
 

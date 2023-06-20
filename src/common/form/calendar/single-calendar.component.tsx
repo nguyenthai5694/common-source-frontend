@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useState } from 'react'
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -41,6 +41,7 @@ export function SingleCalendar({
   disabled = false,
   label = '',
 }: SingleCalendarProps) {
+  const [defaultValue] = useState(formik?.values[name] ? true : false)
   /**
    * Event change
    */
@@ -58,16 +59,25 @@ export function SingleCalendar({
     [onChange, formik, name],
   );
 
+  /**
+   * DatePicker Props config
+   */
+  const datePickerProps = {
+    onChange: handleChange,
+    label,
+    format: FORMAT_DATE,
+    minDate: minDate ? dayjs(minDate) : undefined,
+    maxDate: maxDate ? dayjs(maxDate) : undefined,
+  } as any
+
+  // Add field value if has defaultValue
+  if (defaultValue) datePickerProps.value = dayjs(formik.values[`${name}`])
+
   return (
     <div className='single-calendar'>
       <LocalizationProvider dateAdapter={AdapterDayjs} >
         <DatePicker
-          onChange={handleChange}
-          label={label}
-          value={formik.values[`${name}`] ? dayjs(formik.values[`${name}`]) : undefined}
-          format={FORMAT_DATE}
-          minDate={minDate ? dayjs(minDate) : undefined}
-          maxDate={maxDate ? dayjs(maxDate) : undefined}
+          {...datePickerProps}
         />
       </LocalizationProvider>
     </div>

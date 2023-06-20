@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import Button from '@mui/material/Button';
 import { Form, Formik } from 'formik';
-import { HeaderMiddleProps } from 'common/blocks/datatable/datatable.type';
+import { HeaderMiddleProps } from 'common/blocks/datatable-ui/datatable.type';
 import { FormControl, Input } from 'common/form';
 
 export default function DatatableSearch(props: HeaderMiddleProps) {
